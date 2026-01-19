@@ -1,0 +1,37 @@
+\documentclass[11pt]{standalone}
+
+
+\usepackage{amssymb} 
+\usepackage{amsmath} 
+
+\usepackage[no-math]{fontspec}
+\usepackage{unicode-math}
+\setmainfont{Lato}
+\setmathfont{Stix Two Math}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+
+
+\begin{document}
+\begin{tikzpicture}
+%	\draw (0, -1) node {natürliche Zahlen $\mathbb{N}$};
+%	\draw [-{Triangle}, thick] (-5.8,0) -- (5.8,0);
+%	\foreach \x in {1,...,5} {
+%        \draw [fill] (\x,0) circle (0.1);
+%        \draw (\x,0.4) node {$\x$};
+%    }
+    
+  % Draw the main line with arrow on the right
+  \draw[thick, -{Triangle}] (0,0) -- (10,0);
+  
+  % Draw tick marks and labels
+  \foreach \x in {0,1,2,3,4,5,6,7,8,9} {
+    \draw[thick](\x,0.1) -- (\x,-0.1);
+    \node[below] at (\x,-0.1) {\x};
+  }
+  
+  % Optional: Add a label for the number line
+  \node[above] at (9.5,0.2) {$\mathbb{N}$};
+\end{tikzpicture}
+\end{document}

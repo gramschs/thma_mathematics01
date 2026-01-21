@@ -1,4 +1,4 @@
-\documentclass[11pt]{standalone}
+\documentclass[12pt]{standalone}
 
 
 \usepackage{amssymb} 
@@ -6,22 +6,21 @@
 
 \usepackage[no-math]{fontspec}
 \usepackage{unicode-math}
-\setmainfont{Lato}
+\setmainfont{TeX Gyre Heros}
 \setmathfont{Stix Two Math}
 
 \usepackage{tikz}
-\usetikzlibrary{arrows.meta}
+\usetikzlibrary{arrows.meta, backgrounds}
 
+\usepackage{xcolor}
+\definecolor{bgcolor}{HTML}{F3F4F4}
 
 \begin{document}
-\begin{tikzpicture}
-%	\draw (0, -1) node {natürliche Zahlen $\mathbb{N}$};
-%	\draw [-{Triangle}, thick] (-5.8,0) -- (5.8,0);
-%	\foreach \x in {1,...,5} {
-%        \draw [fill] (\x,0) circle (0.1);
-%        \draw (\x,0.4) node {$\x$};
-%    }
-    
+\begin{tikzpicture}[
+    show background rectangle,
+    background rectangle/.style={fill=bgcolor, rounded corners=8pt},
+    inner frame sep=0.3cm
+]
   % Draw the main line with arrow on the right
   \draw[thick, -{Triangle}] (0,0) -- (10,0);
   

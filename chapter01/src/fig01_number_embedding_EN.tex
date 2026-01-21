@@ -6,20 +6,24 @@
 
 \usepackage[no-math]{fontspec}
 \usepackage{unicode-math}
-\setmainfont{Lato}
+\setmainfont{TeX Gyre Heros}
 \setmathfont{Stix Two Math}
 
 \usepackage{xcolor}
 
 \usepackage{tikz}
-\usetikzlibrary{arrows.meta}
+\usetikzlibrary{arrows.meta, backgrounds}
 
 \definecolor{myblue}{HTML}{CCDEE9}
+\definecolor{bgcolor}{HTML}{F3F4F4}
 
 
 \begin{document}
-\begin{tikzpicture}[scale=1.2]
-  
+\begin{tikzpicture}[scale=1.2,
+    show background rectangle,
+    background rectangle/.style={fill=bgcolor, rounded corners=8pt},
+    inner frame sep=0.3cm
+]
   % Real numbers (outermost)
   \draw[thick, fill=myblue] (0,0) ellipse (4cm and 3cm);
   \node at (0,2.5) {real numbers $\mathbb{R}$};

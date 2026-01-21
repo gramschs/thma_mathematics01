@@ -40,13 +40,8 @@ of three people. The numbers have their own symbols and are written as
 \end{equation*}
 
 Sometimes the number $0$ (zero) is also counted among the natural numbers. We
-denote the set of natural numbers with the symbol $\mathbb{N}$. Thus,
-
-\begin{equation*}
-\mathbb{N} = \{1, 2, 3, 4, 5, \dots\}
-\end{equation*}
-
-or
+denote the set of natural numbers with the symbol $\mathbb{N}$. Thus, in this
+lecture we use
 
 \begin{equation*}
 \mathbb{N} = \{0, 1, 2, 3, 4, 5, \dots\}.
@@ -79,14 +74,14 @@ refer to the set of numbers
 
 as **integers**.
 
-Integers are often visualized as a **number line**.
+Integers are often visualized as a number line.
 
 ```{figure} pics/fig01_line_number_Z.svg
 ---
 width: 100%
 name: fig01_line_number_Z
 ---
-Number line of integers (Source: own representation; license [CC
+Number line of integers (Source: own representation; license [CC 
 BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/))
 ```
 
@@ -99,7 +94,8 @@ cannot write these numbers as clearly as a set, as we can with natural and
 integer numbers. Instead, we define the following:
 
 A rational number is a number that can be represented as a fraction or quotient
-of two integers, whereby division by zero is not permitted.
+of two integers, whereby division by zero is not permitted. We denote the set of
+rational numbers with the symbol $\mathbb{Q}$.
 
 There are two ways of writing rational numbers:
 
@@ -152,7 +148,7 @@ numbers** and abbreviated with the mathematical symbol $\mathbb{R}$.
 width: 100%
 name: fig01_line_number_R
 ---
-Number line with real numbers (Source: own representation; license [CC
+Number line with real numbers (Source: own representation; license [CC 
 BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/))
 ```
 
@@ -171,7 +167,9 @@ width: 100%
 name: fig01_number_embedding_EN
 ---
 Embedding the numbers
-$\mathbb{N}\subset\mathbb{Z}\subset\mathbb{Q}\subset\mathbb{R}$ (Source: own representation; license [CCBY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/))
+$\mathbb{N}\subset\mathbb{Z}\subset\mathbb{Q}\subset\mathbb{R}$ (Source: own
+representation; license [CC BY-NC-SA
+4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/))
 ```
 
 ## Summary and outlook

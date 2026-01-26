@@ -43,12 +43,12 @@ not. The objects belonging to the set are called **elements of the set**.
 
 In mathematics, there are three ways of representing sets:
 
-1. Enumeration,
-2. Description, and
-3. Visualization as a Venn diagram.
+1. Enumeration (Roster method),
+2. Description (set-builder notation), and
+3. graphical representation as a Venn diagram.
 
-For the **enumeration**, we use the so-called curly brackets `{` and `}` and
-write down the elements:
+For the **enumeration**, sometimes called **Roster methode** we use the
+so-called curly brackets `{` and `}` and write down the elements:
 
 \begin{equation*}
 W = \{\text{Monday}, \text{Tuesday}, \text{Wednesday}, \text{Thursday}, \text{Friday} \}.
@@ -97,9 +97,10 @@ of April, which we abbreviate as $A_1$, is then
 A_{1} = \{1, 2, 3, 4, \dots, 15\}.
 \end{equation*}
 
-The second way to enumerate a set is by means of a **description**. The first
-half of April consists of all days in April that are before or equal to the 15th
-day. Mathematically, this is written as follows:
+The second way to enumerate a set is by means of a **description** or the
+so-called **set-builder methode**. The first half of April consists of all days
+in April that are before or equal to the 15th day. Mathematically, this is
+written as follows:
 
 \begin{equation*}
 A_{1} = \{d\in A \;|\; d \leq 15\}.
@@ -161,11 +162,11 @@ $W_5$ is also an element of the set $W_7$. We refer to the set of working days
 $W_5$ as a **subset** of the weekdays $W_7$ and write:
 
 \begin{equation*}
-W_5 \subset W_7.
+W_5 \subseteq W_7.
 \end{equation*}
 
 Conversely, we call the weekdays a **superset** of the working days and write
-$W_7 \supset W_5$, i.e., with a mirror-inverted subset symbol. In a Venn
+$W_7 \supseteq W_5$, i.e., with a mirror-inverted subset symbol. In a Venn
 diagram, one geometric shape (here a circle for the working days) lies
 completely within the other geometric shape (here an ellipse for the weekdays).
 
@@ -175,7 +176,7 @@ width: 100%
 name: fig01_subset_as_venn_diagram_EN
 ---
 Venn diagram showing the subset of working days $W_5$ and the superset of
-weekdays $W_7$ with the relationship $W_5\subset W_7$ (Source: own
+weekdays $W_7$ with the relationship $W_5\subseteq W_7$ (Source: own
 representation; license [CC BY-NC-SA
 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/))
 ```
@@ -187,8 +188,8 @@ other words: the first set $S_1$ is a subset of the second set $S_2$ and $S_2$
 is a subset of $S_1$. Mathematically, we write:
 
 \begin{equation*}
-S_1 = S_2, \quad \text{if} \quad S_1 \subset S_2 \; \text{\textbf{ and }} \;
-S_2 \subset S_1.
+S_1 = S_2, \quad \text{if} \quad S_1 \subseteq S_2 \; \text{\textbf{ and }} \;
+S_2 \subseteq S_1.
 \end{equation*}
 
 For example, we can list the number of working days according to their occurrence
@@ -205,29 +206,15 @@ W_2 = \{\text{Friday}, \text{Monday}, \text{Tuesday}, \text{Thursday}, \text{Wed
 
 Nevertheless, the two sets are equal because they contain the same elements and
 the order of the set is irrelevant. So $W_1$ is a subset of $W_2$ and at the
-same time $W_1 = W_2$.
+same time $W_2$ is a subset of $W_1$, hence, $W_1 = W_2$.
 
-In some textbooks, the symbol $\subset$ denotes a **proper subset**. In our
-example, the set of weekdays $W_7$ has two elements (Saturday and Sunday) that
-do not belong to the set of working days $W_5$. Thus, $W_5$ is a proper subset
-of $W_7$.
-
-However, if we were to take the days in January and March, for example, i.e.
-
-\begin{equation*}
-J = \{1, 2, 3, \ldots, 31\} \quad \text{ and } \quad M = \{1, 2, 3, \ldots, 31\},
-\end{equation*}
-
-then the January days are a subset of the March days, but at the same time the
-set of January days is equal to the set of March days. The symbol $\subseteq$ is
-also used for this, i.e.
-
-\begin{equation*}
-J \subseteq M.
-\end{equation*}
-
-In the following, we will point out when the difference is important. Otherwise,
-we will not distinguish between proper subsets and subsets.
+Some textbooks introduce the term **proper subset**. In our example, the set of
+weekdays $W_7$ has two elements (Saturday and Sunday) that do not belong to the
+set of working days $W_5$. Thus, $W_5$ is a proper subset of $W_7$. If it is
+important to express that $W_5$ is a proper subset of $W_7$, we can write $W_5
+\subsetneq W_7$. In the following, we will point out when the difference is
+important. Otherwise, we do not distinguish between proper subsets and subsets
+and use the symbol $\subseteq$.
 
 ## Summary and outlook
 

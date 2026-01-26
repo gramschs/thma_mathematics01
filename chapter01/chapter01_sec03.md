@@ -20,12 +20,12 @@ calculated as $\sqrt{297^2 + 210^2}$ mm and is therefore a real number.
 
 ```{admonition} Learning goals
 :class: attention
-* You know
+* [ ] You know
   * **natural numbers** $\mathbb{N}$,
   * **integers** $\mathbb{Z}$,
   * **rational numbers** $\mathbb{Q}$,
   * **real numbers** $\mathbb{R}$.
-* You know the embedding of numbers
+* [ ] You know the embedding of numbers
   $\mathbb{N}\subset\mathbb{Z}\subset\mathbb{Q}\subset\mathbb{R}$.
 ```
 

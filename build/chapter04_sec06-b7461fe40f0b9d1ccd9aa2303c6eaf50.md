@@ -1,0 +1,199 @@
+---
+authors:
+  - name: Simone Gramsch
+---
+
+# Optional: Hyperbolic Functions
+
+A power line hanging between two pylons, a chain suspended between two posts,
+the curve of a concrete arch bridge designed to carry only compressive loads:
+all of these shapes are described by the same mathematical curve. It is not a
+parabola, though it looks like one at first glance. The correct description
+requires a new family of functions that combines the exponential functions from
+section 1 in a way that mirrors the structure of the trigonometric functions
+from sections 4 and 5. These are the hyperbolic functions, and they are the
+final addition to our toolkit of elementary functions.
+
+## Learning goals
+
+```{admonition} Learning goals
+:class: attention
+* [ ] You know the definitions of **hyperbolic sine** $\sinh(x)$, **hyperbolic
+  cosine** $\cosh(x)$, and **hyperbolic tangent** $\tanh(x)$ in terms of the
+  exponential function.
+* [ ] You know the key properties of $\sinh$, $\cosh$, and $\tanh$: domain,
+  range, zeros, monotonicity, and symmetry.
+* [ ] You are familiar with the **hyperbolic Pythagorean identity**
+  $\cosh^2(x) - \sinh^2(x) = 1$.
+```
+
+## Definitions
+
+In the previous section we saw that every point on the unit circle can be
+written as $(\cos(\alpha), \sin(\alpha))$. A similar parametric description
+exists for the unit hyperbola $x^2 - y^2 = 1$: every point on its right branch
+can be written as $(\cosh(t), \sinh(t))$. This geometric analogy is the origin
+of the name "hyperbolic functions".
+
+The definitions are built from the natural exponential function by taking
+symmetric combinations of $e^x$ and $e^{-x}$:
+
+\begin{equation*}
+\sinh(x) = \frac{e^x - e^{-x}}{2}, \qquad
+\cosh(x) = \frac{e^x + e^{-x}}{2}.
+\end{equation*}
+
+The hyperbolic tangent is then defined as their ratio, mirroring the definition
+of the ordinary tangent:
+
+\begin{equation*}
+\tanh(x) = \frac{\sinh(x)}{\cosh(x)} = \frac{e^x - e^{-x}}{e^x + e^{-x}}.
+\end{equation*}
+
+Notice the structural parallel with the Euler formulas for the trigonometric
+functions in terms of complex exponentials coming in a future chapter: $\cos(x)
+= (e^{ix} + e^{-ix})/2$ and $\sin(x) = (e^{ix} - e^{-ix})/(2i)$. The hyperbolic
+functions are the real-axis counterparts, using $e^x$ and $e^{-x}$ instead of
+$e^{ix}$ and $e^{-ix}$.
+
+```{admonition} What are ... the hyperbolic functions?
+:class: note
+The **hyperbolic sine**, **hyperbolic cosine**, and **hyperbolic tangent** are
+defined by:
+
+\begin{equation*}
+\sinh(x) = \frac{e^x - e^{-x}}{2}, \quad
+\cosh(x) = \frac{e^x + e^{-x}}{2}, \quad
+\tanh(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}}.
+\end{equation*}
+```
+
+```{figure} pics/fig04_hyperbolic_functions.svg
+---
+width: 75%
+name: fig04_hyperbolic_functions
+---
+Graphs of $\sinh(x)$ (blue), $\cosh(x)$ (red), and $\tanh(x)$ (orange).
+Note the minimum of $\cosh$ at $x = 0$ and the horizontal asymptotes of
+$\tanh$ at $y = \pm 1$.
+(Source: own figure; license [CC BY-SA
+4.0](https://creativecommons.org/licenses/by-sa/4.0))
+```
+
+## Properties
+
+The properties of the hyperbolic functions follow directly from their
+definitions and from the properties of $e^x$ that we established in section 1.
+
+**Hyperbolic sine $\sinh(x)$.** Since $e^x - e^{-x} = 0$ only at $x = 0$, the
+only zero is at the origin. For large positive $x$, the term $e^x$ dominates
+and $\sinh(x) \to +\infty$; for large negative $x$, the term $-e^{-x}$
+dominates and $\sinh(x) \to -\infty$. The function is therefore strictly
+monotonically increasing with domain $\mathbb{R}$ and range $\mathbb{R}$.
+Checking symmetry: $\sinh(-x) = (e^{-x} - e^x)/2 = -\sinh(x)$, so $\sinh$ is
+an odd function, symmetric about the origin.
+
+**Hyperbolic cosine $\cosh(x)$.** Since $e^x + e^{-x} \geq 2$ for all $x$ (by
+the [AM-GM inequality](https://en.wikipedia.org/wiki/AM-GM_inequality)), we have
+$\cosh(x) \geq 1$ for all $x$, with equality at $x = 0$. The function has no
+zeros. Its domain is $\mathbb{R}$ and its range is $[1, \infty)$. Checking
+symmetry: $\cosh(-x) = (e^{-x} + e^x)/2 = \cosh(x)$, so $\cosh$ is an even
+function, symmetric about the $y$-axis. The minimum at $x = 0$ has value
+$\cosh(0) = 1$.
+
+**Hyperbolic tangent $\tanh(x)$.** The zero is at $x = 0$, where $\sinh(0) = 0$.
+For large positive $x$, both $e^x - e^{-x}$ and $e^x + e^{-x}$ are dominated
+by $e^x$, so $\tanh(x) \to 1$. For large negative $x$, $\tanh(x) \to -1$. The
+function is therefore bounded between $-1$ and $1$, with horizontal asymptotes
+at $y = \pm 1$, domain $\mathbb{R}$, and range $(-1, 1)$. Since
+$\tanh(-x) = -\tanh(x)$, the function is odd. It is also strictly monotonically
+increasing.
+
+The $\tanh$ function appears in a surprising range of applications beyond its
+geometric origin. In mechanics, it describes the velocity of an object falling
+through a resistive medium: the object accelerates at first and then approaches
+a terminal velocity asymptotically, exactly the behavior captured by the
+horizontal asymptotes of $\tanh$.
+
+## The hyperbolic Pythagorean identity
+
+In the previous section, the Pythagorean identity $\sin^2(\alpha) + \cos^2(\alpha) = 1$
+followed from the geometry of the unit circle. The hyperbolic counterpart
+follows directly from the definitions by straightforward algebra:
+
+\begin{equation*}
+\cosh^2(x) - \sinh^2(x)
+= \left(\frac{e^x + e^{-x}}{2}\right)^2 - \left(\frac{e^x - e^{-x}}{2}\right)^2.
+\end{equation*}
+
+Expanding both squares:
+
+\begin{equation*}
+= \frac{e^{2x} + 2 + e^{-2x}}{4} - \frac{e^{2x} - 2 + e^{-2x}}{4}
+= \frac{4}{4} = 1.
+\end{equation*}
+
+```{admonition} What is ... the hyperbolic Pythagorean identity?
+:class: note
+For every $x \in \mathbb{R}$:
+
+\begin{equation*}
+\cosh^2(x) - \sinh^2(x) = 1.
+\end{equation*}
+
+Note the sign difference compared to the trigonometric Pythagorean identity
+$\cos^2(\alpha) + \sin^2(\alpha) = 1$.
+```
+
+This single sign difference, a plus in the trigonometric case and a minus in
+the hyperbolic case, reflects the fundamental geometric difference between the
+circle and the hyperbola. It also means that $(\cosh(t), \sinh(t))$ lies on
+the hyperbola $x^2 - y^2 = 1$, confirming the name.
+
+## Engineering applications
+
+**The catenary.** When a flexible, uniform chain or cable hangs freely between
+two supports under its own weight, it forms a curve called the **catenary**.
+The height of the chain above its lowest point as a function of horizontal
+position $x$ is:
+
+\begin{equation*}
+y(x) = a \left(\cosh\!\left(\frac{x}{a}\right) - 1\right),
+\end{equation*}
+
+where $a$ is a parameter determined by the weight per unit length and the
+horizontal tension in the chain. Power lines between pylons, suspension bridge
+cables before the deck is added, and the chains of a swing set all hang in
+catenaries.
+
+The catenary is often confused with a parabola because the two shapes look
+similar for small sag. However, they are genuinely different: a parabola
+describes the path of a projectile under constant gravity, while a catenary
+describes a hanging chain under distributed weight.
+
+**Arch bridges.** An arch that carries only compressive loads with no bending,
+the structurally ideal form for a stone or concrete arch, has the shape of an
+inverted catenary. The Gateway Arch in St. Louis and many historic masonry
+arches follow this form.
+
+**Heat conduction and fluid flow.** Hyperbolic functions appear in the
+analytical solution of the heat equation for fins and in certain velocity
+profiles in fluid mechanics. In both cases the governing differential equation
+has the form $y'' = k^2 y$, whose general solution is a combination of $\sinh$
+and $\cosh$.
+
+## Summary and outlook
+
+The hyperbolic functions $\sinh$, $\cosh$, and $\tanh$ are constructed from
+the exponential function in a way that mirrors the structure of the
+trigonometric functions. The hyperbolic Pythagorean identity
+$\cosh^2(x) - \sinh^2(x) = 1$ is the counterpart of $\sin^2(x) + \cos^2(x) = 1$,
+with a single crucial sign difference. The most prominent engineering
+application is the catenary, the shape of a hanging chain, but the functions
+appear wherever the differential equation $y'' = k^2 y$ arises. With the
+hyperbolic functions we complete the family of elementary functions. We now
+have polynomials, exponential and logarithmic functions, trigonometric
+functions and their identities, and hyperbolic functions. All of these will
+reappear in the chapters on differential and integral calculus, where the
+tools built in chapters 3 and 4 become the objects of study rather than merely
+the background.

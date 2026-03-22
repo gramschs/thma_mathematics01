@@ -18,4 +18,4 @@ TH Mannheim
 
 These lecture notes support "Mathematics 1".
 
-{button}`toc`
+{button}`Table of Contents`

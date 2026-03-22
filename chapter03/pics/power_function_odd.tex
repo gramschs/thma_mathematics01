@@ -1,0 +1,44 @@
+\documentclass[11pt]{standalone}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[no-math]{fontspec}
+\usepackage{unicode-math}
+\usepackage{libertinus}
+
+\usepackage{pgf,xcolor}
+\definecolor{itwm_blue}{HTML}{005A94}
+\definecolor{itwm_red}{HTML}{C00000}
+\definecolor{itwm_yellow}{HTML}{e87846}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines = center,
+    xlabel = {$x$},
+    ylabel = {$y$},
+    xmin=-2.0, xmax=2.0,
+    ymin=-2.0, ymax=2.0,
+    grid = both,
+    axis equal,
+    axis line style={thick},
+    legend pos=north west,
+    legend style={font=\small},
+    legend cell align=left,
+]
+    
+\addplot[draw=itwm_blue, samples=300, ultra thick, domain=-2:2]{ x };
+\addlegendentry{$f(x) = x$}
+
+\addplot[draw=itwm_yellow, samples=300, ultra thick, domain=-2:2]{ x^3 };
+\addlegendentry{$g(x) = x^3$}
+
+\addplot[draw=itwm_red, samples=300, ultra thick, domain=-2:2]{ x^5 };
+\addlegendentry{$h(x) = x^5$}
+
+\end{axis}
+\end{tikzpicture}
+\end{document}

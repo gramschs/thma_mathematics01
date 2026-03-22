@@ -1,0 +1,43 @@
+\documentclass[11pt]{standalone}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[no-math]{fontspec}
+\usepackage{unicode-math}
+\usepackage{libertinus}
+\usepackage{pgf,xcolor}
+\definecolor{itwm_blue}{HTML}{005A94}
+\definecolor{itwm_red}{HTML}{C00000}
+\definecolor{itwm_yellow}{HTML}{e87846}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines = center,
+    xlabel = {$x$},
+    ylabel = {$y$},
+    xmin=-2.0, xmax=2.0,
+    ymin=-5.0, ymax=5.0,
+    grid = both,
+    axis line style={thick},
+    legend pos=south west,
+    legend style={font=\small},
+    legend cell align=left,
+    restrict y to domain=-10:10,
+    legend entries={$f(x) = x^{-2}$, $g(x) = x^{-4}$, $h(x) = x^{-6}$},
+]
+    
+\addplot[draw=itwm_blue, samples=300, ultra thick, domain=-2:-0.2]{ x^(-2) };
+\addplot[draw=itwm_yellow, samples=300, ultra thick, domain=-2:-0.45]{ x^(-4) };
+\addplot[draw=itwm_red, samples=300, ultra thick, domain=-2:-0.6]{ x^(-6) };
+
+\addplot[draw=itwm_blue, samples=300, ultra thick, domain=0.2:2]{ x^(-2) };
+\addplot[draw=itwm_yellow, samples=300, ultra thick, domain=0.45:2]{ x^(-4) };
+\addplot[draw=itwm_red, samples=300, ultra thick, domain=0.6:2]{ x^(-6) };
+
+
+\end{axis}
+\end{tikzpicture}
+\end{document}

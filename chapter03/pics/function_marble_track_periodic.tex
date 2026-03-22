@@ -1,0 +1,33 @@
+\documentclass[11pt]{standalone}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[no-math]{fontspec}
+\usepackage{unicode-math}
+\usepackage{libertinus}
+
+\usepackage{pgf,xcolor}
+\definecolor{itwm_blue}{HTML}{005A94}
+\definecolor{itwm_red}{HTML}{C00000}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines = center,
+    xlabel = {$x$},
+    ylabel = {$y$},
+    height=8cm, width=12cm, 
+    xmin=-8, xmax=8,
+    ymin=-2, ymax=2,
+    grid = both,
+    axis equal,
+    axis line style={thick},
+]
+\addplot[draw=itwm_blue, samples=300, ultra thick, domain=-12:12]{abs(sin(deg(x)))};
+
+\end{axis}
+\end{tikzpicture}
+\end{document}

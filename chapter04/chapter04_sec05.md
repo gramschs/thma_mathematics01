@@ -21,15 +21,12 @@ integral into a manageable form, or combine two sinusoidal signals into one.
 * [ ] You know the **Pythagorean identity** $\sin^2(\alpha) + \cos^2(\alpha) = 1$
   and can apply it to simplify expressions.
 * [ ] You know the **addition theorems** for sine and cosine and can apply them:
-
   \begin{equation*}
   \sin(\alpha \pm \beta) = \sin(\alpha)\cos(\beta) \pm \cos(\alpha)\sin(\beta),
   \end{equation*}
-
   \begin{equation*}
   \cos(\alpha \pm \beta) = \cos(\alpha)\cos(\beta) \mp \sin(\alpha)\sin(\beta).
   \end{equation*}
-
 * [ ] You can derive the **double angle formulas** from the addition theorems.
 ```
 

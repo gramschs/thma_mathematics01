@@ -3,202 +3,268 @@ authors:
   - name: Simone Gramsch
 ---
 
-# Optional: Hyperbolic Functions
+# Limits and Continuity
 
-A power line hanging between two pylons, a chain suspended between two posts,
-the curve of a concrete arch bridge designed to carry only compressive loads:
-all of these shapes are described by the same mathematical curve. It is not a
-parabola, though it looks like one at first glance. The correct description
-requires a new family of functions that combines the exponential functions from
-section 1 in a way that mirrors the structure of the trigonometric functions
-from sections 4 and 5. These are the hyperbolic functions, and they are the
-final addition to our toolkit of elementary functions.
+Throughout this chapter we have used the word "approaches" freely and
+informally. The discharging capacitor voltage approaches zero without ever
+reaching it. The natural logarithm approaches negative infinity as its
+argument approaches zero from the right. In section 4.1 we described $e^x$
+as the unique exponential function whose rate of change at every point equals
+its own value, a claim that involves asking what happens to a certain ratio
+as a time interval shrinks toward zero. Each of these statements rests on the
+same underlying idea. In this section we make that idea precise through the
+concept of the **limit** of a function, and we use it to define the property
+of **continuity**, which turns out to be the minimum requirement for the
+derivative to exist.
 
 ## Learning goals
 
 ```{admonition} Learning goals
 :class: attention
-* [ ] You know the definitions of **hyperbolic sine** $\sinh(x)$, **hyperbolic
-  cosine** $\cosh(x)$, and **hyperbolic tangent** $\tanh(x)$ in terms of the
-  exponential function.
-* [ ] You know the key properties of $\sinh$, $\cosh$, and $\tanh$: domain,
-  range, zeros, monotonicity, and symmetry.
-* [ ] You are familiar with the **hyperbolic Pythagorean identity**
-  $\cosh^2(x) - \sinh^2(x) = 1$.
+* [ ] You understand the concept of a **limit** and can read and write the
+  notation $\lim_{x \to a} f(x) = L$.
+* [ ] You know what **one-sided limits** are and understand when a two-sided
+  limit exists.
+* [ ] You know the two special limits $\lim_{x \to 0} \frac{\sin(x)}{x} = 1$
+  and $\lim_{x \to \infty} \left(1 + \frac{1}{x}\right)^x = e$.
+* [ ] You know what it means for a function to be **continuous** at a point
+  and can identify the common types of **discontinuity**.
 ```
 
-## Definitions
+## What does a function approach?
 
-In the previous section we saw that every point on the unit circle can be
-written as $(\cos(\alpha), \sin(\alpha))$. A similar parametric description
-exists for the unit hyperbola $x^2 - y^2 = 1$: every point on its right branch
-can be written as $(\cosh(t), \sinh(t))$. This geometric analogy is the origin
-of the name "hyperbolic functions".
-
-The definitions are built from the natural exponential function by taking
-symmetric combinations of $e^x$ and $e^{-x}$:
+Let us return to the discharging capacitor from section 4.1. For simplicity
+we set $U_0 = 1~\text{V}$ and $\tau = 1~\text{s}$, so the voltage across the
+capacitor is:
 
 \begin{equation*}
-\sinh(x) = \frac{e^x - e^{-x}}{2}, \qquad
-\cosh(x) = \frac{e^x + e^{-x}}{2}.
+U_C(t) = e^{-t}.
 \end{equation*}
 
-The hyperbolic tangent is then defined as their ratio, mirroring the definition
-of the ordinary tangent:
+*How fast is the capacitor losing voltage at the moment $t = 1~\text{s}$?* We
+cannot answer this by looking at a single instant: a rate of change requires
+two different times. Instead, we measure the average rate of voltage decrease
+over a short interval from $t = 1~\text{s}$ to $t = 1 + h~\text{s}$:
 
 \begin{equation*}
-\tanh(x) = \frac{\sinh(x)}{\cosh(x)} = \frac{e^x - e^{-x}}{e^x + e^{-x}}.
+r(h) = \frac{U_C(1) - U_C(1 + h)}{h} = \frac{e^{-1} - e^{-(1+h)}}{h}.
 \end{equation*}
 
-Notice the structural parallel with the Euler formulas for the trigonometric
-functions in terms of complex exponentials coming in a future chapter: $\cos(x)
-= (e^{ix} + e^{-ix})/2$ and $\sin(x) = (e^{ix} - e^{-ix})/(2i)$. The hyperbolic
-functions are the real-axis counterparts, using $e^x$ and $e^{-x}$ instead of
-$e^{ix}$ and $e^{-ix}$.
+We compute this average rate for decreasing values of $h$:
 
-```{admonition} What are ... the hyperbolic functions?
+| $h~[\text{s}]$ | $r(h)~[\text{V/s}]$ |
+| -------------- | -------------------- |
+| 1.000 | 0.2326 |
+| 0.500 | 0.2895 |
+| 0.100 | 0.3501 |
+| 0.010 | 0.3660 |
+| 0.001 | 0.3677 |
+
+As $h$ decreases, $r(h)$ settles toward $e^{-1} \approx 0.3679~\text{V/s}$.
+Every row in the table gives a slightly different answer, but all of them
+converge toward the same value. We cannot simply set $h = 0$ to find this
+value, because that would require dividing by zero. What we can say is that
+$r(h)$ gets arbitrarily close to $e^{-1}$ as $h$ gets arbitrarily close to
+zero, regardless of from which side $h$ approaches. This is the idea of a
+limit.
+
+```{admonition} What is ... a limit?
 :class: note
-The **hyperbolic sine**, **hyperbolic cosine**, and **hyperbolic tangent** are
-defined by:
+Let $f$ be a function defined near the point $a$, but not necessarily at $a$
+itself. We say that $f(x)$ has the **limit** $L$ as $x$ approaches $a$, and
+write
 
 \begin{equation*}
-\sinh(x) = \frac{e^x - e^{-x}}{2}, \quad
-\cosh(x) = \frac{e^x + e^{-x}}{2}, \quad
-\tanh(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}}.
+\lim_{x \to a} f(x) = L,
 \end{equation*}
+
+if the values $f(x)$ get arbitrarily close to $L$ whenever $x$ gets
+arbitrarily close to $a$, from either side. The value of $f$ at $x = a$
+itself is irrelevant: it may be defined, undefined, or different from $L$.
 ```
 
-```{figure} pics/fig04_hyperbolic_functions.svg
----
-width: 75%
-name: fig04_hyperbolic_functions
----
-Graphs of $\sinh(x)$ (blue), $\cosh(x)$ (red), and $\tanh(x)$ (orange).
-Note the minimum of $\cosh$ at $x = 0$ and the horizontal asymptotes of
-$\tanh$ at $y = \pm 1$.
-(Source: own figure; license [CC BY-SA
-4.0](https://creativecommons.org/licenses/by-sa/4.0))
-```
+Applying this to our example: $\lim_{h \to 0} r(h) = e^{-1}$. This limit is
+the **instantaneous rate of change** of $U_C$ at $t = 1~\text{s}$. Finding
+it systematically is the central task of chapter 5, where it will become the
+definition of the derivative.
 
-## Properties
+Limits can also be taken as $x \to \infty$. We already know that
+$\lim_{t \to \infty} e^{-t} = 0$: the discharging capacitor eventually
+reaches zero. Similarly, $\lim_{x \to \infty} \ln(x) = \infty$ and
+$\lim_{x \to 0^+} \ln(x) = -\infty$. The notation $0^+$ indicates that $x$
+approaches zero from the right, which leads us to the next concept.
 
-The properties of the hyperbolic functions follow directly from their
-definitions and from the properties of $e^x$ that we established in section 1.
+## What if the two sides give different values?
 
-**Hyperbolic sine $\sinh(x)$.** Since $e^x - e^{-x} = 0$ only at $x = 0$, the
-only zero is at the origin. For large positive $x$, the term $e^x$ dominates
-and $\sinh(x) \to +\infty$; for large negative $x$, the term $-e^{-x}$
-dominates and $\sinh(x) \to -\infty$. The function is therefore strictly
-monotonically increasing with domain $\mathbb{R}$ and range $\mathbb{R}$.
-Checking symmetry: $\sinh(-x) = (e^{-x} - e^x)/2 = -\sinh(x)$, so $\sinh$ is
-an odd function, symmetric about the origin.
-
-**Hyperbolic cosine $\cosh(x)$.** Since $e^x + e^{-x} \geq 2$ for all $x$ (by
-the [AM-GM inequality](https://en.wikipedia.org/wiki/AM-GM_inequality)), we have
-$\cosh(x) \geq 1$ for all $x$, with equality at $x = 0$. The function has no
-zeros. Its domain is $\mathbb{R}$ and its range is $[1, \infty)$. Checking
-symmetry: $\cosh(-x) = (e^{-x} + e^x)/2 = \cosh(x)$, so $\cosh$ is an even
-function, symmetric about the $y$-axis. The minimum at $x = 0$ has value
-$\cosh(0) = 1$.
-
-**Hyperbolic tangent $\tanh(x)$.** The zero is at $x = 0$, where $\sinh(0) = 0$.
-For large positive $x$, both $e^x - e^{-x}$ and $e^x + e^{-x}$ are dominated
-by $e^x$, so $\tanh(x) \to 1$. For large negative $x$, $\tanh(x) \to -1$. The
-function is therefore bounded between $-1$ and $1$, with horizontal asymptotes
-at $y = \pm 1$, domain $\mathbb{R}$, and range $(-1, 1)$. Since
-$\tanh(-x) = -\tanh(x)$, the function is odd. It is also strictly monotonically
-increasing.
-
-The $\tanh$ function appears in a surprising range of applications beyond its
-geometric origin. In mechanics, it describes the velocity of an object falling
-through a resistive medium: the object accelerates at first and then approaches
-a terminal velocity asymptotically, exactly the behavior captured by the
-horizontal asymptotes of $\tanh$.
-
-Beyond mechanics, $\tanh$ also plays an important role in machine learning,
-where it is one of the classical activation functions in **neural networks**.
-It squashes any real-valued input into the range $(-1, 1)$, which keeps
-values under control as they pass through layer after layer of a network.
-
-## The hyperbolic Pythagorean identity
-
-In the previous section, the Pythagorean identity $\sin^2(\alpha) + \cos^2(\alpha) = 1$
-followed from the geometry of the unit circle. The hyperbolic counterpart
-follows directly from the definitions by straightforward algebra:
+Sometimes the value that a function approaches depends on which direction we
+come from. Consider the piecewise defined height function from section 3.3:
 
 \begin{equation*}
-\cosh^2(x) - \sinh^2(x)
-= \left(\frac{e^x + e^{-x}}{2}\right)^2 - \left(\frac{e^x - e^{-x}}{2}\right)^2.
+h(x) = \begin{cases}
+-0.25\, x + 6, & x \in [0, 8], \\
+4,             & x \in (8, 12], \\
+-\frac{1}{3}\, x + 8, & x \in (12, 24].
+\end{cases}
 \end{equation*}
 
-Expanding both squares:
+At the boundary point $x = 8~\text{cm}$, the first segment approaches
+$h(x) \to -0.25 \cdot 8 + 6 = 4~\text{cm}$ as $x$ approaches $8$ from the
+left. The second segment has the constant value $4~\text{cm}$, so it also
+approaches $4~\text{cm}$ as $x$ approaches $8$ from the right. We write:
 
 \begin{equation*}
-= \frac{e^{2x} + 2 + e^{-2x}}{4} - \frac{e^{2x} - 2 + e^{-2x}}{4}
-= \frac{4}{4} = 1.
+\lim_{x \to 8^-} h(x) = 4, \qquad \lim_{x \to 8^+} h(x) = 4.
 \end{equation*}
 
-```{admonition} What is ... the hyperbolic Pythagorean identity?
+The notation $8^-$ means approaching $8$ from below and $8^+$ means
+approaching from above. These are called **one-sided limits**. Because both
+one-sided limits agree, the two-sided limit exists:
+$\lim_{x \to 8} h(x) = 4~\text{cm}$.
+
+```{admonition} What are ... one-sided limits?
 :class: note
-For every $x \in \mathbb{R}$:
+The **left-hand limit** $\lim_{x \to a^-} f(x) = L$ means that $f(x)$
+approaches $L$ as $x$ approaches $a$ from below.
+
+The **right-hand limit** $\lim_{x \to a^+} f(x) = L$ means that $f(x)$
+approaches $L$ as $x$ approaches $a$ from above.
+
+The two-sided limit $\lim_{x \to a} f(x)$ exists if and only if both
+one-sided limits exist and are equal:
 
 \begin{equation*}
-\cosh^2(x) - \sinh^2(x) = 1.
+\lim_{x \to a^-} f(x) = \lim_{x \to a^+} f(x) = L.
 \end{equation*}
-
-Note the sign difference compared to the trigonometric Pythagorean identity
-$\cos^2(\alpha) + \sin^2(\alpha) = 1$.
 ```
 
-This single sign difference, a plus in the trigonometric case and a minus in
-the hyperbolic case, reflects the fundamental geometric difference between the
-circle and the hyperbola. It also means that $(\cosh(t), \sinh(t))$ lies on
-the hyperbola $x^2 - y^2 = 1$, confirming the name.
+If the two one-sided limits differ, the two-sided limit does not exist. A
+concrete example is the function $f(x) = |x|/x$, which equals $-1$ for all
+$x < 0$ and $+1$ for all $x > 0$. As $x$ approaches zero from the left the
+function approaches $-1$, and from the right it approaches $+1$. The
+one-sided limits disagree, so $\lim_{x \to 0} f(x)$ does not exist. In
+engineering, an electrical switch exhibits exactly this behavior: the current
+jumps from zero to a finite value the instant the switch closes, with no
+intermediate state.
 
-## Engineering applications
+## Two limits worth knowing by heart
 
-**The catenary.** When a flexible, uniform chain or cable hangs freely between
-two supports under its own weight, it forms a curve called the **catenary**.
-The height of the chain above its lowest point as a function of horizontal
-position $x$ is:
+Two special limits appear so frequently in calculus and engineering that they
+are worth knowing explicitly. Neither can be evaluated by directly
+substituting the limiting value, but both can be confirmed by numerical
+experiment.
+
+**The sinc limit.** We know from section 4.4 that $\sin(x) = 0$ at $x = 0$,
+so the ratio $\sin(x)/x$ takes the form $0/0$ at the origin and is undefined
+there. Computing the ratio for small positive values of $x$ (measured in
+radians) reveals a clear pattern:
+
+| $x~[\text{rad}]$ | $\sin(x)$ | $\sin(x)/x$ |
+| ---------------- | --------- | ------------ |
+| 1.000 | 0.8415 | 0.8415 |
+| 0.500 | 0.4794 | 0.9589 |
+| 0.100 | 0.0998 | 0.9983 |
+| 0.010 | 0.0100 | 0.9999 |
+
+The ratio converges to $1$. This result,
 
 \begin{equation*}
-y(x) = a \left(\cosh\!\left(\frac{x}{a}\right) - 1\right),
+\lim_{x \to 0} \frac{\sin(x)}{x} = 1,
 \end{equation*}
 
-where $a$ is a parameter determined by the weight per unit length and the
-horizontal tension in the chain. Power lines between pylons, suspension bridge
-cables before the deck is added, and the chains of a swing set all hang in
-catenaries.
+is one of the most important limits in calculus. It will appear in chapter 5
+when we derive the derivative of the sine function. It is also the reason why
+radians are the natural unit for angles in all calculus formulas: the limit
+equals exactly $1$ in radians, but would equal $\pi/180$ in degrees.
 
-The catenary is often confused with a parabola because the two shapes look
-similar for small sag. However, they are genuinely different: a parabola
-describes the path of a projectile under constant gravity, while a catenary
-describes a hanging chain under distributed weight.
+**Euler's number as a limit.** In section 4.1 we introduced Euler's number
+$e$ and noted its special role in differentiation. That role can already be
+glimpsed in the following numerical experiment. Consider the expression
+$(1 + 1/x)^x$ for increasing values of $x$:
 
-**Arch bridges.** An arch that carries only compressive loads with no bending,
-the structurally ideal form for a stone or concrete arch, has the shape of an
-inverted catenary. The Gateway Arch in St. Louis and many historic masonry
-arches follow this form.
+| $x$ | $(1 + 1/x)^x$ |
+| --- | -------------- |
+| 1 | 2.0000 |
+| 10 | 2.5937 |
+| 100 | 2.7048 |
+| 1000 | 2.7169 |
+| 10000 | 2.7181 |
 
-**Heat conduction and fluid flow.** Hyperbolic functions appear in the
-analytical solution of the heat equation for fins and in certain velocity
-profiles in fluid mechanics. In both cases the governing differential equation
-has the form $y'' = k^2 y$, whose general solution is a combination of $\sinh$
-and $\cosh$.
+The values converge to $e \approx 2.71828$, confirming:
+
+\begin{equation*}
+\lim_{x \to \infty} \left(1 + \frac{1}{x}\right)^x = e.
+\end{equation*}
+
+This is in fact the original definition from which Euler's number is derived.
+The expression $(1 + 1/x)^x$ can be interpreted as the result of compounding
+a small return of $1/x$ a total of $x$ times. As the compounding steps become
+infinitely fine, the accumulated value converges to $e$. The connection
+between this limit and the differentiation property of $e^x$ will be made
+explicit in chapter 5.
+
+## When is a function continuous?
+
+The marble track from chapter 3 was physically continuous: the ball rolled
+along it without ever jumping from one position to another. The mathematical
+counterpart of this physical intuition is **continuity**.
+
+The piecewise height function from section 3.3 has no jumps. We verified at
+both boundary points that the segments connect: $h_1(8) = h_2(8) = 4~\text{cm}$
+and $h_2(12) = h_3(12) = 4~\text{cm}$. At $x = 8~\text{cm}$, the function
+value $h(8) = 4~\text{cm}$ and the limit $\lim_{x \to 8} h(x) = 4~\text{cm}$
+agree. This is precisely what continuity requires.
+
+```{admonition} What is ... continuity?
+:class: note
+A function $f$ is **continuous at a point** $x = a$ if three conditions hold:
+
+* $f(a)$ is defined,
+* $\lim_{x \to a} f(x)$ exists,
+* $\lim_{x \to a} f(x) = f(a)$.
+
+A function is **continuous on an interval** if it is continuous at every
+point of that interval.
+```
+
+All the elementary functions we have studied in chapters 3 and 4 are
+continuous on their respective domains: polynomials, exponential and
+logarithmic functions, and the trigonometric functions are all continuous
+wherever they are defined. Discontinuities arise precisely at the points
+excluded from the domain, such as $x = 0$ for $1/x$, or at the boundaries
+of piecewise functions where the pieces fail to connect.
+
+There are three common types of discontinuity, each with a different cause.
+
+A **removable discontinuity** occurs when the limit exists at $x = a$ but
+either $f(a)$ is not defined or $f(a)$ differs from the limit. The function
+$\sin(x)/x$ has a removable discontinuity at $x = 0$: the limit equals $1$
+but the function is undefined there. The discontinuity can be removed by
+simply defining $f(0) = 1$.
+
+A **jump discontinuity** occurs when both one-sided limits exist but are not
+equal. The function $f(x) = |x|/x$ has a jump discontinuity at $x = 0$,
+as we saw above. In engineering, the closing of an electrical switch produces
+a jump in the current, and the piecewise stress-strain curve of a material
+at the yield point is another example.
+
+An **infinite discontinuity** occurs when the function values grow without
+bound near $x = a$. The function $f(x) = 1/x$ has an infinite discontinuity
+at $x = 0$: as $x \to 0^+$ the function grows to $+\infty$, and as
+$x \to 0^-$ it falls to $-\infty$. The power functions with negative integer
+exponents from section 3.4 all share this property.
 
 ## Summary and outlook
 
-The hyperbolic functions $\sinh$, $\cosh$, and $\tanh$ are constructed from
-the exponential function in a way that mirrors the structure of the
-trigonometric functions. The hyperbolic Pythagorean identity
-$\cosh^2(x) - \sinh^2(x) = 1$ is the counterpart of $\sin^2(x) + \cos^2(x) = 1$,
-with a single crucial sign difference. The most prominent engineering
-application is the catenary, the shape of a hanging chain, but the functions
-appear wherever the differential equation $y'' = k^2 y$ arises. With the
-hyperbolic functions we complete the family of elementary functions. We now
-have polynomials, exponential and logarithmic functions, trigonometric
-functions and their identities, and hyperbolic functions. All of these will
-reappear in the chapters on differential and integral calculus, where the
-tools built in chapters 3 and 4 become the objects of study rather than merely
-the background.
+The limit of a function captures the value that the function approaches near
+a point, independently of the function value at that point. One-sided limits
+allow us to analyze functions that behave differently from the left and from
+the right, as in the piecewise functions of section 3.3. Two special limits
+stand out for their importance in what follows: $\lim_{x \to 0} \sin(x)/x = 1$
+will appear when we differentiate the sine function, and the limit definition
+of $e$ connects back to the unique differentiation property of the natural
+exponential function first described in section 4.1. Continuity is the
+natural companion to the limit concept: a continuous function is one for
+which the limit always agrees with the function value. In chapter 5 we will
+see that continuity at a point is a necessary condition for the derivative to
+exist there, and the limit notation introduced here will reappear immediately,
+in the very definition of the derivative.

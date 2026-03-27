@@ -235,8 +235,7 @@ convert between different bases, we use the identity:
 a^x = e^{x \ln a},
 \end{equation*}
 
-where $\ln$ is the natural logarithm, which we will introduce in a later
-chapter.
+where $\ln$ is the natural logarithm, which we will introduce in section 4.3.
 
 ## Summary and outlook
 

@@ -17,5 +17,3 @@ TH Mannheim
 ![Mathematics](title.png)
 
 These lecture notes support "Mathematics 1".
-
-{button}`Table of Content`

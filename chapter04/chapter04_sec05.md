@@ -217,7 +217,8 @@ of the unit circle and generates further useful identities by simple algebra.
 The addition theorems allow any sum or difference of angles to be expanded, and
 the double angle formulas follow as special cases. With these identities, and
 the power reduction formulas in particular, we are fully prepared for the
-integration techniques we will encounter in a later chapter. In the final
-section of this chapter we introduce the hyperbolic functions, which share a
+integration techniques we will encounter in a later chapter. In the next section we introduce the concept of limits, which forms the
+bridge from functions to differential calculus. For those interested, section
+4.7 gives an optional introduction to the hyperbolic functions, which share a
 striking structural similarity with the trigonometric functions but are built
 from the exponential function.

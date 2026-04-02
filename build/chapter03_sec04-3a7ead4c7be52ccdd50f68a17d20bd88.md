@@ -1,0 +1,271 @@
+---
+authors:
+  - name: Simone Gramsch
+---
+
+# Power Functions and Polynomials
+
+All our marble track profiles so far have been straight inclined rails,
+described by a linear height function. But what if the rail is curved? A rail
+that starts gently and becomes progressively steeper, or one that curves into a
+valley and rises again, cannot be described by a straight line. To handle curved
+profiles we need a broader family of functions: power functions and, built from
+them, polynomials.
+
+## Learning goals
+
+```{admonition} Learning goals
+:class: attention
+* [ ] You know what a **power function** $f(x) = a \cdot x^n$ is and understand
+  how the coefficient $a$ and the exponent $n$ affect its shape.
+* [ ] You know the behaviour of power functions for positive integer exponents,
+  negative integer exponents, and rational exponents (root functions).
+* [ ] You know what a **polynomial** is and are familiar with the terms
+  **degree**, **coefficients**, and **leading coefficient**.
+* [ ] You know the linear function $f(x) = mx + b$ as the polynomial of degree 1
+  and can identify the **slope** $m$ and the **intercept** $b$.
+* [ ] You can determine the long-term behaviour of a polynomial for
+  $x \to \pm\infty$ from its degree and leading coefficient.
+```
+
+## Power functions
+
+Imagine we replace the straight rail of our marble track with a curved one.
+Different curvatures give different height profiles: one rail might drop steeply
+at first and then flatten out; another might curve gently throughout. All these
+profiles can be described by **power functions**.
+
+```{admonition} What is ... a power function?
+:class: note
+A **power function** is a function of the form
+
+\begin{equation*}
+f(x) = a \cdot x^n,
+\end{equation*}
+
+where $a$ is a real number called the **coefficient** and $n$ is a real number
+called the **exponent**. We require $a \neq 0$.
+```
+
+The coefficient $a$ controls the steepness and orientation of the function: a
+large $|a|$ gives a steep curve, while a negative $a$ flips the graph upside
+down. The exponent $n$ determines the fundamental shape. We consider three
+important cases.
+
+**Positive integer exponents ($n = 1, 2, 3, \ldots$)**
+
+For $n = 1$ we obtain $f(x) = a \cdot x$, a straight line through the origin.
+For $n = 2$ we get $f(x) = a \cdot x^2$, a parabola that opens upward if
+$a > 0$ and downward if $a < 0$. For $n = 3$ we obtain $f(x) = a \cdot x^3$,
+a cubic with an S-shaped curve that changes its direction of curvature at the
+origin.
+
+A useful observation: power functions with an even exponent are even functions,
+that is, $f(-x) = f(x)$, while power functions with an odd exponent are odd
+functions, that is, $f(-x) = -f(x)$. We met both types of symmetry in the
+previous section on function properties.
+
+```{figure} pics/fig03_power_functions_positive.svg
+---
+width: 75%
+name: fig03_power_functions_positive
+---
+Graphs of power functions with positive integer exponents. Functions with odd
+exponents (left) are odd functions; functions with even exponents (right) are
+even functions.
+(Source: own figure; licence [CC BY-SA
+4.0](https://creativecommons.org/licenses/by-sa/4.0))
+```
+
+**Negative integer exponents ($n = -1, -2, -3, \ldots$)**
+
+For negative exponents we can rewrite the power function as a fraction:
+
+\begin{equation*}
+f(x) = a \cdot x^{-n} = \frac{a}{x^n}.
+\end{equation*}
+
+These functions are not defined at $x = 0$, because division by zero is not
+permitted. As $x$ approaches zero, the function values grow beyond all bounds:
+$|f(x)| \to \infty$. The point $x = 0$ is therefore not in the domain. For
+example, $f(x) = \frac{1}{x}$ (the case $n = -1$ with $a = 1$) is the
+well-known hyperbola, with domain $D = \mathbb{R} \setminus \{0\}$.
+
+```{figure} pics/fig03_power_functions_negative.svg
+---
+width: 75%
+name: fig03_power_functions_negative
+---
+Graphs of power functions with negative integer exponents. Again, odd exponents
+(left) give odd functions and even exponents (right) give even functions.
+(Source: own figure; licence [CC BY-SA
+4.0](https://creativecommons.org/licenses/by-sa/4.0))
+```
+
+**Rational exponents ($n = \frac{1}{2}, \frac{1}{3}, \ldots$)**
+
+When the exponent is a fraction, we obtain root functions. The most important
+case is $n = \frac{1}{2}$:
+
+\begin{equation*}
+f(x) = x^{1/2} = \sqrt{x}.
+\end{equation*}
+
+This function is only defined for $x \geq 0$, since the square root of a
+negative number is not a real number. The domain is therefore $D = [0, \infty)$.
+A marble track with the profile $h(x) = -\sqrt{x}$ would drop steeply near
+the start and then become progressively flatter as the ball travels further.
+
+```{figure} pics/fig03_power_functions_rational.svg
+---
+width: 75%
+name: fig03_power_functions_rational
+---
+Graphs of power functions with rational exponents (root functions).
+(Source: own figure; licence [CC BY-SA
+4.0](https://creativecommons.org/licenses/by-sa/4.0))
+```
+
+Note that the choice of exponent determines not only the shape of the function
+but also its domain. This is something to check carefully when working with
+power functions in engineering models.
+
+```{dropdown} Video "What are Power Functions?" by Wrath of Math
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/Kr_Z61NVW-w"
+title="What are Power Functions? | Functions and Relations, Types of Functions" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
+
+```{dropdown} Video "Power Functions" by Scholar-U
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/g48BrPisqek"
+title="Power Functions" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+encrypted-media; gyroscope; picture-in-picture; web-share"
+referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
+
+## Linear functions
+
+We have already met linear functions in section 1: the height function of our
+straight inclined rail was $h(x) = -\frac{1}{4}x + 6$. This function contains
+a power function with exponent $n = 1$ and an additional constant term. Let us
+look at it more carefully.
+
+```{admonition} What is ... a linear function?
+:class: note
+A **linear function** is a function of the form
+
+\begin{equation*}
+f(x) = m \cdot x + b,
+\end{equation*}
+
+where $m$ is the **slope** and $b$ is the **intercept** (or $y$-intercept).
+Both $m$ and $b$ are real numbers.
+```
+
+The slope $m$ tells us how steeply the graph rises or falls. For our marble
+track the slope was $m = -\frac{1}{4}$, meaning the rail fell. The sign and
+magnitude of $m$ determine the qualitative behaviour:
+
+- If $m > 0$, the function is strictly monotonically increasing (rising line).
+- If $m < 0$, the function is strictly monotonically decreasing (falling line).
+- If $m = 0$, the function is constant (horizontal line).
+
+Geometrically, the slope can be read off using the **slope triangle**: if we
+move from a point $(x_1, y_1)$ to a point $(x_2, y_2)$ on the line, then
+
+\begin{equation*}
+m = \frac{\Delta y}{\Delta x} = \frac{y_2 - y_1}{x_2 - x_1}.
+\end{equation*}
+
+For our marble track, $m = -\frac{1}{4}$ means: every time the ball travels
+$4~\text{cm}$ to the right, it drops by $1~\text{cm}$.
+
+The intercept $b$ is the value of the function at $x = 0$, that is, the point
+where the graph crosses the $y$-axis. Substituting $x = 0$ gives
+$f(0) = b$. For our marble track, $b = 6~\text{cm}$, which is exactly the
+starting height at the starting block.
+
+```{dropdown} Video "Linear Functions" by The Organic Chemistry Tutor
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/BtcKotD6Ni8?list=PL0o_zxa4K1BWYThyV4T2Allw6zY0jEumv" title="Linear Functions" frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
+
+## Polynomials
+
+A linear function combines a power function of degree 1 with a constant term.
+What if we combine several power functions with different exponents? Imagine a
+marble track profile that starts gently, curves through a valley, and rises
+again before the finishing block. No single power function can describe all
+these features at once, but a sum of several power functions can.
+
+```{admonition} What is ... a polynomial?
+:class: note
+A **polynomial** is a function of the form
+
+\begin{equation*}
+p(x) = a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0,
+\end{equation*}
+
+where $a_0, a_1, \ldots, a_n$ are real numbers called the **coefficients** of
+the polynomial, and $a_n \neq 0$. The highest exponent $n$ is called the
+**degree** of the polynomial, and the coefficient $a_n$ of the highest power is
+called the **leading coefficient**.
+```
+
+A polynomial is therefore a sum of power functions with non-negative integer
+exponents, plus a constant term $a_0$. The functions we have already met are
+all special cases: a power function $a \cdot x^n$ is a polynomial with a single
+term, and a linear function $mx + b$ is a polynomial of degree 1.
+
+A few examples illustrate the variety:
+
+- $f(x) = 5x + 3$ is a polynomial of degree 1 (a linear function).
+- $g(x) = 2x^2 - 3x + 1$ is a polynomial of degree 2 (a quadratic function).
+- $h(x) = x^3 - 4x^2 + x - 7$ is a polynomial of degree 3 (a cubic).
+- $k(x) = -0.5x^4 + 2x^3 - x + 5$ is a polynomial of degree 4.
+
+For our marble track, the more complex the height profile, the higher the
+degree of the required polynomial. A straight rail needs degree 1, a parabolic
+ramp needs degree 2, and a track with several hills and valleys may require a
+polynomial of degree 3 or higher.
+
+```{figure} pics/fig03_polynomial_graphs.svg
+---
+width: 75%
+name: fig03_polynomial_graphs
+---
+Graphs of polynomials of degrees 1 through 4.
+(Source: own figure; licence [CC BY-SA
+4.0](https://creativecommons.org/licenses/by-sa/4.0))
+```
+
+**Long-term behaviour**
+One of the most useful things we can read off immediately from a polynomial is
+its behaviour for very large positive or very large negative values of $x$, that
+is, for $x \to \pm\infty$. This is determined entirely by the degree $n$ and
+the sign of the leading coefficient $a_n$:
+
+- $n$ even, $a_n > 0$: the graph rises to $+\infty$ in both directions.
+- $n$ even, $a_n < 0$: the graph falls to $-\infty$ in both directions.
+- $n$ odd, $a_n > 0$: the graph comes from $-\infty$ on the left and rises to
+  $+\infty$ on the right.
+- $n$ odd, $a_n < 0$: the graph comes from $+\infty$ on the left and falls to
+  $-\infty$ on the right.
+
+For example, the polynomial $h(x) = -0.001x^3 + 0.05x^2 - 0.5x + 6$ has
+degree 3 and leading coefficient $a_3 = -0.001 < 0$. We can immediately
+conclude that for large positive $x$ the function goes to $-\infty$, which
+makes physical sense: a descending rail eventually reaches the ground and
+cannot be extended indefinitely.
+
+## Summary and outlook
+
+We have seen that power functions form the building blocks of polynomials, and
+that polynomials can describe arbitrarily complex curved track profiles by
+combining terms of different degrees. The long-term behaviour of a polynomial
+is controlled entirely by its degree and leading coefficient. Among all
+polynomials, the quadratic function of degree 2 deserves special attention: its
+graph is a parabola with a lowest or highest point that will later play a
+central role in differential calculus. We study quadratic functions in detail
+in the next section.

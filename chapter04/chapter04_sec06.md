@@ -94,6 +94,12 @@ reaches zero. Similarly, $\lim_{x \to \infty} \ln(x) = \infty$ and
 $\lim_{x \to 0^+} \ln(x) = -\infty$. The notation $0^+$ indicates that $x$
 approaches zero from the right, which leads us to the next concept.
 
+```{dropdown} Video "Introduction to Limits" by The Organic Chemistry Tutor
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/YNstP0ESndU"
+title="Calculus 1 - Introduction to Limits" frameborder="0" allow="accelerometer;
+autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
+
 ## What if the two sides give different values?
 
 Sometimes the value that a function approaches depends on which direction we
@@ -145,6 +151,14 @@ one-sided limits disagree, so $\lim_{x \to 0} f(x)$ does not exist. In
 engineering, an electrical switch exhibits exactly this behavior: the current
 jumps from zero to a finite value the instant the switch closes, with no
 intermediate state.
+
+```{dropdown} Video "One sided Limits" by The Organic Chemistry Tutor
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/6e4Wtgc43KQ"
+title="One Sided Limits, Graphs, Continuity, Infinity, Absolute Value, Squeeze Thereom -
+Calculus Review" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+encrypted-media; gyroscope; picture-in-picture; web-share"
+referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
 
 ## Two limits worth knowing by heart
 
@@ -252,6 +266,13 @@ bound near $x = a$. The function $f(x) = 1/x$ has an infinite discontinuity
 at $x = 0$: as $x \to 0^+$ the function grows to $+\infty$, and as
 $x \to 0^-$ it falls to $-\infty$. The power functions with negative integer
 exponents from section 3.4 all share this property.
+
+```{dropdown} Video "Continuity Basic Introduction" by The Organic Chemistry Tutor
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/joewRl1CTL8"
+title="Continuity Basic Introduction, Point, Infinite, &amp; Jump Discontinuity,
+Removable &amp; Nonremovable" frameborder="0" allow="accelerometer; autoplay;
+clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
 
 ## Summary and outlook
 

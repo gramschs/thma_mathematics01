@@ -152,6 +152,13 @@ A few more examples to practise:
 With practice, identifying inner and outer functions becomes automatic. In each
 case we ask: what is the outermost operation? Everything else is inside it.
 
+```{dropdown} Video "Composite Functions" by The Organic Chemistry Tutor
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/ZFPkQkURSxk"
+title="Composite Functions" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+encrypted-media; gyroscope; picture-in-picture; web-share"
+referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
+
 ## Summary and outlook
 
 The composition of functions chains two functions in sequence: the output of

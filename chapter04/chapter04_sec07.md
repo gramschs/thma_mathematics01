@@ -80,6 +80,12 @@ $\tanh$ at $y = \pm 1$.
 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
+```{dropdown} Video "Hyperbolic Trig Functions" by The Organic Chemistry Tutor
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/PJRSu0Vf0r0"
+title="Hyperbolic Trig Functions - Basic Introduction" frameborder="0" allow="accelerometer;
+autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
+
 ## Properties
 
 The properties of the hyperbolic functions follow directly from their
@@ -154,6 +160,12 @@ This single sign difference, a plus in the trigonometric case and a minus in
 the hyperbolic case, reflects the fundamental geometric difference between the
 circle and the hyperbola. It also means that $(\cosh(t), \sinh(t))$ lies on
 the hyperbola $x^2 - y^2 = 1$, confirming the name.
+
+```{dropdown} Video "Hyperbolic Trig Identities" by The Organic Chemistry Tutor
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/m9nwdn55Z2w"
+title="Hyperbolic Trig Identities" frameborder="0" allow="accelerometer; autoplay;
+clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
 
 ## Engineering applications
 

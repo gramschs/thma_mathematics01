@@ -130,6 +130,19 @@ Note that the choice of exponent determines not only the shape of the function
 but also its domain. This is something to check carefully when working with
 power functions in engineering models.
 
+```{dropdown} Video "What are Power Functions?" by Wrath of Math
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/Kr_Z61NVW-w"
+title="What are Power Functions? | Functions and Relations, Types of Functions" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
+
+```{dropdown} Video "Power Functions" by Scholar-U
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/g48BrPisqek"
+title="Power Functions" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+encrypted-media; gyroscope; picture-in-picture; web-share"
+referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
+
 ## Linear functions
 
 We have already met linear functions in section 1: the height function of our
@@ -171,6 +184,12 @@ The intercept $b$ is the value of the function at $x = 0$, that is, the point
 where the graph crosses the $y$-axis. Substituting $x = 0$ gives
 $f(0) = b$. For our marble track, $b = 6~\text{cm}$, which is exactly the
 starting height at the starting block.
+
+```{dropdown} Video "Linear Functions" by The Organic Chemistry Tutor
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/BtcKotD6Ni8?list=PL0o_zxa4K1BWYThyV4T2Allw6zY0jEumv" title="Linear Functions" frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
 
 ## Polynomials
 
@@ -239,6 +258,12 @@ degree 3 and leading coefficient $a_3 = -0.001 < 0$. We can immediately
 conclude that for large positive $x$ the function goes to $-\infty$, which
 makes physical sense: a descending rail eventually reaches the ground and
 cannot be extended indefinitely.
+
+```{dropdown} Video "How To Graph Polynomial Functions"by The Organic Chemistry Tutor
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/a5x4lwnvHM0?list=PL0o_zxa4K1BU5sTWZ2YxFhpXwsnMfMke7" title="How To Graph Polynomial Functions Using
+End Behavior, Multiplicity &amp; Zeros" frameborder="0" allow="accelerometer; autoplay;
+clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
 
 ## Summary and outlook
 

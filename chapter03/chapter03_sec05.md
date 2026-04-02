@@ -81,6 +81,13 @@ if $a > 0$ the parabola opens upward and has a lowest point; if $a < 0$ it
 opens downward and has a highest point. The larger $|a|$ is, the narrower the
 parabola.
 
+```{dropdown} Video "Quadratic Functions" by StudyPug
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/KRwb4YhQPwA"
+title="Quadratic Functions - Explained, Simplified and Made Easy" frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
+
 ## Standard form and vertex form
 
 The standard form $f(x) = ax^2 + bx + c$ is convenient for reading off the
@@ -138,6 +145,12 @@ visible.
 Both forms describe exactly the same function. The standard form is convenient
 for calculations involving individual coefficients; the vertex form is
 convenient whenever the vertex itself is the quantity of interest.
+
+```{dropdown} Video "Standard form to vertex form" by The Organic Chemistry Tutor
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/pf9LkX8hpTQ"
+title="Standard Form to Vertex Form - Quadratic Equations" frameborder="0" allow="accelerometer;
+autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
 
 ## Zeros and the discriminant
 
@@ -219,6 +232,11 @@ name: fig03_parabola_sketch
 Key features of a parabola: opening direction, vertex, zeros, and $y$-intercept.
 (Source: own figure; licence [CC BY-SA
 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+```
+
+```{dropdown} Video "Graphing Quadratic Functions" by The Organic Chemistry Tutor
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/Hq2Up_1Ih5E"
+title="Graphing Quadratic Functions in Vertex &amp; Standard Form - Axis of Symmetry - Word Problems" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 ```
 
 ## The vertex and differential calculus

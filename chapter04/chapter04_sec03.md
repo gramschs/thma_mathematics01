@@ -25,6 +25,13 @@ engineering.
 * [ ] You can solve equations of the form $a^x = b$ using the logarithm.
 ```
 
+```{dropdown} Video "Logarithms Explained" by The Organic Chemistry Tutor
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/LRbi_pMX1DM"
+title="Logarithms Explained Rules &amp; Properties, Condense, Expand, Graphing &amp;
+Solving Equations Introduction" frameborder="0" allow="accelerometer; autoplay;
+clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
+
 ## The logarithm as the inverse of the exponential function
 
 We return to the capacitor discharge equation and the question from the

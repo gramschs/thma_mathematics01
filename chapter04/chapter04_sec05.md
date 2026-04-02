@@ -118,6 +118,14 @@ gives an identity for the tangent:
 This identity appears in the computation of certain integrals and in the
 analysis of vibrating systems.
 
+```{dropdown} Video ""Pythagorean Identities" by The Organic Chemistry Tutor
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/TpADRvW8zm8"
+title="Pythagorean Identities - Examples &amp; Practice Problems, Trigonometry" 
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+allowfullscreen></iframe>
+```
+
 ## Addition theorems
 
 The addition theorems give the sine and cosine of a sum or difference of two
@@ -171,6 +179,14 @@ combined into a single sinusoid. This technique, expanding and recombining
 trigonometric expressions, is fundamental in the analysis of vibrations and
 electrical circuits.
 
+```{dropdown} Video "Sum and Difference Identities" by The Organic Chemistry Tutor
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/sU2pyMR8GZ4"
+title="Sum and Difference Identities &amp; Formulas - Sine, Cosine, Tangent - Degrees &amp;
+Radians, Trigonometry" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+encrypted-media; gyroscope; picture-in-picture; web-share"
+referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
+
 ## Double angle formulas
 
 Setting $\beta = \alpha$ in the addition theorems gives the **double angle
@@ -206,6 +222,20 @@ at double the angle. They appear constantly in integral calculus: computing
 the integral of $\sin^2(\alpha)$ or $\cos^2(\alpha)$ directly is awkward, but
 after applying the power reduction formula the integral becomes straightforward.
 We will use them in exactly this way when we reach integration.
+
+```{dropdown}
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/SE5SBTgrwH8"
+title="Double Angle Identities &amp; Formulas of Sin, Cos &amp; Tan - Trigonometry"
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+allowfullscreen></iframe>
+```
+
+```{dropdown} Video "Trig identities" by The Organic Chemistry Tutor
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/m1OitPmkydY"
+title="Trig Identities" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+encrypted-media; gyroscope; picture-in-picture; web-share"
+referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
 
 ## Summary and outlook
 

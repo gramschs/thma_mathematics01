@@ -74,6 +74,10 @@ greater than $90°$. To describe a full rotation of the crankshaft, including
 angles beyond $90°$ and even multiple complete turns, we need a broader
 definition.
 
+```{dropdown} Video "The Six Trigonometric Functions, Basic Introduction, Trigonometry" by The Organic Chemistry Tutor
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/WvoFgL4P_rw" title="The Six Trigonometric Functions, Basic Introduction, Trigonometry" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
+
 ## The unit circle
 
 We extend the definition of sine and cosine to all angles using the
@@ -122,6 +126,21 @@ the following table:
 
 The values for angles in the other three quadrants follow by symmetry, which
 we will discuss in the next subsection.
+
+```{dropdown} Video "Unit Circle Trigonometry" by The Organic Chemistry Tutor
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/V5ArB_GFGYQ"
+title="Unit Circle Trigonometry - Sin Cos Tan - Radians &amp; Degrees" frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+allowfullscreen></iframe>
+```
+
+```{dropdown} Video "Radians and Degrees" by The Organic Chemistry Tutor
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/JmLN3QxshlE"
+title="Radians and Degrees" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+encrypted-media; gyroscope; picture-in-picture; web-share"
+referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
 
 ## Properties of sine and cosine
 
@@ -249,6 +268,14 @@ The general sinusoidal form $f(t) = A\sin(\omega t + \varphi) + d$ with its
 four parameters labeled.
 (Source: own figure; license [CC BY-SA
 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+```
+
+```{dropdown} Video ""Graphing Trigonometric Functions" by The Organic Chemistry Tutor
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/fo_q9mEAFp4"
+title="Graphing Trigonometric Functions, Phase Shift, Period, Transformations, Tangent,
+Cosecant, Cosine" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+encrypted-media; gyroscope; picture-in-picture; web-share"
+referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 ```
 
 ## Summary and outlook

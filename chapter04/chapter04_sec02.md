@@ -60,6 +60,12 @@ do this uniquely, that is, if every output value $y$ came from exactly one
 input value $x$, then we can define a new function that maps $y$ back to $x$.
 This new function is the inverse of $f$.
 
+```{dropdown} Video "Introduction to Inverse Function" by The Organic Chemistry Tutor
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/TN4ybFiuV3k"
+title="Introduction to Inverse Functions" frameborder="0" allow="accelerometer; autoplay;
+clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
+
 ## When is a function invertible?
 
 Not every function can be inverted. Consider the squaring function
@@ -150,6 +156,11 @@ over its full domain, we can often make it invertible by restricting the domain
 to an interval on which it is strictly monotonic. We will use exactly this idea
 when we define the inverse functions of sine and cosine in section 4.
 
+```{dropdown} Video "How To Find The Inverse of a Function" by The Organic Chemistry tutor
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/2zeYEx4eTdc"
+title="How To Find The Inverse of a Function" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
+
 ## Graphical interpretation
 
 There is a beautiful geometric relationship between the graph of a function and
@@ -176,6 +187,19 @@ domain and range are swapped. For our linear example, $f(x) = 3x - 5$ maps
 $\mathbb{R}$ to $\mathbb{R}$, and so does $f^{-1}$. For the restricted squaring
 function, $f: [0, \infty) \to [0, \infty)$ and $f^{-1} = \sqrt{x}$ also maps
 $[0, \infty)$ to $[0, \infty)$.
+
+```{dropdown} Video "Graphing Inverse Functions" by The Organic Chemistry Tutor
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/ukEtad_aml4"
+title="Graphing Inverse Functions" frameborder="0" allow="accelerometer; autoplay;
+clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
+
+```{dropdown} Video "Inverse Functions - Domain and Range" by The Organic Chemistry Tutor
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/GsIo3B46yjU"
+title="Inverse Functions - Domain &amp; range-  With Fractions, Square Roots, &amp; Graphs"
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+```
 
 ## Summary and outlook
 

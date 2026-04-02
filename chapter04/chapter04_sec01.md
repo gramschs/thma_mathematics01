@@ -93,6 +93,12 @@ substance undergoing radioactive decay, and the speed of a vehicle braking
 against air resistance all follow the same exponential pattern. Understanding
 the exponential function is therefore not optional for an engineer.
 
+```{dropdown} Video "Introduction to Exponential Functions" by Nerdstudy
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/nqpn0SQB5ds"
+title="Introduction to Exponential Functions - Nerdstudy" frameborder="0" allow="accelerometer;
+autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
+
 ## Definition and properties
 
 The general form of the exponential function is $f(x) = a^x$, where the base
@@ -153,6 +159,13 @@ decreasing.
 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
+```{dropdown} Video "What are Exponential Functions?" by Math and Science
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/_rKZHpfrAuY"
+title="07 - What is an Exponential Function? (Exponential Growth, Decay &amp; Graphing)."
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+```
+
 ## Euler's number and the natural exponential function
 
 Among all possible bases, one stands out as the natural choice for science and
@@ -188,6 +201,13 @@ $e^{-t/\tau}$. This is the natural exponential function evaluated at
 $-t/\tau$, that is, a composition of the form $f(g(t))$ with inner function
 $g(t) = -t/\tau$ and outer function $f(u) = e^u$. We will need this
 observation when we differentiate such expressions using the chain rule.
+
+```{dropdown} Video "What's so special about Euler's number?" by 3Blue1Brown
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/m2MIpDrF7Es"
+title="What&#39;s so special about Euler&#39;s number e? | Chapter 5, Essence of calculus"
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+```
 
 ## Calculation rules
 

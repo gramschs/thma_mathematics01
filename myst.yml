@@ -34,6 +34,33 @@ project:
         - file: chapter04/chapter04_sec05.md
         - file: chapter04/chapter04_sec06.md
         - file: chapter04/chapter04_sec07.md
+
+    - title: The Derivative
+      children:
+        - file: chapter05/chapter05_sec01.md
+        - file: chapter05/chapter05_sec02.md
+        - file: chapter05/chapter05_sec03.md
+        - file: chapter05/chapter05_sec04.md
+        - file: chapter05/chapter05_sec05.md       
+    - title: Differentiation Rules and Standard Derivatives
+      children:
+        - file: chapter06/chapter06_sec01.md
+        - file: chapter06/chapter06_sec02.md
+        - file: chapter06/chapter06_sec03.md
+        - file: chapter06/chapter06_sec04.md
+        - file: chapter06/chapter06_sec05.md       
+    - title: Higher-Order Derivatives
+      children:
+        - file: chapter07/chapter07_sec01.md
+        - file: chapter07/chapter07_sec02.md
+        - file: chapter07/chapter07_sec03.md
+        - file: chapter07/chapter07_sec04.md
+    - title: Applications of Differential Calculus
+      children:
+        - file: chapter08/chapter08_sec01.md
+        - file: chapter08/chapter08_sec02.md
+        - file: chapter08/chapter08_sec03.md
+        - file: chapter08/chapter08_sec04.md
     
 site:
   template: book-theme

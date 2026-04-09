@@ -26,13 +26,12 @@ reference for any new chapter or section.
   ```
   ---
   authors:
-    - name:
+    - name: Simone Gramsch
   ---
   ```
 - The section title is an H1 heading (`#`).
 - Subsections use H2 headings (`##`).
-- The learning goals block always appears immediately after the H1 title,
-  before any body text.
+- The learning goals block always appears immediately after the introductio (= H1 title and a short introduction 3 - 4 lines)
 
 ---
 

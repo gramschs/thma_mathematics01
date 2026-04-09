@@ -1,0 +1,20 @@
+---
+authors:
+  - name: Simone Gramsch
+---
+
+# The Difference Quotient
+
+```{admonition} Warning: under construction
+:class: warning
+This chapter is under construction.
+```
+
+In chapters 3 and 4 we described how quantities depend on each other using functions. But functions do more than store values: they encode how a quantity changes. A vehicle accelerating along a test track does not simply occupy a position, it moves from one position to the next, and the rate at which it does so carries as much engineering information as the position itself. To quantify change we introduce the difference quotient.
+
+```{admonition} Learning goals
+:class: attention
+* [ ] You know the definition of the **difference quotient** $\dfrac{f(x_0 + h) - f(x_0)}{h}$ and can compute it for a given function and a given point $x_0$.
+* [ ] You can interpret the difference quotient as the **average rate of change** of a function over the interval $[x_0, x_0 + h]$.
+* [ ] You understand the geometric meaning of the difference quotient as the slope of the **secant line** through the two points $(x_0, f(x_0))$ and $(x_0 + h, f(x_0 + h))$ on the graph.
+```

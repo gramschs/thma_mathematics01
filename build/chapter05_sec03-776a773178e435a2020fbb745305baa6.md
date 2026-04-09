@@ -1,0 +1,20 @@
+---
+authors:
+  - name: Simone Gramsch
+---
+
+# The Derivative Function
+
+```{admonition} Warning: under construction
+:class: warning
+This chapter is under construction.
+```
+
+At a single point $x_0$ the differential quotient gives the instantaneous rate of change. But we can ask the same question at every point in the domain at once. The result is a new function, one that assigns to each input value the slope of the original graph at that point. This new function is the derivative, and constructing it is the foundation on which all subsequent rules in this chapter are built.
+
+```{admonition} Learning goals
+:class: attention
+* [ ] You know the definition of the **derivative function** $f'(x) = \lim_{h \to 0} \dfrac{f(x+h) - f(x)}{h}$.
+* [ ] You are familiar with the standard notations for the derivative: $f'(x)$, $\dfrac{df}{dx}$, and $\dot{f}(x)$.
+* [ ] You can compute the derivative of simple functions such as power functions and linear functions directly from the limit definition.
+```

@@ -1,0 +1,20 @@
+---
+authors:
+  - name: Simone Gramsch
+---
+
+# The Differential Quotient
+
+```{admonition} Warning: under construction
+:class: warning
+This chapter is under construction.
+```
+
+We computed the average rate of change of a function over a finite interval using the difference quotient. But engineers often need something more precise: not the average speed over a long stretch, but the speed at a single instant. To pass from the average to the instantaneous, we let the interval shrink toward zero. This limiting process is the central idea of differential calculus.
+
+```{admonition} Learning goals
+:class: attention
+* [ ] You understand the concept of the **limit** of the difference quotient as $h \to 0$.
+* [ ] You know the **differential quotient** $\lim_{h \to 0} \dfrac{f(x_0 + h) - f(x_0)}{h}$ as the instantaneous rate of change of $f$ at the point $x_0$.
+* [ ] You can interpret the differential quotient geometrically as the slope of the **tangent line** to the graph of $f$ at the point $(x_0, f(x_0))$.
+```

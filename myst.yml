@@ -17,7 +17,7 @@ project:
 #        - file: chapter01/chapter01_sec01.md
 #        - file: chapter01/chapter01_sec02.md
 #        - file: chapter01/chapter01_sec03.md
-    - title: Functions
+    - title: 3. Functions
       children:
         - file: chapter03/chapter03_sec01.md
         - file: chapter03/chapter03_sec02.md
@@ -25,7 +25,7 @@ project:
         - file: chapter03/chapter03_sec04.md
         - file: chapter03/chapter03_sec05.md
         - file: chapter03/chapter03_sec06.md
-    - title: Advanced functions
+    - title: 4. Advanced functions
       children:
         - file: chapter04/chapter04_sec01.md
         - file: chapter04/chapter04_sec02.md

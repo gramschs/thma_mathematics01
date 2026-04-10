@@ -3,7 +3,7 @@ authors:
   - name: Simone Gramsch
 ---
 
-# Piecewise Defined Functions
+# 3.3 Piecewise Defined Functions
 
 So far our marble track consisted of a single straight rail, described by one
 function equation across the entire domain. But what happens when we rebuild

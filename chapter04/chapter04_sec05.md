@@ -3,7 +3,7 @@ authors:
   - name: Simone Gramsch
 ---
 
-# Trigonometric Identities
+# 4.5 Trigonometric Identities
 
 We now have the graphs and properties of sine, cosine, and tangent firmly in
 hand. The next step is to understand the algebraic relationships between them.

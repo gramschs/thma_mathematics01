@@ -3,7 +3,7 @@ authors:
   - name: Simone Gramsch
 ---
 
-# Properties of Functions
+# 3.2 Properties of Functions
 
 In the previous section we described the height of a ball on a straight
 inclined rail as a function. Now we extend the marble track system by building

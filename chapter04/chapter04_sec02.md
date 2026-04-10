@@ -3,7 +3,7 @@ authors:
   - name: Simone Gramsch
 ---
 
-# Inverse Functions
+# 4.2 Inverse Functions
 
 At the end of the previous section we were left with a question we could not
 yet answer: at what time does the capacitor reach a given voltage? We know how

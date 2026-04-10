@@ -3,7 +3,7 @@ authors:
   - name: Simone Gramsch
 ---
 
-# Power Functions and Polynomials
+# 3.4 Power Functions and Polynomials
 
 All our marble track profiles so far have been straight inclined rails,
 described by a linear height function. But what if the rail is curved? A rail

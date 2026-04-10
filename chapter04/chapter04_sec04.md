@@ -3,7 +3,7 @@ authors:
   - name: Simone Gramsch
 ---
 
-# Trigonometric Functions
+# 4.4 Trigonometric Functions
 
 A crankshaft rotates, a piston oscillates, a bridge vibrates under traffic
 load, an alternating voltage drives a motor. Periodic phenomena are everywhere

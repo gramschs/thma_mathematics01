@@ -3,7 +3,7 @@ authors:
   - name: Simone Gramsch
 ---
 
-# Optional: Hyperbolic Functions
+# 4.7 Optional: Hyperbolic Functions
 
 A power line hanging between two pylons, a chain suspended between two posts,
 the curve of a concrete arch bridge designed to carry only compressive loads:

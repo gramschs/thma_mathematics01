@@ -3,7 +3,7 @@ authors:
   - name: Simone Gramsch
 ---
 
-# Quadratic Functions
+# 3.5 Quadratic Functions
 
 Among all polynomials, the quadratic function of degree 2 deserves its own
 section. Its graph is a parabola, a curve that appears throughout engineering

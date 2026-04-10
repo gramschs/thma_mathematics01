@@ -3,7 +3,7 @@ authors:
   - name: Simone Gramsch
 ---
 
-# Composition of Functions
+# 3.6 Composition of Functions
 
 So far every function we have studied takes a number as its input and produces
 a number as its output. But what if we feed the output of one function directly

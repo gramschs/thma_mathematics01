@@ -3,7 +3,7 @@ authors:
   - name: Simone Gramsch
 ---
 
-# Limits and Continuity
+# 4.6 Limits and Continuity
 
 Throughout this chapter we have used the word "approaches" freely and
 informally. The discharging capacitor voltage approaches zero without ever

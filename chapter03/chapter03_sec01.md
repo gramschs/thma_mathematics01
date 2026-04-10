@@ -3,7 +3,7 @@ authors:
   - name: Simone Gramsch
 ---
 
-# What is a Function?
+# 3.1 What is a Function?
 
 The height of a ball rolling along a marble track -- how can we describe this
 mathematically? This seemingly simple question leads us directly to one of the

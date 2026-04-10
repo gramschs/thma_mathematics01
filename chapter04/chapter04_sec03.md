@@ -3,7 +3,7 @@ authors:
   - name: Simone Gramsch
 ---
 
-# Logarithmic Functions
+# 4.3 Logarithmic Functions
 
 At the end of the previous section we were left with an equation we could not
 yet solve: $e^{-t/\tau} = 0.5$. We know that the exponential function is

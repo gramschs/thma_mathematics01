@@ -187,6 +187,22 @@ know that the differential quotient $f'(x_0)$ is its slope.
   horizontal at the vertex.
 -->
 
+## Additional Learning Material
+
+```{dropdown} Video "What is a derivative?" by Mario's Math Tutoring
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/wUZcIYx-7a4?list=PLHRatQsym1_h8-WDa9ngFteCmg-guAUUK" title="What is a derivative?" frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+allowfullscreen></iframe>
+```
+
+```{dropdown} Video "MATH180 - Section 1.4: Differentiation Using Limits of Difference Quotients" by Matthew Sokol
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/VHQDS3O1y_4"
+title="MATH180 - Section 1.4: Differentiation Using Limits of Difference Quotients"
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+```
+
 ## Summary and outlook
 
 We have defined the differential quotient as the limit of the difference

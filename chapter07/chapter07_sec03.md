@@ -55,13 +55,13 @@ the lift hill, making the contrast explicit.
 | Position $x$ [m] | $h'(x)$ | $h''(x)$ | Shape of track |
 | --- | --- | --- | --- |
 | $0$ | $0$ | $\tfrac{1}{15} > 0$ | begins to curve upward |
-| $15$ | $\tfrac{1}{4}$ | $\tfrac{1}{30} > 0$ | curving upward, rising |
+| $15$ | $\tfrac{3}{4}$ | $\tfrac{1}{30} > 0$ | curving upward, rising |
 | $30$ | $1$ | $0$ | steepest point, curvature changes |
-| $45$ | $\tfrac{1}{4}$ | $-\tfrac{1}{30} < 0$ | curving downward, still rising |
+| $45$ | $\tfrac{3}{4}$ | $-\tfrac{1}{30} < 0$ | curving downward, still rising |
 | $60$ | $0$ | $-\tfrac{1}{15} < 0$ | levels off at the summit |
 
 The contrast between $x = 15$ and $x = 45$ is particularly instructive. At
-both positions the slope is $\frac{1}{4}$: the track rises at exactly the same
+both positions the slope is $\frac{3}{4}$: the track rises at exactly the same
 gradient. Yet the bending character is opposite. At $x = 15$ the gradient is
 still growing, and the tangent line lies below the track nearby. At $x = 45$
 the gradient is diminishing, and the tangent line lies above the track nearby.

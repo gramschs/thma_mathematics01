@@ -39,10 +39,10 @@ energy into heat. When the mass is displaced and released, it does not
 oscillate indefinitely: the amplitude shrinks with every cycle as the damper
 dissipates energy.
 
-```{figure} pics/fig06_damped_oscillator.svg
+```{figure} pics/fig06_mass_spring_damper.svg
 ---
 width: 75%
-name: fig06_damped_oscillator
+name: fig06_mass_spring_damper
 ---
 A mass-spring-damper system. The mass $m$ is displaced from its equilibrium
 position and released. The resulting motion is a damped oscillation.

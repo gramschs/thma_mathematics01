@@ -246,6 +246,28 @@ by the separation. The difference quotient is, in this sense, the mathematical
 formalization of what an engineer already does when reading two sensor values
 and asking how quickly the quantity is changing between them.
 
+## Additional Learning Material
+
+```{dropdown} Video "Difference quotient" by Mario's Math Tutoring
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/L_GApcZZgsE"
+title="Difference Quotient - What is it? (PreCalculus)" frameborder="0" allow="accelerometer;
+autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
+
+```{dropdown} Video "Difference Quotient" by The Organic Chemistry Tutor
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/qQgVomi8lCc"
+title="Difference Quotient" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+encrypted-media; gyroscope; picture-in-picture; web-share"
+referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
+
+```{dropdown} Video "How to Compute the Difference Quotient (f(x + h) - f(x))/h" by The Math Sorcerer
+<iframe width="1020" height="553" src="https://www.youtube.com/embed/GEJ4YqFK5CM"
+title="How to Compute the Difference Quotient (f(x + h) - f(x))/h" frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
+
 ## Summary and outlook
 
 We have introduced the difference quotient as a precise mathematical tool for

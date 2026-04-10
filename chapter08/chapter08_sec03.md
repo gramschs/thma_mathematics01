@@ -3,7 +3,7 @@ authors:
   - name: Simone Gramsch
 ---
 
-# Optimization Problems
+# 8.3 Optimization Problems
 
 ```{admonition} Warning: under construction
 :class: warning

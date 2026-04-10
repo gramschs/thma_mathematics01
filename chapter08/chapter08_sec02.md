@@ -3,7 +3,7 @@ authors:
   - name: Simone Gramsch
 ---
 
-# Curve Sketching
+# 8.2 Curve Sketching
 
 ```{admonition} Warning: under construction
 :class: warning

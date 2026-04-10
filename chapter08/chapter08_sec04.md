@@ -3,7 +3,7 @@ authors:
   - name: Simone Gramsch
 ---
 
-# Taylor Polynomials and Taylor Series
+# 8.4 Taylor Polynomials and Taylor Series
 
 ```{admonition} Warning: under construction
 :class: warning

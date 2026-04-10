@@ -3,7 +3,7 @@ authors:
   - name: Simone Gramsch
 ---
 
-# Local and Global Extrema
+# 8.1 Local and Global Extrema
 
 ```{admonition} Warning: under construction
 :class: warning

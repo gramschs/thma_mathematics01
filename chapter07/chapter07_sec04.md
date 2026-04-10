@@ -3,7 +3,7 @@ authors:
   - name: Simone Gramsch
 ---
 
-# Inflection Points
+# 7.4 Inflection Points
 
 ```{admonition} Warning: under construction
 :class: warning

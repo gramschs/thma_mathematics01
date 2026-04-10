@@ -3,7 +3,7 @@ authors:
   - name: Simone Gramsch
 ---
 
-# Velocity, Acceleration, and Jerk
+# 7.2 Velocity, Acceleration, and Jerk
 
 ```{admonition} Warning: under construction
 :class: warning

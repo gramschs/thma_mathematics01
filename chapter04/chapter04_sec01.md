@@ -3,7 +3,7 @@ authors:
   - name: Simone Gramsch
 ---
 
-# 4.1 xponential Functions
+# 4.1 Exponential Functions
 
 In chapter 3 we built up a toolkit of polynomial functions by combining power
 functions. Polynomials are very flexible, but they cannot describe one of the

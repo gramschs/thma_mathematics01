@@ -18,7 +18,10 @@ precisely, we introduce the difference quotient.
 ```{admonition} Learning goals
 :class: attention
 * [ ] You know the definition of the **difference quotient**
-  $\dfrac{f(x_0 + h) - f(x_0)}{h}$ and can compute it for a given function
+  \begin{equation*}
+  \dfrac{f(x_0 + h) - f(x_0)}{h}
+  \end{equation*}
+  and can compute it for a given function
   and a given point $x_0$.
 * [ ] You can interpret the difference quotient as the **average rate of
   change** of a function over the interval $[x_0,\, x_0 + h]$.
@@ -40,18 +43,31 @@ f(x) = 0.02\,x^2 - 0.6\,x + 6, \quad x \in [0, 30],
 \end{equation*}
 
 where $x$ is the position along the track in centimetres and $f(x)$ is the
-height above the table surface in centimetres. The rail starts at
-$f(0) = 6~\text{cm}$, descends to its lowest point at $x = 15~\text{cm}$ with
-$f(15) = 1.5~\text{cm}$, and then rises symmetrically back to
-$f(30) = 6~\text{cm}$ at the finishing block. Unlike the straight rail from section 3.1, this track does not descend
-at the same rate everywhere. Near the starting block the rail falls steeply;
-near the bottom of the valley it is almost flat; beyond the vertex it begins
-to climb.
+height above the table surface in centimetres.
+
+```{figure} pics/fig05_marble_track_parabola.svg
+Graph of the height function $f(x) = 0.02x^2 - 0.6x + 6$ of the parabolic marble track on the domain $[0, 30]$.
+(Source: own figure; licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+```
+
+The rail starts at $f(0) = 6~\text{cm}$, descends to its lowest point at $x =
+15~\text{cm}$ with $f(15) = 1.5~\text{cm}$, and then rises symmetrically back to
+$f(30) = 6~\text{cm}$ at the finishing block. Unlike the straight rail from
+section 3.1, this track does not descend at the same rate everywhere. Near the
+starting block the rail falls steeply; near the bottom of the valley it is
+almost flat; beyond the vertex it begins to climb.
 
 *How can we describe this varying steepness numerically?* The simplest approach
 is to pick two positions on the track, measure the heights at both, and compute
 the average rate of change between them. Suppose we choose position
-$x_0 = 5~\text{cm}$ and position $x_1 = 20~\text{cm}$. The heights are
+$x_0 = 5~\text{cm}$ and position $x_1 = 20~\text{cm}$.
+
+```{figure} pics/fig05_marble_track_difference_quotient.svg
+Graph of the height function with the secant line through $P_1 = (5, 3.5)$ and $P_2 = (20, 2)$, showing the rise $\Delta f$ and the run $\Delta x$.
+(Source: own figure; licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+```
+
+The heights are
 
 \begin{equation*}
 f(5) = 0.02 \cdot 25 - 0.6 \cdot 5 + 6 = 0.5 - 3 + 6 = 3.5~\text{cm},
@@ -128,7 +144,6 @@ shrinks, we zoom in closer and closer to the point $x_0 = 5$. The values appear
 to be approaching a limiting number. What that limit is, and what it means, is
 the subject of the next section.
 
-```{raw} html
 <!--
   SVELTE APP 1: "Difference quotient explorer"
   
@@ -158,7 +173,6 @@ the subject of the next section.
   the difference quotient update, building intuition that the difference
   quotient captures the average steepness of the track between two points.
 -->
-```
 
 ## What does the difference quotient look like geometrically?
 
@@ -187,7 +201,6 @@ that just touches the curve at a single point? That limiting line is the tangent
 to the curve at $P_1$, and finding it is the central goal of differential
 calculus.
 
-```{raw} html
 <!--
   SVELTE APP 2: "Secant approaches tangent" (= the existing App.svelte)
   
@@ -211,7 +224,6 @@ calculus.
   Note for the instructor: tell students to observe that the error tile turns
   green as h → 0. Section 5.2 explains why.
 -->
-```
 
 ## Where does the difference quotient appear in engineering?
 

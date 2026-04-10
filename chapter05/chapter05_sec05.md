@@ -138,7 +138,6 @@ f(x_0 + \Delta x) \approx f(x_0) + f'(x_0)\,\Delta x
 
 is called the **linear approximation** or **linearisation** of $f$ at $x_0$.
 
-```{raw} html
 <!--
   SVELTE APP: "Tangent line and linear approximation"
 
@@ -176,7 +175,6 @@ is called the **linear approximation** or **linearisation** of $f$ at $x_0$.
   visual fact. The error tile at x1 reinforces that the approximation
   degrades quadratically as x1 moves away from x0.
 -->
-```
 
 ## Where does linear approximation appear in engineering?
 

@@ -23,15 +23,17 @@ reference for any new chapter or section.
 - MyST Markdown for Jupyter Book version 2.
 - One section per file.
 - Every file opens with a YAML front matter block:
-  ```
+
+  ```markdown
   ---
   authors:
     - name: Simone Gramsch
   ---
   ```
+
 - The section title is an H1 heading (`#`).
 - Subsections use H2 headings (`##`).
-- The learning goals block always appears immediately after the introductio (= H1 title and a short introduction 3 - 4 lines)
+- The learning goals block always appears immediately after the introduction (= H1 title and a short introduction 3 - 4 lines)
 
 ---
 
@@ -61,15 +63,13 @@ reference for any new chapter or section.
 
 ## Learning Goals Block
 
-```
 ```{admonition} Learning goals
 :class: attention
 * [ ] You know ...
 * [ ] You can ...
 ```
-```
 
-- Appears immediately after the H1 title, before any body text.
+- Appears immediately after the introduction.
 - Each goal is concise and checkable: a student should be able to determine
   unambiguously whether they have achieved it.
 - Key terms are in **bold**.
@@ -120,11 +120,9 @@ Every section follows this arc without exception:
 
 Use `{admonition}` with `:class: note`. Title pattern: **"What is ... ?"**
 
-```
 ```{admonition} What is ... a function?
 :class: note
 A **function** is ...
-```
 ```
 
 - Definition boxes appear **after** the concept has been developed informally
@@ -179,10 +177,8 @@ A **function** is ...
 
 ## Video Dropdowns
 
-```
 ```{dropdown} Video "Title" by Channel
 <iframe ...></iframe>
-```
 ```
 
 - Place videos at the point of relevance within the text, immediately after
@@ -404,7 +400,7 @@ the panel background whenever `my_lightgray` is changed for theme switching.
 Every figure referenced in the MyST Markdown source carries a caption of
 the form:
 
-```
+```{figure}
 Graph of [what the figure shows].
 (Source: own figure; licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```

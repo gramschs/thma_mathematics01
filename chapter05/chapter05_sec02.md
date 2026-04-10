@@ -19,7 +19,9 @@ to zero and examine what the difference quotient approaches in that process.
 * [ ] You understand the concept of the **limit** of the difference quotient
   as $h \to 0$.
 * [ ] You know the **differential quotient**
-  $f'(x_0) = \lim_{h \to 0} \dfrac{f(x_0 + h) - f(x_0)}{h}$
+  \begin{equation*}
+  f'(x_0) = \lim_{h \to 0} \dfrac{f(x_0 + h) - f(x_0)}{h}
+  \end{equation*}
   as the instantaneous rate of change of $f$ at the point $x_0$.
 * [ ] You can interpret the differential quotient geometrically as the slope
   of the **tangent line** to the graph of $f$ at the point $(x_0, f(x_0))$.
@@ -152,7 +154,6 @@ The full equation of the tangent line, and its role as a linear approximation
 of the function, will be developed in section 5.5. For now it is enough to
 know that the differential quotient $f'(x_0)$ is its slope.
 
-```{raw} html
 <!--
   SVELTE APP: "Convergence to the differential quotient"
 
@@ -185,7 +186,6 @@ know that the differential quotient $f'(x_0)$ is its slope.
   x0 to 15 shows the slope approaching 0, confirming that the tangent is
   horizontal at the vertex.
 -->
-```
 
 ## Summary and outlook
 

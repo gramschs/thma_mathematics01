@@ -178,7 +178,6 @@ to a section of rail that drops straight down, a physical impossibility and
 a mathematical signal that the function model is being pushed beyond its
 valid domain.
 
-```{raw} html
 <!--
   SVELTE APP: "One-sided difference quotients at a corner"
 
@@ -211,7 +210,6 @@ valid domain.
   tangent; at a corner they lock onto different slopes no matter how small
   h becomes.
 -->
-```
 
 ## Summary and outlook
 

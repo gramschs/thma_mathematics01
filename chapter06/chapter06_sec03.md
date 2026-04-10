@@ -16,10 +16,14 @@ expression. We need a rule for products, and a companion rule for quotients.
 ```{admonition} Learning goals
 :class: attention
 * [ ] You know the **product rule**
-  $\bigl(f \cdot g\bigr)' = f' \cdot g + f \cdot g'$
+  \begin{equation*}
+  \bigl(f \cdot g\bigr)' = f' \cdot g + f \cdot g'
+  \end{equation*}
   and can apply it to products of elementary functions.
 * [ ] You know the **quotient rule**
-  $\left(\dfrac{f}{g}\right)' = \dfrac{f' \cdot g - f \cdot g'}{g^2}$
+  \begin{equation*}
+  \left(\dfrac{f}{g}\right)' = \dfrac{f' \cdot g - f \cdot g'}{g^2}
+  \end{equation*}
   and can apply it wherever $g \neq 0$.
 * [ ] You can identify when the product or quotient rule is needed and carry
   out the differentiation correctly, including simplification of the result.

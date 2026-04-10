@@ -16,7 +16,9 @@ of the track's steepness.
 ```{admonition} Learning goals
 :class: attention
 * [ ] You know the definition of the **derivative function**
-  $f'(x) = \lim_{h \to 0} \dfrac{f(x + h) - f(x)}{h}$.
+  \begin{equation*}
+  f'(x) = \lim_{h \to 0} \dfrac{f(x + h) - f(x)}{h}.
+  \end{equation*}
 * [ ] You are familiar with the standard notations for the derivative:
   $f'(x)$, $\dfrac{df}{dx}$, and $\dot{f}(t)$.
 * [ ] You can compute the derivative function of a polynomial directly from
@@ -135,7 +137,6 @@ $x = 30$. This reflects the symmetry of the parabola about its axis at
 $x = 15$: the track rises on the right at the same rate at which it falls on
 the left.
 
-```{raw} html
 <!--
   SVELTE APP: "Function and its derivative side by side"
 
@@ -171,7 +172,6 @@ the left.
   visual: the height of the red dot equals the slope of the green line,
   at every x simultaneously.
 -->
-```
 
 ## How is the derivative written?
 

@@ -18,7 +18,9 @@ in engineering practice.
 ```{admonition} Learning goals
 :class: attention
 * [ ] You know the **chain rule**: if $h(x) = f(g(x))$, then
-  $h'(x) = f'(g(x)) \cdot g'(x)$.
+  \begin{equation*}
+  h'(x) = f'(g(x)) \cdot g'(x).
+  \end{equation*}
 * [ ] You can identify the **inner function** $g$ and the **outer function**
   $f$ in a composite expression, as practiced in section 3.6.
 * [ ] You can apply the chain rule to differentiate composite functions

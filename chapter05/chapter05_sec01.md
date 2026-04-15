@@ -144,35 +144,22 @@ shrinks, we zoom in closer and closer to the point $x_0 = 5$. The values appear
 to be approaching a limiting number. What that limit is, and what it means, is
 the subject of the next section.
 
-<!--
-  SVELTE APP 1: "Difference quotient explorer"
-  
-  An interactive plot of the parabolic marble track f(x) = 0.02x² - 0.6x + 6
-  on the domain [0, 30].
-  
-  Controls:
-    - A slider for x0 (the fixed base point), range [0, 25], default 5.
-    - A slider for h (the step size), range [0.5, 15], default 10.
-  
-  Display:
-    - The parabola in dark blue.
-    - Two filled dots at (x0, f(x0)) and (x0+h, f(x0+h)), labelled P1 and P2.
-    - A shaded rectangle on the x-axis showing the interval [x0, x0+h],
-      labelled Δx = h.
-    - A vertical arrow from f(x0) to f(x0+h) at position x0+h,
-      labelled Δf = f(x0+h) - f(x0).
-    - The secant line through P1 and P2, extended across the full plot.
-  
-  Info tiles below the chart:
-    - "Δx" showing the step size h.
-    - "Δf" showing f(x0+h) - f(x0), rounded to 3 decimal places.
-    - "Difference quotient Δf/Δx" showing the computed value, rounded to 3
-      decimal places, colored red for negative and green for positive.
-  
-  Purpose: students can drag both sliders and watch the secant line tilt and
-  the difference quotient update, building intuition that the difference
-  quotient captures the average steepness of the track between two points.
--->
+<!-- markdownlint-disable MD033 -->
+<div id="applet-container-850">
+
+<iframe
+  src="https://gramschs.github.io/thma_mathematics01_assets/interactive/chapter05/chap05_sec01_app01.html"
+  width="100%"
+  frameborder="0"
+  scrolling="no">
+</iframe>
+
+</div>
+<!-- markdownlint-enable MD033 -->
+
+In case of display problems please use the link
+
+> [Start App 1](https://gramschs.github.io/thma_mathematics01_assets/interactive/chapter05/chap05_sec01_app01.html)
 
 ## What does the difference quotient look like geometrically?
 
@@ -201,29 +188,22 @@ that just touches the curve at a single point? That limiting line is the tangent
 to the curve at $P_1$, and finding it is the central goal of differential
 calculus.
 
-<!--
-  SVELTE APP 2: "Secant approaches tangent" (= the existing App.svelte)
-  
-  Adapt the function to the marble track: f(x) = 0.02x² - 0.6x + 6,
-  domain [0, 30]. Fix x0 = 5, slider range for h: [0.01, 10], default h = 5.
-  Analytical derivative: f'(x) = 0.04x - 0.6, so f'(5) = -0.4.
-  
-  The app already shows:
-    - The function curve (dark blue).
-    - The secant through P1 and P2 (red), updating live with the slider.
-    - The tangent at x0 (green dashed), shown as a preview.
-    - Info tiles: secant slope, approximation error |Δf/Δx - f'(x0)|,
-      colored from red (large error) to green (small error).
-  
-  Purpose: the visual appearance of the secant rotating toward the tangent
-  as h → 0 prepares students for the key concept of section 5.2, the
-  differential quotient. The error tile gives a first hint that the secant
-  is only an approximation, and that a better description of local steepness
-  is possible.
-  
-  Note for the instructor: tell students to observe that the error tile turns
-  green as h → 0. Section 5.2 explains why.
--->
+<!-- markdownlint-disable MD033 -->
+<div id="applet-container-850">
+
+<iframe
+  src="https://gramschs.github.io/thma_mathematics01_assets/interactive/chapter05/chap05_sec01_app02.html"
+  width="100%"
+  frameborder="0"
+  scrolling="no">
+</iframe>
+
+</div>
+<!-- markdownlint-enable MD033 -->
+
+In case of display problems please use the link
+
+> [Start App 2](https://gramschs.github.io/thma_mathematics01_assets/interactive/chapter05/chap05_sec01_app02.html)
 
 ## Where does the difference quotient appear in engineering?
 

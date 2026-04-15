@@ -211,6 +211,22 @@ valid domain.
   h becomes.
 -->
 
+## Additional Material
+
+```{dropdown} Video "Differentiability and continuity" by Khan Acdemy
+<iframe width="887" height="499" src="https://www.youtube.com/embed/xuAiQOzIkWY"
+title="Differentiability and continuity | Derivatives introduction | AP Calculus AB |
+Khan Academy" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+encrypted-media; gyroscope; picture-in-picture; web-share"
+referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
+
+```{dropdown} Video "Continuity and Differentiability" by The Organic Chemistry Tutor
+<iframe width="887" height="499" src="https://www.youtube.com/embed/fml0-ELYLaE"
+title="Continuity and Differentiability" frameborder="0" allow="accelerometer; autoplay;
+clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
+
 ## Summary and outlook
 
 We have seen that differentiability is a stronger condition than continuity.

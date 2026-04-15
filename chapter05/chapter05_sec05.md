@@ -206,6 +206,24 @@ polynomial approximations that reduce the error further by adding quadratic
 and higher-order terms. These are the Taylor polynomials, and they generalise
 the tangent line formula in a natural direction.
 
+## Additional Material
+
+```{dropdown} Video "How to find the tangent line" by Math Queen
+<iframe width="887" height="499" src="https://www.youtube.com/embed/KFhtxNO-zD8"
+title="How to find the tangent line - Function, Calculus" frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+allowfullscreen></iframe>
+```
+
+```{dropdown} Video "Finding The Linearization of a Function Using Tangent Line Approximations" by The Organic Chemistry Tutor
+<iframe width="887" height="499" src="https://www.youtube.com/embed/XQaCbFMnDo0"
+title="Finding The Linearization of a Function Using Tangent Line Approximations"
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+allowfullscreen></iframe>
+```
+
 ## Summary and outlook
 
 This section completes chapter 5. Starting from the difference quotient as

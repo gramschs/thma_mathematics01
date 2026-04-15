@@ -105,6 +105,13 @@ We include this result in the reference table below. The derivation belongs
 properly to section 6.5, where the **inverse function rule** makes it a
 one-line consequence of $(e^x)' = e^x$.
 
+```{dropdown} Video "Derivatives of Exponential Functions" by Math Queen
+<iframe width="887" height="499" src="https://www.youtube.com/embed/91eBrJ5tMDA?list=PLE7EThKaHi1l4U1BI5ILuYkTjZhKJT3en" title="Derivatives of Exponential Functions -
+Calculus Easily Explained" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+encrypted-media; gyroscope; picture-in-picture; web-share"
+referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
+
 ## What are the derivatives of the trigonometric functions?
 
 For the sine function, expanding $\sin(x + h)$ with the addition theorem from

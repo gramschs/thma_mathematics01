@@ -222,6 +222,15 @@ confirming the entry in the reference table of section 6.1. The Pythagorean
 identity, which we proved geometrically from the unit circle, turns out to
 play an algebraic role in differential calculus as well.
 
+## Additional Material
+
+```{dropdown} Video "Quotient Rule Made Easy" by Math Queen
+<iframe width="887" height="499" src="https://www.youtube.com/embed/eAOs07K9rM0?list=PLE7EThKaHi1k4zRjLsN9eSmJONz1X45Vz" title="Quotient Rule Made Easy - Derivatives,
+Fraction, Calculus" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+encrypted-media; gyroscope; picture-in-picture; web-share"
+referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
+
 ## Summary and outlook
 
 The product rule and the quotient rule complete the toolkit for differentiating

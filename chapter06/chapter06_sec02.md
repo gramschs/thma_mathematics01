@@ -55,6 +55,20 @@ represents the starting height of the rail at $x = 0$. Differentiating it
 gives zero: the starting height is a fixed number and contributes nothing
 to the slope of the track.
 
+```{dropdown} Video "Calculus Power Rule Explained in 2 Minutes" by CodeLucky
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/j7RPQ5kWEdM"
+title="Calculus Power Rule Explained in 2 Minutes | Derivatives for Beginners"
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+allowfullscreen></iframe>
+```
+
+```{dropdown} Video "The Constant Rule For Derivatives" by The Organic Chemistry Tutor
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/cyn6CDnAlcA"
+title="The Constant Rule For Derivatives" frameborder="0" allow="accelerometer;
+autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
+
 ## Can a constant factor be moved outside the derivative?
 
 Suppose we scale a function by a constant factor, for instance doubling the
@@ -90,6 +104,12 @@ by $x^2$. The factor rule and the power rule together give
 
 Similarly, $(0.6\,x)' = 0.6 \cdot (x)' = 0.6 \cdot 1 = 0.6$.
 
+```{dropdown} Video "The Constant Multiple Rule For Derivatives" by The Organic Chemitrsy Tutor
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/ut-AFj600S0"
+title="The Constant Multiple Rule For Derivatives" frameborder="0" allow="accelerometer;
+autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
+
 ## Can a sum of functions be differentiated term by term?
 
 The track height is a sum of three terms. *Can we differentiate each term
@@ -120,6 +140,13 @@ For any two differentiable functions $f$ and $g$:
 The same argument applies to a difference: $(f - g)' = f' - g'$. And by
 applying the rule repeatedly, it extends to any finite sum of terms. Every
 term in a sum can be differentiated independently of the others.
+
+```{dropdown} Video "Calculus Sum Rule" by CodeLucky
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/vJGM7Wn43p8"
+title="Calculus Sum Rule Explained: Derivatives Distribute Over Addition" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+allowfullscreen></iframe>
+```
 
 ## Differentiating the marble track
 

@@ -222,6 +222,14 @@ confirming the entry in the reference table of section 6.1. The Pythagorean
 identity, which we proved geometrically from the unit circle, turns out to
 play an algebraic role in differential calculus as well.
 
+```{dropdown} Video "Derivatives of tan(x) and cot(x)" by Khan Academy
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/Rr_1GQyiRYs"
+title="Derivatives of tan(x) and cot(x) | Derivative rules | AP Calculus AB |
+Khan Academy" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+encrypted-media; gyroscope; picture-in-picture; web-share"
+referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
+
 ## Additional Material
 
 ```{dropdown} Video "Quotient Rule Made Easy" by Math Queen

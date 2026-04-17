@@ -70,6 +70,14 @@ reciprocal of the slope of $f$ at the corresponding point $x_0 = f^{-1}(y_0)$.
 Reflection about $y = x$ swaps rise and run, which is exactly what taking a
 reciprocal does to a slope.
 
+```{dropdown} Video "Derivatives of Inverse Functions" by CodeLucky
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/ZBKjU6jqxWA"
+title="Derivatives of Inverse Functions: The General Formula Explained (Calculus)"
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+allowfullscreen></iframe>
+```
+
 ## What is the derivative of the natural logarithm?
 
 We apply the rule to $f(x) = e^x$, whose inverse is $f^{-1}(y) = \ln y$.

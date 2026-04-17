@@ -45,15 +45,16 @@ a coincidence of this particular function?*
 ## What is the power rule?
 
 It is a general rule. To see why, we apply the limit definition to
-$f(x) = x^n$ for a positive integer $n$. Expanding $(x + h)^n$ with the
-binomial theorem:
+$f(x) = x^n$ for a positive integer $n$. When we expand $(x + h)^n$, the
+result is a sum that starts with $x^n$, followed by a term $n\,x^{n-1}\,h$,
+and then terms that all contain $h^2$ or higher powers of $h$:
 
 \begin{equation*}
-(x + h)^n = x^n + n\,x^{n-1}\,h + \binom{n}{2}\,x^{n-2}\,h^2 + \cdots + h^n.
+(x + h)^n = x^n + n\,x^{n-1}\,h + (\text{terms with } h^2, h^3, \ldots, h^n).
 \end{equation*}
 
 Subtracting $x^n$, dividing by $h$, and letting $h \to 0$, every term
-containing a factor of $h$ vanishes and we are left with
+containing a remaining factor of $h$ vanishes and we are left with
 
 \begin{equation*}
 (x^n)' = n\,x^{n-1}.
@@ -70,15 +71,22 @@ For any real exponent $n \in \mathbb{R}$:
 
 The rule extends to all real exponents, not only positive integers. For
 $n = -1$ we obtain $(x^{-1})' = -x^{-2}$, and for $n = \tfrac{1}{2}$ we
-obtain $(\sqrt{x}\,)' = \tfrac{1}{2}\,x^{-1/2}$. The derivation for
-non-integer exponents requires a short additional argument using the chain
-rule, which we return to in section 6.4.
+obtain $(\sqrt{x}\,)' = \tfrac{1}{2}\,x^{-1/2}$. The extension to arbitrary
+real exponents uses the rewriting $x^n = e^{n \ln x}$ (valid for $x > 0$),
+combined with the derivatives of $e^x$ and $\ln x$ and the chain rule, tools
+we develop in sections 6.4 and 6.5.
 
 Returning to our marble track: applying the power rule to each term of
 $f(x) = 0.02\,x^2 - 0.6\,x + 6$ recovers $f'(x) = 0.04\,x - 0.6$
 immediately. The same result that required a full page in section 5.3 now
 follows in a single line. The rules for combining terms systematically are
 formalised in section 6.2.
+
+```{dropdown} Video "Power Rule"by The Organic Chemistry Tutor
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/9Yz-RCdS2Tg"
+title="The Power Rule For Derivatives" frameborder="0" allow="accelerometer; autoplay;
+clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
 
 ## What are the derivatives of the exponential function and the natural logarithm?
 
@@ -95,11 +103,31 @@ No limit calculation is required. The equation is not a result we derive from
 scratch; it is a direct translation of what makes $e$ special in the first
 place.
 
+```{figure} pics/chap06_exp_derivative.svg
+---
+width: 100%
+name: chap06_exp_derivative
+---
+The exponential function with some slopes on the left and its derivative at the right
+(Source: own figure; licence [CC BY-SA
+4.0](https://creativecommons.org/licenses/by-sa/4.0))
+```
+
 The natural logarithm $\ln x$ is the inverse of $e^x$, and its derivative is
 
 \begin{equation*}
 (\ln x)' = \frac{1}{x}, \quad x > 0.
 \end{equation*}
+
+```{figure} pics/chap06_log_derivative.svg
+---
+width: 100%
+name: chap06_log_derivative
+---
+The logarithm with some slopes on the left and its derivative at the right
+(Source: own figure; licence [CC BY-SA
+4.0](https://creativecommons.org/licenses/by-sa/4.0))
+```
 
 We include this result in the reference table below. The derivation belongs
 properly to section 6.5, where the **inverse function rule** makes it a
@@ -128,9 +156,41 @@ The same procedure applied to cosine yields
 (\cos x)' = -\sin x.
 \end{equation*}
 
-The negative sign has a direct geometric meaning: wherever sine is rising,
-cosine is falling. On the unit circle the two functions are always a quarter
-period out of phase, and differentiation reflects this relationship exactly.
+The negative sign has a direct geometric meaning: $(\cos x)' = -\sin x$
+means that cosine is *increasing* where sine is negative, and *decreasing*
+where sine is positive. Equivalently, the extrema of cosine coincide exactly
+with the zeros of sine, and vice versa. On the unit circle the two functions
+are always a quarter period out of phase, and differentiation reflects this
+relationship exactly.
+
+<!-- markdownlint-disable -->
+<iframe
+  src="https://gramschs.github.io/thma_mathematics01_assets/interactive/chapter06/chap06_sin_cos.html"
+  width="100%"
+  frameborder="0"
+  scrolling="no">
+</iframe>
+<!-- markdownlint-enable -->
+
+For full size of the applet please start
+
+> [App - Sine Derivative Explorer](https://gramschs.github.io/thma_mathematics01_assets/interactive/chapter06/chap06_sin_cos.html)
+
+```{dropdown} Video "Derivatives of sin(x) and cos(x)" by CodeLucky
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/hw5PZhkX2mI"
+title="Derivatives of sin(x) and cos(x) | Calculus Beginners Guide" frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+allowfullscreen></iframe>
+```
+
+```{dropdown} Video "Derivatives of sin(x) and cos(x)" by Khan Acdemy
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/UwFlrPNf5ZE"
+title="Derivatives of sin(x) and cos(x) | Derivative rules | AP Calculus AB |
+Khan Academy" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+encrypted-media; gyroscope; picture-in-picture; web-share"
+referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
+```
 
 The derivative of the tangent follows from the quotient rule, which we
 develop in section 6.3. The result is
@@ -140,6 +200,16 @@ develop in section 6.3. The result is
 \end{equation*}
 
 valid wherever $\cos x \neq 0$.
+
+```{figure} pics/chap06_tan_derivative.svg
+---
+width: 100%
+name: chap06_tan_derivative
+---
+The tangent with some slopes on the left and its derivative at the right
+(Source: own figure; licence [CC BY-SA
+4.0](https://creativecommons.org/licenses/by-sa/4.0))
+```
 
 These are not only abstract formulas. The position of a mass in a vibrating
 mechanical system is often a product of an exponential decay and a
@@ -155,7 +225,8 @@ problem in the rest of this chapter.
 
 | Function $f(x)$ | Derivative $f'(x)$ | Condition |
 | --- | --- | --- |
-| $x^n$ | $n\,x^{n-1}$ | $n \in \mathbb{R}$ |
+| $x^n$, $n \in \mathbb{Z}$ | $n\,x^{n-1}$ | $x \neq 0$ if $n \leq 0$ |
+| $x^n$, $n \in \mathbb{R} \setminus \mathbb{Z}$ | $n\,x^{n-1}$ | $x > 0$ |
 | $e^x$ | $e^x$ | |
 | $\ln x$ | $\dfrac{1}{x}$ | $x > 0$ |
 | $\sin x$ | $\cos x$ | |

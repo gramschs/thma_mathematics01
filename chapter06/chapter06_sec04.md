@@ -161,9 +161,9 @@ h'(x) = \frac{1}{2}(1 - x^2)^{-1/2} \cdot (-2x)
        = \frac{-x}{\sqrt{1 - x^2}}.
 \end{equation*}
 
-This last example also completes the loose end from section 6.1, where we
-noted that the power rule extends to real exponents but deferred the argument.
-For any $f(x) = x^r$ with real $r$, writing $x^r = e^{r\ln x}$ and applying
+This last example also completes the loose end from section 6.1, where we noted
+that the power rule extends to real exponents but deferred the argument. For any
+$f(x) = x^r$ with real $r$ and $x > 0$, writing $x^r = e^{r\ln x}$ and applying
 the chain rule gives $(x^r)' = e^{r\ln x} \cdot r/x = r\,x^{r-1}$, confirming
 the power rule for all real exponents.
 

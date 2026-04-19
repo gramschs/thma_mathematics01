@@ -104,7 +104,7 @@ by $x^2$. The factor rule and the power rule together give
 
 Similarly, $(0.6\,x)' = 0.6 \cdot (x)' = 0.6 \cdot 1 = 0.6$.
 
-```{dropdown} Video "The Constant Multiple Rule For Derivatives" by The Organic Chemitrsy Tutor
+```{dropdown} Video "The Constant Multiple Rule For Derivatives" by The Organic Chemistry Tutor
 <iframe width="1020" height="574" src="https://www.youtube.com/embed/ut-AFj600S0"
 title="The Constant Multiple Rule For Derivatives" frameborder="0" allow="accelerometer;
 autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

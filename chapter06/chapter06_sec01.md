@@ -82,7 +82,7 @@ immediately. The same result that required a full page in section 5.3 now
 follows in a single line. The rules for combining terms systematically are
 formalised in section 6.2.
 
-```{dropdown} Video "Power Rule"by The Organic Chemistry Tutor
+```{dropdown} Video "Power Rule" by The Organic Chemistry Tutor
 <iframe width="1020" height="574" src="https://www.youtube.com/embed/9Yz-RCdS2Tg"
 title="The Power Rule For Derivatives" frameborder="0" allow="accelerometer; autoplay;
 clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

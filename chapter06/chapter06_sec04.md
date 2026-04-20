@@ -145,12 +145,32 @@ function is $u = x^2$. Applying the chain rule:
 h'(x) = \cos(x^2) \cdot 2x.
 \end{equation*}
 
+```{figure} pics/chain_rule_sin_x2.svg
+---
+width: 100%
+name: chain_rule_sin_x2
+---
+Left: $h(x) = \sin(x^2)$. Right: its derivative $h'(x) = \cos(x^2)\cdot 2x$,
+obtained by the chain rule with outer function $\sin(u)$ and inner function $u = x^2$.
+(Source: own figure; licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+```
+
 Consider $h(x) = e^{\sin x}$. The outer function is $e^u$ and the inner
 function is $u = \sin x$. Applying the chain rule:
 
 \begin{equation*}
 h'(x) = e^{\sin x} \cdot \cos x.
 \end{equation*}
+
+```{figure} pics/chain_rule_exp_sinx.svg
+---
+width: 100%
+name: chain_rule_exp_sinx
+---
+Left: $h(x) = e^{\sin x}$. Right: its derivative $h'(x) = e^{\sin x}\cdot\cos x$,
+obtained by the chain rule with outer function $e^u$ and inner function $u = \sin x$.
+(Source: own figure; licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+```
 
 Consider $h(x) = \sqrt{1 - x^2}$, which we recognised as a composition in
 section 3.6. Writing it as $(1 - x^2)^{1/2}$, the outer function is $u^{1/2}$
@@ -160,6 +180,16 @@ and the inner function is $u = 1 - x^2$. The chain rule and the power rule give:
 h'(x) = \frac{1}{2}(1 - x^2)^{-1/2} \cdot (-2x)
        = \frac{-x}{\sqrt{1 - x^2}}.
 \end{equation*}
+
+```{figure} pics/chain_rule_sqrt.svg
+---
+width: 100%
+name: chain_rule_sqrt
+---
+Left: $h(x) = \sqrt{1-x^2}$, the upper unit semicircle, defined on $[-1,\,1]$.
+Right: its derivative $h'(x) = -x/\sqrt{1-x^2}$, which diverges as $x \to \pm 1$.
+(Source: own figure; licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+```
 
 This last example also completes the loose end from section 6.1, where we noted
 that the power rule extends to real exponents but deferred the argument. For any

@@ -72,6 +72,16 @@ $\delta = 0.5~\text{s}^{-1}$, and $\omega_d = 3~\text{rad/s}$:
 x(t) = 0.10\,e^{-0.5\,t}\cos(3t).
 \end{equation*}
 
+```{figure} pics/chap06_damped_oscillation.svg
+---
+width: 75%
+name: chap06_damped_oscillation
+---
+Graph of the damped oscillation $x(t) = 0.10\,e^{-0.5\,t}\cos(3t)$ in blue with the
+exponential envelope $\pm 0.10\,e^{-0.5\,t}$ shown as dashed curves in red.
+(Source: own figure; licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+```
+
 *How fast is the mass moving, and in which direction?* The velocity $v(t) = x'(t)$
 is what we want, and computing it requires differentiating a product of two
 functions. Neither the marble track nor any polynomial from sections 6.1 and
@@ -151,6 +161,25 @@ The velocity is itself a product of the decaying envelope $e^{-\delta t}$ and
 an oscillating term, so it also decays to zero as $t \to \infty$, as expected
 for a system losing energy continuously.
 
+For the concrete system with $A = 0.10~\text{m}$, $\delta = 0.5~\text{s}^{-1}$,
+and $\omega_d = 3~\text{rad/s}$ this becomes
+
+\begin{equation*}
+v(t) = -0.10\,e^{-0.5\,t}\bigl(0.5\cos(3t) + 3\sin(3t)\bigr)~\frac{\text{m}}{\text{s}}.
+\end{equation*}
+
+```{figure} pics/damped_oscillation_and_velocity.svg
+---
+width: 100%
+name: damped_oscillation_and_velocity
+---
+Left: displacement $x(t) = 0.10\,e^{-0.5\,t}\cos(3t)$. Right: velocity
+$v(t) = -0.10\,e^{-0.5\,t}(0.5\cos(3t)+3\sin(3t))$, obtained by the product
+rule. Both start from their verified values at $t = 0$ and decay to zero as the
+damper dissipates energy.
+(Source: own figure; licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+```
+
 We verify the result at $t = 0$ with the concrete values
 $A = 0.10~\text{m}$, $\delta = 0.5~\text{s}^{-1}$, $\omega_d = 3~\text{rad/s}$:
 
@@ -221,6 +250,17 @@ $\cos^2 x + \sin^2 x = 1$. Therefore
 confirming the entry in the reference table of section 6.1. The Pythagorean
 identity, which we proved geometrically from the unit circle, turns out to
 play an algebraic role in differential calculus as well.
+
+```{figure} pics/quotient_rule_tan.svg
+---
+width: 100%
+name: quotient_rule_tan
+---
+Left: $\tan x = \sin x / \cos x$. Right: its derivative $(\tan x)' = 1/\cos^2 x$,
+which is always greater than or equal to $1$ and diverges at the same asymptotes
+as $\tan x$.
+(Source: own figure; licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+```
 
 ```{dropdown} Video "Derivatives of tan(x) and cot(x)" by Khan Academy
 <iframe width="1020" height="574" src="https://www.youtube.com/embed/Rr_1GQyiRYs"

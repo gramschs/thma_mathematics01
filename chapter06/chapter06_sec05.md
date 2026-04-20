@@ -98,6 +98,17 @@ This confirms the entry in the reference table of section 6.1 and closes the
 last open item in that table. The restriction $x > 0$ reflects the domain of
 the natural logarithm, which we established in section 4.3.
 
+```{figure} pics/inverse_rule_ln.svg
+---
+width: 100%
+name: inverse_rule_ln
+---
+Left: $\ln x$, defined for $x > 0$, with $\ln 1 = 0$ and $\ln e = 1$ marked.
+Right: its derivative $(\ln x)' = 1/x$, which is always positive and decays
+toward zero as $x \to \infty$.
+(Source: own figure; licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+```
+
 Returning to the damped oscillator: in section 6.3 we asked at what time the
 amplitude envelope $A\,e^{-\delta t}$ drops to a prescribed fraction $\alpha$
 of the initial displacement $A$. Solving $e^{-\delta t} = \alpha$ gives
@@ -115,6 +126,19 @@ $dt/d\alpha = -1/(0.5 \cdot 0.5) = -4~\text{s}$. Each additional percentage
 point added to the target fraction shortens the settling time by approximately
 $0.04~\text{s}$, a sensitivity figure that can inform a design decision.
 
+```{figure} pics/inverse_rule_settling_time.svg
+---
+width: 100%
+name: inverse_rule_settling_time
+---
+Left: settling time $t(\alpha) = -\ln(\alpha)/\delta$ as a function of the
+target fraction $\alpha$, with $\delta = 0.5~\text{s}^{-1}$. Right: the
+sensitivity $dt/d\alpha = -1/(\delta\,\alpha)$; at $\alpha = 0.5$ its value
+is $-4~\text{s}$, meaning each percentage-point increase in target fraction
+shortens the settling time by approximately $0.04~\text{s}$.
+(Source: own figure; licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+```
+
 ## What are the inverse trigonometric functions?
 
 In section 4.4 we noted that the sine and cosine functions are not invertible
@@ -126,12 +150,49 @@ The **arcsine** $\arcsin(x)$ is the inverse of $\sin$ restricted to
 $[-\pi/2,\, \pi/2]$. Its domain is $[-1, 1]$ and its range is
 $[-\pi/2,\, \pi/2]$.
 
+```{figure} pics/arcsin.svg
+---
+width: 55%
+name: arcsin
+---
+$\sin x$ restricted to $[-\pi/2,\,\pi/2]$ (red) and its inverse $\arcsin x$
+(blue), mirror images of each other across the diagonal $y = x$. The grid
+lines at $y = \pm 1$ confirm that $\sin(\pm\pi/2) = \pm 1$ and
+$\arcsin(\pm 1) = \pm\pi/2$.
+(Source: own figure; licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+```
+
 The **arccosine** $\arccos(x)$ is the inverse of $\cos$ restricted to
 $[0, \pi]$. Its domain is $[-1, 1]$ and its range is $[0, \pi]$.
+
+```{figure} pics/arccos.svg
+---
+width: 65%
+name: arccos
+---
+$\cos x$ restricted to $[0,\,\pi]$ (red) and its inverse $\arccos x$ (blue),
+mirror images of each other across the diagonal $y = x$. The grid lines at
+$y = \pm 1$ confirm that $\cos(0) = 1$, $\cos(\pi) = -1$, $\arccos(1) = 0$,
+and $\arccos(-1) = \pi$.
+(Source: own figure; licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+```
 
 The **arctangent** $\arctan(x)$ is the inverse of $\tan$ restricted to
 $(-\pi/2,\, \pi/2)$. Its domain is $\mathbb{R}$ and its range is
 $(-\pi/2,\, \pi/2)$.
+
+```{figure} pics/arctan.svg
+---
+width: 65%
+name: arctan
+---
+$\tan x$ restricted to $(-\pi/2,\,\pi/2)$ (red) and its inverse $\arctan x$
+(blue), mirror images of each other across the diagonal $y = x$. Dashed
+vertical lines mark the asymptotes of $\tan x$; dotted horizontal lines mark
+the asymptotes of $\arctan x$. Open circles indicate that both the domain of
+$\tan$ and the range of $\arctan$ are open intervals.
+(Source: own figure; licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+```
 
 ```{admonition} What are ... the inverse trigonometric functions?
 :class: note
@@ -168,6 +229,18 @@ is non-negative on that interval. Therefore:
 (\arcsin x)' = \frac{1}{\sqrt{1 - x^2}}, \quad x \in (-1,\,1).
 \end{equation*}
 
+```{figure} pics/arcsin_derivative.svg
+---
+width: 100%
+name: arcsin_derivative
+---
+Left: $\arcsin x$ on its closed domain $[-1,\,1]$. Right: its derivative
+$(\arcsin x)' = 1/\sqrt{1-x^2}$, which is always greater than or equal to
+$1$ and diverges as $x \to \pm 1$, reflecting the vertical tangents of
+$\arcsin$ at its endpoints.
+(Source: own figure; licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+```
+
 **Derivative of $\arccos(x)$.** Here $f(y) = \cos(y)$ on $[0, \pi]$, so
 $f'(y) = -\sin(y)$ and $f^{-1}(x) = \arccos(x)$. The rule gives:
 
@@ -188,6 +261,19 @@ Note that $(\arcsin x)' + (\arccos x)' = 0$, consistent with the identity
 $\arcsin(x) + \arccos(x) = \pi/2$, which holds for all $x \in [-1, 1]$ and
 whose derivative must indeed be zero.
 
+```{figure} pics/arccos_derivative.svg
+---
+width: 100%
+name: arccos_derivative
+---
+Left: $\arccos x$ on its closed domain $[-1,\,1]$. Right: its derivative
+$(\arccos x)' = -1/\sqrt{1-x^2}$, which is always less than or equal to
+$-1$ and diverges to $-\infty$ as $x \to \pm 1$. The right panel is the
+exact negative of the derivative of $\arcsin x$, consistent with
+$(\arcsin x)' + (\arccos x)' = 0$.
+(Source: own figure; licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+```
+
 **Derivative of $\arctan(x)$.** Here $f(y) = \tan(y)$ on $(-\pi/2, \pi/2)$,
 so $f'(y) = 1/\cos^2(y)$ and $f^{-1}(x) = \arctan(x)$. The rule gives:
 
@@ -207,6 +293,18 @@ The arctangent derivative is defined for all real $x$, has its maximum value
 of $1$ at $x = 0$, and decays to zero as $|x| \to \infty$, consistent with
 the S-shaped graph of $\arctan$ flattening toward its horizontal asymptotes
 $\pm\pi/2$.
+
+```{figure} pics/arctan_derivative.svg
+---
+width: 100%
+name: arctan_derivative
+---
+Left: $\arctan x$ on $\mathbb{R}$, with dotted horizontal asymptotes at
+$\pm\pi/2$. Right: its derivative $(\arctan x)' = 1/(1+x^2)$, which attains
+its maximum value of $1$ at $x = 0$ and decays smoothly to zero as
+$|x| \to \infty$.
+(Source: own figure; licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+```
 
 ## Summary and outlook
 

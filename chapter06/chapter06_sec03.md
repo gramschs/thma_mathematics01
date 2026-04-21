@@ -39,16 +39,20 @@ energy into heat. When the mass is displaced and released, it does not
 oscillate indefinitely: the amplitude shrinks with every cycle as the damper
 dissipates energy.
 
-```{figure} pics/fig06_mass_spring_damper.svg
----
-width: 75%
-name: fig06_mass_spring_damper
----
-A mass-spring-damper system. The mass $m$ is displaced from its equilibrium
-position and released. The resulting motion is a damped oscillation.
-(Source: own figure; licence [CC BY-SA
-4.0](https://creativecommons.org/licenses/by-sa/4.0))
-```
+<!-- markdownlint-disable MD033 -->
+<div id="applet-container-850">
+
+<iframe
+  src="https://gramschs.github.io/thma_mathematics01_assets/interactive/chapter06/chap06_mass_spring_damper.html"
+  width="100%"
+  frameborder="0"
+  scrolling="no">
+</iframe>
+
+</div>
+<!-- markdownlint-enable MD033 -->
+
+> [Start App in separate window](https://gramschs.github.io/thma_mathematics01_assets/interactive/chapter06/chap06_mass_spring_damper.html)
 
 We measure the displacement of the mass from its equilibrium position and call
 it $x$, with positive values to the right. For a system with moderate damping,
@@ -64,6 +68,21 @@ natural frequency** in $\text{rad/s}$. At $t = 0$ we have $x(0) = A$,
 confirming that the mass starts at the prescribed displacement. As $t$
 increases, the factor $e^{-\delta t}$ shrinks toward zero and the oscillation
 dies away.
+
+<!-- markdownlint-disable MD033 -->
+<div id="applet-container-720">
+
+<iframe
+  src="https://gramschs.github.io/thma_mathematics01_assets/interactive/chapter06/chap06_oscillator.html"
+  width="100%"
+  frameborder="0"
+  scrolling="no">
+</iframe>
+
+</div>
+<!-- markdownlint-enable MD033 -->
+
+[Start App in separate window](https://gramschs.github.io/thma_mathematics01_assets/interactive/chapter06/chap06_oscillator.html)
 
 For a concrete system we use $A = 0.10~\text{m}$,
 $\delta = 0.5~\text{s}^{-1}$, and $\omega_d = 3~\text{rad/s}$:

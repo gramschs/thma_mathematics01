@@ -66,6 +66,48 @@ project:
         - file: chapter08/chapter08_sec02.md
         - file: chapter08/chapter08_sec03.md
         - file: chapter08/chapter08_sec04.md
+    - title: 9. The Definite Integral
+      children:
+        - file: chapter09/chapter09_sec01.md
+        - file: chapter09/chapter09_sec02.md
+        - file: chapter09/chapter09_sec03.md
+        - file: chapter09/chapter09_sec04.md
+    - title: 10. Antiderivatives and the Fundamental Theorem of Calculus
+      children:
+        - file: chapter10/chapter10_sec01.md
+        - file: chapter10/chapter10_sec02.md
+        - file: chapter10/chapter10_sec03.md
+        - file: chapter10/chapter10_sec04.md
+        - file: chapter10/chapter10_sec05.md
+    - title: 11. Integration Techniques
+      children:
+        - file: chapter11/chapter11_sec01.md
+        - file: chapter11/chapter11_sec02.md
+        - file: chapter11/chapter11_sec03.md
+        - file: chapter11/chapter11_sec04.md
+        - file: chapter11/chapter11_sec05.md
+        - file: chapter11/chapter11_sec06.md
+    - title: 12. Applications of Integration
+      children:
+        - file: chapter12/chapter12_sec01.md
+        - file: chapter12/chapter12_sec02.md
+        - file: chapter12/chapter12_sec03.md
+    - title: 13. Complex Numbers (Cartesian Form)
+      children:
+        - file: chapter13/chapter13_sec01.md
+        - file: chapter13/chapter13_sec02.md
+        - file: chapter13/chapter13_sec03.md
+        - file: chapter13/chapter13_sec04.md
+        - file: chapter13/chapter13_sec05.md
+    - title: 14. Complex Numbers (Polar Form)
+      children:
+        - file: chapter14/chapter14_sec01.md
+        - file: chapter14/chapter14_sec02.md
+        - file: chapter14/chapter14_sec03.md
+        - file: chapter14/chapter14_sec04.md
+        - file: chapter14/chapter14_sec05.md
+        
+
     
 site:
   template: book-theme

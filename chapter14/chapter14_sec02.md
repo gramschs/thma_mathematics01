@@ -1,0 +1,24 @@
+---
+authors:
+  - name: Simone Gramsch
+---
+
+# Converting Between Cartesian and Polar Form
+
+```{admonition} Warning
+:class: warning
+This chapter is coming soon. The content will appear here before the relevant
+week of the course.
+```
+
+```{admonition} Learning goals
+:class: attention
+* [ ] You can convert a complex number from Cartesian form $a + bi$ to polar
+  form $r(\cos\varphi + i\sin\varphi)$ by computing $r = \sqrt{a^2 + b^2}$
+  and $\varphi = \operatorname{atan2}(b, a)$.
+* [ ] You can convert a complex number from polar form back to Cartesian form
+  using $a = r\cos\varphi$ and $b = r\sin\varphi$.
+* [ ] You can carry out both conversions correctly for complex numbers in all
+  four quadrants of the complex plane, paying careful attention to the
+  quadrant when determining the argument.
+```

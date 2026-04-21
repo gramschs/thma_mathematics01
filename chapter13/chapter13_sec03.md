@@ -1,0 +1,24 @@
+---
+authors:
+  - name: Simone Gramsch
+---
+
+# The Complex Plane
+
+```{admonition} Warning
+:class: warning
+This chapter is coming soon. The content will appear here before the relevant
+week of the course.
+```
+
+```{admonition} Learning goals
+:class: attention
+* [ ] You can represent a complex number $z = a + bi$ as a point or a vector
+  in the **complex plane**, with the real part on the horizontal axis and the
+  imaginary part on the vertical axis.
+* [ ] You can interpret addition of complex numbers geometrically as vector
+  addition in the complex plane.
+* [ ] You are familiar with the terms **real axis**, **imaginary axis**, and
+  **Argand diagram** as names for the coordinate system used to represent
+  complex numbers geometrically.
+```

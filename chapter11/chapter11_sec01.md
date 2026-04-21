@@ -1,0 +1,23 @@
+---
+authors:
+  - name: Simone Gramsch
+---
+
+# Integration by Substitution
+
+```{admonition} Warning
+:class: warning
+This chapter is coming soon. The content will appear here before the relevant
+week of the course.
+```
+
+```{admonition} Learning goals
+:class: attention
+* [ ] You know the **substitution rule** for indefinite integrals as the
+  integration counterpart of the chain rule from Section 6.4.
+* [ ] You can identify a suitable substitution $u = g(x)$ by recognising a
+  composite structure in the integrand.
+* [ ] You can carry out a substitution completely: rewriting the integrand,
+  transforming the differential $dx$, evaluating the resulting integral in
+  $u$, and back-substituting to express the result in terms of $x$.
+```

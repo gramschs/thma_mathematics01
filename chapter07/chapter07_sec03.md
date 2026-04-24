@@ -12,14 +12,20 @@ information. It tells us not just whether the function is rising or falling,
 but whether the rate of change is itself growing or shrinking. Geometrically,
 this is the difference between a curve that bends upward, like the base of a
 valley, and a curve that bends downward, like the crown of a hill. This
-bending character shapes not only the appearance of the graph but the
-relationship between the curve and its tangent lines.
+bending behavior affects how the graph looks and how its tangent lines sit
+relative to the curve.
 
 ```{admonition} Learning goals
 :class: attention
-* [ ] You know the definitions of **convexity** (concave up) and **concavity** (concave down) of a function on an interval.
-* [ ] You can determine intervals of convexity and concavity from the sign of the second derivative: $f''(x) > 0$ implies convex, $f''(x) < 0$ implies concave.
-* [ ] You understand the geometric interpretation of the second derivative's sign in terms of the curvature of the graph and the behavior of the tangent line.
+* [ ] You know the definitions of **convexity** (concave up) and **concavity**
+  (concave down) of a function on an interval.
+* [ ] You can determine intervals of convexity and concavity from the sign of
+  the second derivative: $f''(x) > 0$ implies convex, $f''(x) < 0$ implies
+  concave.
+
+* [ ] You understand the geometric interpretation of the second derivative's
+  sign in terms of the curvature of the graph and the behavior of the tangent
+  line.
 ```
 
 ## What does the sign of the second derivative reveal on the track?
@@ -32,6 +38,19 @@ h(x) = \frac{1}{30}\,x^2 - \frac{1}{2700}\,x^3, \quad x \in [0, 60],
 
 with second derivative $h''(x) = \dfrac{30 - x}{450}$. This expression is
 positive for $x < 30$, zero at $x = 30$, and negative for $x > 30$.
+
+```{figure} pics/chap07_sec03_fig01.svg
+:name: fig-ch07-lift-hill-convex-concave
+
+Convexity and concavity of the lift hill height profile $h(x) = \frac{1}{30}x^2 -
+\frac{1}{2700}x^3$ on $[0, 60]$. The lower half $[0, 30]$ (blue shading) is
+convex (concave up), where the slope $h'(x)$ increases and the graph bends
+upward. The upper half $[30, 60]$ (yellow shading) is concave (concave down),
+where the slope decreases and the graph bends downward. The tangents at $x = 15$
+and $x = 45$ have the same slope but lie below the curve in the convex region
+and above the curve in the concave region. (Source: own figure; licence [CC
+BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+```
 
 *What does this sign change mean for the shape of the track?*
 
@@ -87,7 +106,12 @@ The slope is decreasing, the graph bends downward, and every tangent line
 lies above the graph on that interval.
 ```
 
-The tangent-line characterisation in the definition deserves attention. For a
+In this course we use the word *convex* for what many textbooks call
+"concave up", and *concave* for what many textbooks call "concave down".
+We will mainly talk about the simple case where the second derivative exists
+and is strictly positive or strictly negative on the interval.
+
+The tangent-line characterization in the definition deserves attention. For a
 convex function the tangent at any point underestimates the function value at
 nearby points: the true curve is always above the straight-line approximation.
 For a concave function the tangent overestimates: the true curve is below.
@@ -100,33 +124,6 @@ For the roller coaster lift hill we summarise: $h$ is convex on $[0, 30]$ and
 concave on $[30, 60]$. The transition occurs at $x = 30~\text{m}$, the point
 of steepest ascent.
 
-```{raw} html
-<!--
-  SVELTE APP: "Convexity and concavity on the lift hill"
-
-  Main panel: the graph of h(x) = x²/30 - x³/2700 on [0, 60].
-  The region x ∈ [0, 30] is shaded light blue (convex) and the region
-  x ∈ [30, 60] is shaded light red (concave).
-
-  A movable point P at (x0, h(x0)) with a tangent line extending to both
-  sides. A slider controls x0 across [0, 60], default 15.
-
-  Two indicator tiles below the graph:
-    - "h''(x₀)" showing the current value of h''(x0) = (30-x0)/450,
-      coloured blue when positive and red when negative.
-    - "Tangent vs curve" showing whether the tangent lies below or above
-      nearby curve values. This is computed as the sign of h(x0+5) - t(x0+5)
-      where t is the tangent line at x0.
-
-  Preset buttons at x0 = 15 (blue region) and x0 = 45 (red region)
-  illustrate the symmetric gradient but opposite curvature from the table.
-
-  Purpose: students can drag P and observe how the tangent rotates, how the
-  indicator flips when crossing x = 30, and how the tangent-vs-curve
-  indicator reverses sign at the same transition.
--->
-```
-
 ## Where does convexity matter in engineering?
 
 Convexity and concavity appear throughout structural and civil engineering
@@ -134,12 +131,14 @@ wherever the shape of a loaded member or a geometric path must be described
 precisely.
 
 In beam theory, the deflection of a simply supported beam under load satisfies
-the relation $EI\,y'' = M(x)$, where $E$ is the modulus of elasticity, $I$ is
-the second moment of area, and $M(x)$ is the bending moment at cross-section
-$x$. The sign of $y''$ at each section identifies whether the beam is sagging
-(convex upward, $y'' > 0$) or hogging (concave, $y'' < 0$). These two regimes
-produce tension in opposite fibres of the cross-section, and the reinforcement
-layout in a concrete beam is designed with this distinction in mind.
+the relation $EI\,y'' = M(x)$, where $E$ is the modulus of elasticity,
+$I$ is the second moment of area, and $M(x)$ is the bending moment at
+cross-section $x$. The sign of $y''$ at each section identifies whether the
+beam is sagging (bending downwards in the middle, convex upward, $y'' > 0$)
+or hogging (bending upwards in the middle, concave, $y'' < 0$). These two
+regimes produce tension in opposite fibres of the cross-section, and the
+reinforcement layout in a concrete beam is designed with this distinction in
+mind.
 
 In road and railway design, the vertical alignment alternates between convex
 sections at summits and concave sections in valleys. The curvature at each

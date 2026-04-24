@@ -17,9 +17,14 @@ requires a careful argument.
 
 ```{admonition} Learning goals
 :class: attention
-* [ ] You know the definition of an **inflection point** as a point where the convexity of the function changes sign.
-* [ ] You can identify candidates for inflection points using the necessary condition $f''(x_0) = 0$.
-* [ ] You know that $f''(x_0) = 0$ is necessary but not sufficient for an inflection point, and you can verify the **sign change of $f''$** on either side of $x_0$ to confirm it.
+* [ ] You know the definition of an **inflection point** as a point where the
+  sign of the second derivative (and thus the convexity/concavity of the
+  function) changes.
+* [ ] You can identify candidates for inflection points using the necessary
+  condition $f''(x_0) = 0$.
+* [ ] You know that $f''(x_0) = 0$ is necessary but not sufficient for an
+  inflection point, and you can verify the **sign change of $f''$** on either
+  side of $x_0$ to confirm it.
 ```
 
 ## What is an inflection point?
@@ -27,18 +32,20 @@ requires a careful argument.
 At $x = 30~\text{m}$ on the roller coaster, the second derivative
 $h''(30) = \frac{30 - 30}{450} = 0$ vanishes. More importantly, $h''$ is
 positive to the left and negative to the right: the track is convex just
-before $x = 30$ and concave just after. The curvature does not merely reach
-zero and bounce back; it crosses through zero and reverses sign. This crossing
-is what defines an inflection point.
+before $x = 30$ and concave just after. The curvature does not just reach zero
+and then take the same sign again; instead it crosses through zero and
+reverses its sign. This crossing is what defines an inflection point.
 
 ```{admonition} What is ... an inflection point?
 :class: note
-Let $f$ be twice differentiable near $x_0$. We say $x_0$ is an **inflection
-point** of $f$ if $f''$ changes sign at $x_0$: that is, $f''(x) > 0$ on one
-side of $x_0$ and $f''(x) < 0$ on the other.
+Let $f$ be twice differentiable near $x_0$, with a second derivative that is
+continuous there. We say $x_0$ is an **inflection point** of $f$ if $f''$
+changes sign at $x_0$: that is, $f''(x) > 0$ on one side of $x_0$ and
+$f''(x) < 0$ on the other.
 
 A necessary condition for an inflection point is $f''(x_0) = 0$, but this
-condition alone is not sufficient.
+condition alone is not sufficient. In this chapter we restrict attention to
+smooth functions where this second-derivative test applies.
 ```
 
 To locate the inflection point of the lift hill we solve $h''(x) = 0$:
@@ -71,6 +78,17 @@ and the track slope is $h'(30) = 1$, a $45°$ incline. The inflection point
 lies at the midpoint of the lift hill, at precisely half the total height of
 40 m, where the gradient is steepest.
 
+```{figure} pics/chap07_sec04_fig01.svg
+:name: chap07_sec04_fig01
+Inflection point on the lift hill height profile $h(x) = \frac{1}{30}x^2 -
+\frac{1}{2700}x^3$ on $[0, 60]$. The lower half $[0, 30]$ (blue shading) is
+convex (concave up), the upper half $[30, 60]$ (yellow shading) is concave
+(concave down). At $x = 30~\text{m}$ the second derivative $h''(x)$ changes
+sign, the graph passes through an inflection point $(30, 20)$, and the tangent
+$y = x - 10$ crosses from lying below the curve to lying above it. (Source: own
+figure; licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+```
+
 ## Is $h''(x_0) = 0$ enough on its own?
 
 The calculation above used two steps: first we found that $h''(30) = 0$, then
@@ -96,6 +114,17 @@ The lesson is clear: solve $f''(x) = 0$ to find the candidates, then verify
 the sign change to confirm each one. A zero of the second derivative that does
 not come with a sign change is not an inflection point.
 
+```{figure} pics/chap07_sec04_fig02.svg
+:name: chap07_sec04_fig02
+Comparison of two candidates for an inflection point at $x = 0$. Left: $g(x) =
+x^4$ with $g''(0) = 0$ but $g''(x) > 0$ on both sides of $0$, so the graph is
+convex everywhere and $x = 0$ is a minimum, not an inflection point. Right:
+$f(x) = x^3$ with $f''(0) = 0$ and $f''(x) < 0$ for $x < 0$, $f''(x) > 0$ for $x>
+0$, so the graph changes from concave to convex and $x = 0$ is a true
+inflection point where the tangent crosses the curve. (Source: own figure;
+licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+```
+
 ## What does the inflection point look like on the graph?
 
 The inflection at $x = 30$ is visible in the geometry of the lift hill profile.
@@ -107,48 +136,17 @@ crosses from one side of the curve to the other, momentarily coinciding in
 both value and slope with the track but transitioning from an underestimate to
 an overestimate.
 
-This crossing is one of the sharpest visual signatures of an inflection point.
-For the marble track studied in chapters 5 and 6, no such crossing occurs
-because $f''(x) = 0.04 > 0$ everywhere: the parabola is convex on its entire
-domain, and its tangent lines never cross the curve.
+This crossing is a clear visual sign of an inflection point. For the marble
+track studied in chapters 5 and 6, no such crossing occurs because
+$f''(x) = 0.04 > 0$ everywhere: the parabola is convex on its entire domain,
+and its tangent lines never cross the curve.
 
-The location of the inflection point is also physically significant for the
-passengers. On the lower half, the track pushes upward against the car with a
-centripetal force that adds to the apparent weight, pressing passengers into
-their seats. On the upper half, the track curves in the opposite sense, and
-the centripetal force direction reverses, reducing the apparent weight. The
-inflection point at $x = 30$ m marks the boundary between these two
-experiences.
-
-```{raw} html
-<!--
-  SVELTE APP: "Inflection point explorer"
-
-  Main panel: the graph of h(x) = x²/30 - x³/2700 on [0, 60].
-  The lower half [0, 30] shaded light blue (convex), upper half [30, 60]
-  shaded light red (concave). A vertical dashed line at x = 30 labelled
-  "inflection point".
-
-  A movable tangent line at (x0, h(x0)), extended across the full domain.
-  A slider for x0 across [0, 60], default 30.
-
-  An indicator panel below the graph:
-    - "h''(x₀)" showing the current value, coloured blue/red.
-    - A text label: "Tangent lies BELOW curve" (when x0 < 30) or
-      "Tangent lies ABOVE curve" (when x0 > 30), updating automatically.
-    - When x0 is near 30, both labels dim and a third text "At the
-      inflection: tangent crosses the curve" is highlighted.
-
-  A second panel shows the graph of h''(x) = (30-x)/450 with:
-    - The zero at x = 30 marked.
-    - The sign coloured blue on the left and red on the right.
-    - A dot tracking (x0, h''(x0)) as the slider moves.
-
-  Purpose: students observe simultaneously that the tangent switches sides
-  at x = 30 and that h'' changes sign there, connecting the algebraic
-  condition to the geometric reality.
--->
-```
+The location of the inflection point is also important for the passengers. On
+the lower half, the track pushes upward against the car with a centripetal
+force that adds to the apparent weight, pressing passengers into their seats.
+On the upper half, the track curves in the opposite sense, and the centripetal
+force direction reverses, reducing the apparent weight. The inflection point
+at $x = 30$ m marks the boundary between these two experiences.
 
 ## Where do inflection points appear in engineering?
 
@@ -165,12 +163,12 @@ from the region where it hogs (concave), and it determines where to place
 construction joints and how to arrange reinforcement in concrete structures.
 
 In road and railway design, every transition from a sag curve to a crest curve
-introduces an inflection point in the vertical profile. The curvature is zero
-at that point, and design standards specify the minimum length of the
-transition zone around it to ensure that the change in centripetal force
-imposed on vehicles remains within comfortable bounds. The mathematics behind
-those standards is exactly the analysis of higher-order derivatives that we
-have developed in this chapter.
+contains an inflection point in the vertical profile. The curvature is zero at
+that point, and design standards specify the minimum length of the transition
+zone around it to ensure that the change in centripetal force imposed on
+vehicles remains within comfortable bounds. The mathematics behind those
+standards uses exactly the analysis of higher-order derivatives that we have
+developed in this chapter.
 
 In the analysis of control systems, a sigmoid-shaped step response has exactly
 one inflection point, corresponding to the moment of maximum rate of change in
@@ -180,27 +178,16 @@ underlying system model.
 
 ## Summary and outlook
 
-We have defined the inflection point as a point where the convexity of a
-function changes, identified the necessary condition $f''(x_0) = 0$, and shown
-through the example of $g(x) = x^4$ that this condition is not sufficient on
-its own. For the roller coaster height profile $h(x)$, the unique inflection
-at $x = 30~\text{m}$ marks the transition from the bowl-shaped lower half of
-the lift hill to the dome-shaped upper half, at the point of maximum gradient,
-mid-height on the rise.
+We have defined an inflection point as a point where the sign of the second
+derivative, and therefore the convexity/concavity of a function, changes. The
+condition $f''(x_0) = 0$ is necessary but not sufficient; the example
+$g(x) = x^4$ shows that we must also check whether $f''$ changes sign at
+$x_0$ to confirm an inflection point.
 
-This chapter has built three levels of analysis on top of the derivative
-function introduced in chapter 5. The second derivative measures the rate of
-change of the slope. Its sign classifies every interval as convex or concave.
-A zero of the second derivative that comes with a sign change marks an
-inflection point, a boundary between the two regimes. The third derivative,
-jerk, measures how quickly the acceleration changes and is the physical
-quantity that determines passenger comfort and structural impulse loading.
-
-These tools are the direct preparation for the analysis of extrema in the next
-chapter. We will ask not just whether a function is increasing or decreasing,
-but whether a stationary point, a point where $f'(x_0) = 0$, is a local
-minimum, a local maximum, or neither. The answer comes from the sign of the
-second derivative at that point, in what is called the second derivative test.
-The notions of convexity and concavity developed here are exactly what that
-test requires, and we will find that the roller coaster profile provides a
-natural entry point for that discussion as well.
+For the roller coaster height profile $h(x)$, the unique inflection at
+$x = 30~\text{m}$ marks the transition from the bowl-shaped lower half of the
+lift hill (convex) to the dome-shaped upper half (concave), at mid-height and
+at the point of maximum gradient. In the next chapter we will use the same
+idea—linking the sign of $f''$ to the local shape of the graph—to classify
+stationary points $f'(x_0) = 0$ as local minima, local maxima, or neither via
+the **second derivative test**.

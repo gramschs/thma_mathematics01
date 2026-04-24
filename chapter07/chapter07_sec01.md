@@ -24,28 +24,39 @@ evolving in turn.
 ## What happens when we differentiate the derivative?
 
 In chapter 5 we derived the derivative function $f'(x) = 0.04x - 0.6$ for
-the parabolic marble track $f(x) = 0.02x^2 - 0.6x + 6$. Applying the power
-rule from chapter 6 one more time:
+the parabolic marble track $f(x) = 0.02x^2 - 0.6x + 6$. We now ask what
+happens if we differentiate this derivative as well, using the power rule
+from chapter 6 one more time:
 
 \begin{equation*}
 \bigl(f'(x)\bigr)' = (0.04x - 0.6)' = 0.04.
 \end{equation*}
 
-The result is a positive constant. It tells us that the slope of the marble
-track increases at a steady rate as $x$ grows: for every centimetre of
-horizontal travel the slope rises by exactly $0.04$. The track curves upward
-uniformly from one end to the other, which is exactly what we expect from a
-parabola.
+The result is a positive constant. This constant positive value means that the
+slope of the marble track increases at the same rate everywhere along the track:
+for each additional centimeter of horizontal distance the slope rises by exactly
+$0.04$. The track curves upward at a constant rate along its entire length,
+which is exactly what we expect from a parabola.
 
-This new function is called the **second derivative** of $f$, written $f''(x)$.
-It is the derivative of the derivative, obtained by applying the
-differentiation process twice. We do not have to stop there: the second
-derivative is itself a function, and we can differentiate it a third time to
-obtain the **third derivative** $f'''(x)$, a fourth time to obtain $f^{(4)}(x)$,
-and so on. For the marble track the third derivative is
-$f'''(x) = (0.04)' = 0$: the second derivative is constant, and the derivative
-of a constant is zero. All derivatives beyond the second vanish for this
-quadratic.
+This new function is called the **second derivative** of $f$ and is written
+$f''(x)$. It is the derivative of the derivative, obtained by applying the
+differentiation process twice.
+
+```{figure} pics/chap07_marble_track.svg
+:name: chap07_marble_track
+Graph of the marble track height profile together with its first and second
+derivatives, showing the curve, the tangent slope, and the constant slope change
+at a common position $x = 10$. (Source: own figure; licence [CC BY-SA
+4.0](https://creativecommons.org/licenses/by-sa/4.0))
+```
+
+We do not have to stop there. The second derivative is itself a function, so we
+can differentiate it again. Differentiating a third time gives the **third
+derivative** $f'''(x)$, a fourth time gives $f^{(4)}(x)$, and so on. For the
+marble track the third derivative is $f'''(x) = (0.04)' = 0$, because the second
+derivative is constant and the derivative of a constant is zero. For this
+quadratic function, every derivative of order three or higher is therefore equal
+to zero.
 
 ## What is the $n$-th derivative?
 
@@ -87,26 +98,36 @@ Both families of notation are standard in engineering literature.
 
 ## How do we compute the higher derivatives for a roller coaster lift hill?
 
-We now introduce the running example for this chapter: a section of a roller
+We now introduce the running example for this chapter, a section of a roller
 coaster lift hill. The track carries passengers from the boarding platform at
 ground level up to the summit of the first drop. We place the origin at the
 base of the lift and measure height $h$ and horizontal distance $x$ both in
-metres. The shape of the track is modelled by the cubic polynomial
+meters. The shape of the track is modeled by the cubic polynomial
 
 \begin{equation*}
 h(x) = \frac{1}{30}\,x^2 - \frac{1}{2700}\,x^3, \quad x \in [0, 60].
 \end{equation*}
 
+```{figure} pics/chap07_roller_coaster.svg
+:name: chap07_roller_coaster
+Graph of the roller coaster lift hill height profile $h(x) = \dfrac{1}{30}x^2 -
+\dfrac{1}{2700}x^3$ on the interval $[0, 60]$, showing the base at $(0, 0)$ and
+the summit at $(60, 40)$. (Source: own figure; licence [CC BY-SA
+4.0](https://creativecommons.org/licenses/by-sa/4.0))
+```
+
 Two boundary conditions are built into this formula. At the boarding
-platform, $h(0) = 0$: the track starts at ground level. At the summit,
+platform we have $h(0) = 0$, so the track starts at ground level. At the
+summit,
 
 \begin{equation*}
 h(60) = \frac{3600}{30} - \frac{216000}{2700} = 120 - 80 = 40~\text{m}.
 \end{equation*}
 
-The lift hill raises passengers 40 metres over a horizontal span of 60 metres.
+The lift hill raises passengers $40~\text{m}$ over a horizontal span of
+$60~\text{m}$, from the base at $x = 0$ to the summit at $x = 60$.
 
-We now apply the power rule and constant-multiple rule from chapter 6 to
+We now apply the power rule and constant multiple rule from chapter 6 to
 compute the successive derivatives. The first derivative gives the gradient,
 that is, the slope of the track at each horizontal position:
 
@@ -114,11 +135,24 @@ that is, the slope of the track at each horizontal position:
 h'(x) = \frac{x}{15} - \frac{x^2}{900} = \frac{x(60 - x)}{900}.
 \end{equation*}
 
-The factor $(60 - x)$ confirms that $h'(0) = 0$ and $h'(60) = 0$: the track
+```{figure} pics/chap07_roller_coaster_1stderivative.svg
+:name: chap07_roller_coaster_1stderivative
+Graph of the slope function $h'(x) = \dfrac{x}{15} - \dfrac{x^2}{900}$ on the
+interval $[0, 60]$, showing the horizontal start and end of the lift hill and
+the maximum slope at $x = 30~\text{m}$. (Source: own figure; licence [CC BY-SA
+4.0](https://creativecommons.org/licenses/by-sa/4.0))
+```
+
+The factor $(60 - x)$ confirms that $h'(0) = 0$ and $h'(60) = 0$, so the track
 starts horizontally at the boarding platform and levels off again at the
 summit. In between, the slope is positive everywhere. Its maximum value is
-$h'(30) = \frac{30 \cdot 30}{900} = 1$, reached at the midpoint $x = 30~\text{m}$,
-where the track inclines at $45°$.
+
+\begin{equation*}
+h'(30) = \frac{30 \cdot 30}{900} = 1,
+\end{equation*}
+
+reached at the midpoint $x = 30~\text{m}$, where the track inclines at
+$45^\circ$.
 
 The second derivative measures how quickly the gradient is changing:
 
@@ -126,11 +160,21 @@ The second derivative measures how quickly the gradient is changing:
 h''(x) = \frac{1}{15} - \frac{x}{450} = \frac{30 - x}{450}.
 \end{equation*}
 
-At $x = 0$ we have $h''(0) = \frac{30}{450} = \frac{1}{15} > 0$: the slope is
-increasing. At $x = 30$, $h''(30) = 0$: the slope has stopped growing. At
-$x = 60$, $h''(60) = -\frac{1}{15} < 0$: the slope is now decreasing back
-toward zero. The sign change of $h''$ marks a qualitative shift in the geometry
-of the track that we will examine carefully in sections 7.3 and 7.4.
+```{figure} pics/chap07_roller_coaster_2ndderivative.svg
+:name: chap07_roller_coaster_2ndderivative
+Graph of the second derivative $h''(x) = \frac{1}{15} - \frac{x}{450}$ on the
+interval $[0, 60]$, showing the positive values on the lower half of the lift
+hill, the zero at $x = 30~\text{m}$, and the negative values on the upper half.
+(Source: own figure; licence [CC BY-SA
+4.0](https://creativecommons.org/licenses/by-sa/4.0))
+```
+
+At $x = 0$ we have $h''(0) = \dfrac{30}{450} = \dfrac{1}{15} > 0$, so the
+slope is increasing at the start of the lift. At $x = 30$ we obtain
+$h''(30) = 0$, so the slope has stopped growing. At $x = 60$ we find
+$h''(60) = -\dfrac{1}{15} < 0$, so the slope is now decreasing back toward
+zero. The sign change of $h''$ marks a qualitative shift in the geometry of
+the track, which we will examine carefully in sections 7.3 and 7.4.
 
 The third derivative is constant:
 
@@ -138,42 +182,19 @@ The third derivative is constant:
 h'''(x) = -\frac{1}{450}.
 \end{equation*}
 
-One further differentiation gives $h^{(4)}(x) = 0$, and all higher derivatives
-are zero. This is expected: $h$ is a polynomial of degree three, and
-differentiating three times reduces it to a nonzero constant.
-
-```{raw} html
-<!--
-  SVELTE APP: "Roller coaster derivatives explorer"
-
-  Four stacked panels, all sharing the same x-axis [0, 60] and linked by
-  a vertical cursor at a movable position x = x0.
-
-  PANEL 1: h(x) = x²/30 - x³/2700
-    The height profile in dark blue. The tangent line at x0 in green dashed.
-    A filled dot at (x0, h(x0)) in orange.
-
-  PANEL 2: h'(x) = x(60-x)/900
-    The slope function in red. A filled dot at (x0, h'(x0)) in orange.
-    A horizontal dashed line at y = 0.
-
-  PANEL 3: h''(x) = (30-x)/450
-    The curvature indicator in dark green. A filled dot at (x0, h''(x0))
-    in orange. A horizontal dashed line at y = 0. The region x < 30
-    shaded light blue (convex), the region x > 30 shaded light red (concave).
-
-  PANEL 4: h'''(x) = -1/450
-    A constant horizontal line. A filled dot at (x0, -1/450) in orange.
-
-  A single slider controls x0 across [0, 60], default 15.
-  Preset buttons at x0 = 0, 15, 30, 45, 60.
-
-  Purpose: students see all four functions at once and can drag x0 to observe
-  how the tangent slope in panel 1 corresponds to the height in panel 2,
-  how the rate of change of panel 2 is shown in panel 3, and that panel 4
-  is flat throughout.
--->
+```{figure} pics/chap07_roller_coaster_3rdderivative.svg
+:name: chap07_roller_coaster_3rdderivative
+Graph of the third derivative $h'''(x) = -\frac{1}{450}$ as a constant negative
+value on the interval $[0, 60]$, representing the uniform rate at which the
+slope change of the lift hill decreases. (Source: own figure; licence [CC BY-SA
+4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
+
+One further differentiation gives $h^{(4)}(x) = 0$, and all higher derivatives
+are zero. This is exactly what we expect. The height profile $h$ is a
+polynomial of degree three, and differentiating three times reduces it to a
+nonzero constant. Every derivative of order four or higher is therefore
+identically zero.
 
 ## How do higher-order derivatives behave for other function families?
 

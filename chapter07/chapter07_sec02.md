@@ -10,15 +10,19 @@ mathematical construction. When the independent variable is time, each
 successive derivative of a position function acquires a concrete physical
 meaning that engineers in every discipline encounter regularly. The first
 derivative describes how fast the position is changing. The second describes
-how fast the velocity is changing. Each layer adds a new dimension of
-information about the motion, and each has practical consequences for the
-design of the system that produces it.
+how fast the velocity is changing. Each derivative adds new information about
+how the motion is changing, and each has practical consequences for how we
+design the system that produces it.
 
 ```{admonition} Learning goals
 :class: attention
-* [ ] You can interpret the first derivative of a position function as **velocity** and the second derivative as **acceleration**.
-* [ ] You know the **third derivative** of position as the rate of change of acceleration, called **jerk**, and you understand its significance in ride comfort and structural loading.
-* [ ] You can compute velocity, acceleration, and jerk from a given position function and interpret each result physically.
+* [ ] You can interpret the first derivative of a position function as
+  **velocity** and the second derivative as **acceleration**.
+* [ ] You know the **third derivative** of position as the rate of change of
+  acceleration, called **jerk**, and you understand its significance in ride
+  comfort and structural loading.
+* [ ] You can compute velocity, acceleration, and jerk from a given position
+  function and interpret each result physically.
 ```
 
 ## How does the car move after the summit?
@@ -36,6 +40,20 @@ seconds measured from the moment the car passes the summit:
 s(t) = 40 - t^3, \quad t \in [0, 3].
 \end{equation*}
 
+We treat the motion in one dimension and track only the vertical height.
+This is a simplified kinematic model chosen to illustrate changing velocity,
+acceleration, and jerk; it is not intended as an exact model of gravitational
+free fall along the actual track.
+
+```{figure} pics/chap07_sec02_fig01.svg
+:name: chap07_sec02_fig01
+
+Height of the roller coaster car during the first descent, modeled by $s(t) = 40 -
+t^3$ for $t \in [0, 3]$. The car starts at the summit $(0, 40)$ and reaches a
+height of $13~\text{m}$ after three seconds. (Source: own figure; licence [CC
+BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+```
+
 At $t = 0$ the car is at the summit: $s(0) = 40~\text{m}$. At $t = 3~\text{s}$
 it has descended to $s(3) = 40 - 27 = 13~\text{m}$, dropping 27 metres in
 three seconds. The height zero corresponds to ground level, and the base of
@@ -49,11 +67,21 @@ derivative of the height with respect to time:
 v(t) = s'(t) = -3t^2 ~\frac{\text{m}}{\text{s}}.
 \end{equation*}
 
-The negative sign indicates downward motion. At $t = 1~\text{s}$ the car is
-descending at $3~\text{m/s}$ (about $11~\text{km/h}$), and at $t = 3~\text{s}$
-the speed has reached $27~\text{m/s}$ (about $97~\text{km/h}$). The car is
-not moving at a constant speed: each second it descends faster than the second
-before.
+```{figure} pics/chap07_sec02_fig02.svg
+:name: chap07_sec02_fig02
+
+Vertical velocity of the roller coaster car during the first descent, modeled by
+$v(t) = s'(t) = -3t^2$ for $t \in [0, 3]$. The car starts from rest at the
+summit, then its downward speed increases from $3~\text{m/s}$ after one second
+to $27~\text{m/s}$ after three seconds. (Source: own figure; licence [CC BY-SA
+4.0](https://creativecommons.org/licenses/by-sa/4.0))
+```
+
+We take height to be positive upwards, so downward motion appears as negative
+velocity. At $t = 1~\text{s}$ the car is descending at $3~\text{m/s}$ (about
+$11~\text{km/h}$), and at $t = 3~\text{s}$ the speed has reached
+$27~\text{m/s}$ (about $97~\text{km/h}$). The car is not moving at a constant
+speed: each second it descends faster than the second before.
 
 ## What is the acceleration?
 
@@ -64,13 +92,22 @@ The velocity is itself changing with time, and the rate of that change is the
 a(t) = s''(t) = -6t ~\frac{\text{m}}{\text{s}^2}.
 \end{equation*}
 
-At the summit, $a(0) = 0$: the net force along the track is zero at the
-moment the track is horizontal, and there is no acceleration. As the car moves
-down the slope, the component of gravity along the track grows, and the
-acceleration magnitude increases steadily. At $t = 1~\text{s}$ the downward
-acceleration is $6~\text{m/s}^2$, roughly $0.6\,g$. At $t = 3~\text{s}$ it
-reaches $18~\text{m/s}^2$, approximately $1.8\,g$: passengers feel pressed
-into their seats with a force nearly twice their own weight.
+```{figure} pics/chap07_sec02_fig03.svg
+:name: chap07_sec02_fig03
+Vertical acceleration of the roller coaster car during the first descent,
+modeled by $a(t) = s''(t) = -6t$ for $t \in [0, 3]$. The downward acceleration
+grows linearly from $0~\text{m/s}^2$ at the summit to $18~\text{m/s}^2$ after
+three seconds, corresponding to about $1.8\,g$. (Source: own figure; licence [CC
+BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+```
+
+At the summit, $a(0) = 0$: in this simple model the acceleration is zero at
+the moment the track is horizontal. As the car moves down the slope, the
+magnitude of the downward acceleration increases steadily. At $t = 1~\text{s}$
+the downward acceleration is $6~\text{m/s}^2$, roughly $0.6\,g$. At
+$t = 3~\text{s}$ it reaches $18~\text{m/s}^2$, approximately $1.8\,g$:
+passengers feel pressed into their seats with a force nearly twice their own
+weight.
 
 We can verify this against the velocity data. Between $t = 1~\text{s}$ and
 $t = 2~\text{s}$ the velocity changes from $-3~\text{m/s}$ to $-12~\text{m/s}$,
@@ -89,9 +126,19 @@ of position, a quantity called **jerk**:
 j(t) = s'''(t) = -6 ~\frac{\text{m}}{\text{s}^3}.
 \end{equation*}
 
+```{figure} pics/chap07_sec02_fig04.svg
+:name: chap07_sec02_fig04
+Jerk of the roller coaster car during the first descent, modeled by $j(t) =
+s'''(t) = -6$ for $t \in [0, 3]$. The jerk is constant and negative, meaning
+that the downward acceleration increases at a uniform rate throughout the
+motion. (Source: own figure; licence [CC BY-SA
+4.0](https://creativecommons.org/licenses/by-sa/4.0))
+```
+
 The jerk is constant throughout the descent. Every second, the downward
-acceleration increases by exactly $6~\text{m/s}^2$. This uniform rate at
-which the body force on the passengers builds up is a direct design parameter.
+acceleration increases by exactly $6~\text{m/s}^2$. This constant rate at
+which the force on the passengers increases is a quantity that designers can
+choose and control.
 
 ```{admonition} What is ... jerk?
 :class: note
@@ -115,39 +162,9 @@ impulse loads on the car's wheels, axles, and track structure. The fourth
 derivative of $s(t) = 40 - t^3$ is zero, as we expect from a cubic: the jerk
 is constant, and the derivative of a constant is zero.
 
-```{raw} html
-<!--
-  SVELTE APP: "Descent dynamics"
-
-  Four horizontally arranged info tiles at the top, updating live:
-    - "Height s(t)" in metres, to 2 decimal places.
-    - "Velocity v(t)" in m/s, to 2 decimal places, coloured blue for downward.
-    - "Acceleration a(t)" in m/s², to 2 decimal places.
-    - "Jerk j(t)" in m/s³, constant −6, coloured to confirm it never changes.
-
-  Main panel: a schematic vertical track on the left. A small car icon
-  moves downward along it as t increases. The track spans from 40 m to 0 m
-  on the y-axis. The car's position corresponds to s(t).
-
-  Graph panel on the right: three curves plotted on the same t-axis [0, 3]:
-    - s(t) = 40 − t³ in dark blue (height).
-    - v(t) = −3t² in red (velocity), shown on a secondary y-axis.
-    - a(t) = −6t in orange (acceleration), shown on the same secondary axis.
-  A vertical dashed cursor at the current time t highlights the values.
-
-  A play/pause button animates t from 0 to 3. A slider also lets students
-  scrub manually.
-
-  Purpose: students see all three physical quantities updating simultaneously
-  and can pause at any moment to read off and compare the exact values.
-  The constant jerk tile stays steady while the others change, making the
-  distinction between position, velocity, acceleration, and jerk concrete.
--->
-```
-
 ## Where does jerk appear in engineering?
 
-Jerk is a design constraint in any system that moves humans or sensitive
+Jerk is an important design limit in any system that moves humans or sensitive
 equipment. In elevator engineering, many national standards specify a maximum
 jerk of around $2~\text{m/s}^3$ during start and stop phases: above this
 threshold passengers experience the onset of motion as an uncomfortable lurch
@@ -155,11 +172,11 @@ rather than a smooth transition. High-speed passenger trains are typically
 designed to stay below $0.85~\text{m/s}^3$ in normal service so that standing
 passengers retain their balance and seated passengers do not spill drinks.
 
-In structural engineering, jerk governs the impulsive component of loading.
+In structural engineering, jerk governs the sudden part of the loading.
 A crane that lowers a heavy component with large jerk generates dynamic forces
 that can exceed the static weight by a factor of two or more. The drive system
-must limit jerk explicitly, not just acceleration, to keep the structural
-loads within the design envelope.
+must limit jerk explicitly, not just acceleration, to keep the structural loads
+within the allowed range.
 
 For the roller coaster itself, the jerk profile along the entire ride is one
 of the primary quantities that the ride designer controls. A constant jerk of

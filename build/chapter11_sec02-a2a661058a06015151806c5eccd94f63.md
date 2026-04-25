@@ -1,0 +1,22 @@
+---
+authors:
+  - name: Simone Gramsch
+---
+
+# Substitution in Definite Integrals
+
+```{admonition} Warning
+:class: warning
+This chapter is coming soon. The content will appear here before the relevant
+week of the course.
+```
+
+```{admonition} Learning goals
+:class: attention
+* [ ] You can apply the substitution rule to **definite integrals** by
+  transforming the limits of integration alongside the integrand.
+* [ ] You know that transforming the limits avoids the need to back-substitute
+  and produces the numerical result directly.
+* [ ] You can use the **power reduction formulas** from Section 4.5 as a
+  substitution strategy for integrands involving $\sin^2(x)$ or $\cos^2(x)$.
+```

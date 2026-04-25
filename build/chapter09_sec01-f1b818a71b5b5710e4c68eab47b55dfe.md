@@ -1,0 +1,22 @@
+---
+authors:
+  - name: Simone Gramsch
+---
+
+# The Area Problem
+
+```{admonition} Warning
+:class: warning
+This chapter is coming soon. The content will appear here before the relevant
+week of the course.
+```
+
+```{admonition} Learning goals
+:class: attention
+* [ ] You know that the problem of computing the area under a curve is the
+  central motivation for integral calculus.
+* [ ] You can describe the **area problem** geometrically for a continuous
+  function $f$ on a closed interval $[a, b]$.
+* [ ] You are familiar with the idea that the exact area can be approached by
+  sums of rectangular strips whose widths become arbitrarily small.
+```

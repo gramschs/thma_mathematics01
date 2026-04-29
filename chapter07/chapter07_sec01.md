@@ -224,6 +224,12 @@ The **trigonometric functions** form a four-step cycle. Starting from $\sin x$:
 After four differentiations we return to $\sin x$, so $(\sin x)^{(4)} = \sin x$.
 The same four-step cycle holds for $\cos x$, shifted by one step.
 
+```{dropdown} Video "Higher Order Derivatives" by The Organic Chemistry Tutor
+<iframe width="927" height="521" src="https://www.youtube.com/embed/s7rd9YPJrNc"
+title="Higher Order Derivatives" frameborder="0" allow="accelerometer; autoplay;
+clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
+
 ## Summary and outlook
 
 We have defined the $n$-th derivative by repeated application of the

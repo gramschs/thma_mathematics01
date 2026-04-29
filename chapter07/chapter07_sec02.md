@@ -185,6 +185,32 @@ experience as thrilling rather than injurious. The geometry of the track,
 through the higher derivatives of its spatial profile, directly determines
 the jerk that passengers feel at each moment of the ride.
 
+```{dropdown} Video "Position, Jerk, Pop and Other Derivatives of The Position Function" by PrimeNewtons
+<iframe width="927" height="521" src="https://www.youtube.com/embed/zl5D_ffrF9c"
+title="Position, Jerk, Pop and Other Derivatives of The Position Function" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
+
+```{dropdown} Video "Higher Derivatives and Their Applications" by Professor Dave explains
+<iframe width="927" height="521" src="https://www.youtube.com/embed/zUDxgehxQqs"
+title="Higher Derivatives and Their Applications" frameborder="0" allow="accelerometer;
+autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
+
+```{dropdown} Video "Higher order derivatives" by 3Blue1Brown
+<iframe width="927" height="521" src="https://www.youtube.com/embed/BLkz5LGWihw"
+title="Higher order derivatives | Chapter 10, Essence of calculus" frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+allowfullscreen></iframe>
+```
+
+```{dropdown} Video "Feel the Jerk! The Physics of Sudden Change" by PhysicsHigh
+<iframe width="927" height="521" src="https://www.youtube.com/embed/7dKG1rfm76U"
+title="Feel the Jerk! The Physics of Sudden Change" frameborder="0" allow="accelerometer;
+autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
+
 ## Summary and outlook
 
 We have given the first three derivatives of a position function their physical

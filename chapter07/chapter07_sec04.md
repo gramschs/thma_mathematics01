@@ -176,6 +176,12 @@ the output. Identifying this point, and measuring the slope of the response
 curve there, is a standard method for estimating the time constants of the
 underlying system model.
 
+```{dropdown} Video "Concavity, Inflection Points, and Second Derivative" by The Organic Chemistry Tutor
+<iframe width="927" height="521" src="https://www.youtube.com/embed/OhqNbQi9QPk"
+title="Concavity, Inflection Points, and Second Derivative" frameborder="0" allow="accelerometer;
+autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
+
 ## Summary and outlook
 
 We have defined an inflection point as a point where the sign of the second

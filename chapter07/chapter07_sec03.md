@@ -147,6 +147,13 @@ on a crest curve and the dynamic wheel load on a vehicle passing through a sag
 curve at speed. Both quantities are checked against design standards before a
 vertical profile is approved.
 
+```{dropdown} Video "concave/convex/inflection" by Bicen Maths
+<iframe width="817" height="613" src="https://www.youtube.com/embed/zsqUbl8XISo"
+title="Differentiation 26 • Second Derivative - concave/convex/inflection • P2 Ex9I • 🚀"
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+```
+
 ## Summary and outlook
 
 We have given the sign of the second derivative a geometric interpretation. A

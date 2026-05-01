@@ -16,10 +16,16 @@ now tells us whether each of those special points is a peak or a trough.
 
 ```{admonition} Learning goals
 :class: attention
-* [ ] You know the definitions of **local maximum**, **local minimum**, and **global extremum** of a function.
-* [ ] You know the **necessary condition** for a local extremum: $f'(x_0) = 0$ at a **critical point** $x_0$.
-* [ ] You know the **sufficient conditions** using the second derivative: $f''(x_0) > 0$ implies a local minimum and $f''(x_0) < 0$ implies a local maximum at a critical point.
-* [ ] You can find and classify the local extrema of a given differentiable function and determine which of them is the global extremum on a closed interval.
+* [ ] You know the definitions of **local maximum**, **local minimum**, and
+  **global extremum** of a function.
+* [ ] You know the **necessary condition** for a local extremum: $f'(x_0) = 0$
+  at a **critical point** $x_0$.
+* [ ] You know the **sufficient conditions** using the second derivative:
+  $f''(x_0) > 0$ implies a local minimum and $f''(x_0) < 0$ implies a local
+  maximum at a critical point.
+* [ ] You can find and classify the local extrema of a given differentiable
+  function and determine which of them is the global extremum on a closed
+  interval.
 ```
 
 ## How does the power delivered to a load depend on resistance?

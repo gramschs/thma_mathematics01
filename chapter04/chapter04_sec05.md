@@ -118,7 +118,7 @@ gives an identity for the tangent:
 This identity appears in the computation of certain integrals and in the
 analysis of vibrating systems.
 
-```{dropdown} Video ""Pythagorean Identities" by The Organic Chemistry Tutor
+```{dropdown} Video "Pythagorean Identities" by The Organic Chemistry Tutor
 <iframe width="1020" height="574" src="https://www.youtube.com/embed/TpADRvW8zm8"
 title="Pythagorean Identities - Examples &amp; Practice Problems, Trigonometry" 
 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
@@ -223,7 +223,7 @@ the integral of $\sin^2(\alpha)$ or $\cos^2(\alpha)$ directly is awkward, but
 after applying the power reduction formula the integral becomes straightforward.
 We will use them in exactly this way when we reach integration.
 
-```{dropdown}
+```{dropdown} Video "Double Angle Identities" by The Organic Chemistry Tutor
 <iframe width="1020" height="574" src="https://www.youtube.com/embed/SE5SBTgrwH8"
 title="Double Angle Identities &amp; Formulas of Sin, Cos &amp; Tan - Trigonometry"
 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"

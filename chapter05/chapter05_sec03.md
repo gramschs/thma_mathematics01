@@ -69,7 +69,7 @@ f'(x) = 0.04\,x - 0.6, \quad x \in [0, 30].
 \end{equation*}
 
 This is a linear function. The derivative of a polynomial of degree 2 is a
-polynomial of degree 1 — one degree lower. We will see in the next chapter
+polynomial of degree 1, one degree lower. We will see in the next chapter
 that this pattern holds for every power function.
 
 We can immediately verify the earlier result: substituting $x = 5$ gives
@@ -154,7 +154,7 @@ the left.
     - The straight line in red.
     - A filled dot at (x0, f'(x0)) in orange, directly below the dot in
       the top panel.
-    - A horizontal dashed reference line at y = 0, labelled "f'(x) = 0".
+    - A horizontal dashed reference line at y = 0, labeled "f'(x) = 0".
 
   A single slider controls x0 across [0, 30], default 5.
 
@@ -177,7 +177,7 @@ the left.
 
 The derivative function $f'$ can be written in several equivalent notations.
 All three appear in engineering literature and textbooks, and it is important
-to recognise each of them.
+to recognize each of them.
 
 The **Lagrange notation** $f'(x)$ is read as "$f$ prime of $x$". It is concise
 and is the standard choice in this course. The derivative at a specific point

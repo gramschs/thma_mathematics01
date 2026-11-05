@@ -55,14 +55,6 @@ represents the starting height of the rail at $x = 0$. Differentiating it
 gives zero: the starting height is a fixed number and contributes nothing
 to the slope of the track.
 
-```{dropdown} Video "Calculus Power Rule Explained in 2 Minutes" by CodeLucky
-<iframe width="1020" height="574" src="https://www.youtube.com/embed/j7RPQ5kWEdM"
-title="Calculus Power Rule Explained in 2 Minutes | Derivatives for Beginners"
-frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
-allowfullscreen></iframe>
-```
-
 ```{dropdown} Video "The Constant Rule For Derivatives" by The Organic Chemistry Tutor
 <iframe width="1020" height="574" src="https://www.youtube.com/embed/cyn6CDnAlcA"
 title="The Constant Rule For Derivatives" frameborder="0" allow="accelerometer;
@@ -168,9 +160,9 @@ no algebraic expansion at all.
 
 With $f'(x) = 0.04\,x - 0.6$ in hand, we can read off physically meaningful
 values immediately. At the starting block $f'(0) = -0.6$: the track descends
-at $0.6~\text{cm}$ per centimetre at the entry point, its steepest section.
+at $0.6~\text{cm}$ per centimeter at the entry point, its steepest section.
 At the lowest point $f'(15) = 0$: the rail is momentarily horizontal, consistent
-with the vertex of the parabola we located in section 3.5. At the finishing
+with the vertex of the parabola at $x = 15~\text{cm}$. At the finishing
 block $f'(30) = 0.6$: the track climbs at the same rate at which it descended
 at the start, reflecting the symmetry of the parabola about $x = 15~\text{cm}$.
 

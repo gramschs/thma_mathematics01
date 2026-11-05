@@ -153,7 +153,7 @@ The corner at a track junction is the most common failure of differentiability
 in engineering models, but it is not the only one. Two further cases are worth
 knowing.
 
-**Corner.** This is the case we have already analysed in detail. The
+**Corner.** This is the case we have already analyzed in detail. The
 function is continuous at $x_0$, but the difference quotient approaches
 different finite values from the left and from the right. The function
 $f(x) = |x|$ at $x_0 = 0$ is the simplest example: the left-hand limit of
@@ -192,7 +192,7 @@ valid domain.
   different slopes that do not converge to a common line.
 
   A second slider controls the magnitude of h across [0.01, 3], default 0.5.
-  Reducing h shows the one-sided quotients stabilising at different values
+  Reducing h shows the one-sided quotients stabilizing at different values
   at the corners, and at the same value on the smooth segments.
 
   Info tiles:
@@ -213,7 +213,7 @@ valid domain.
 
 ## Additional Material
 
-```{dropdown} Video "Differentiability and continuity" by Khan Acdemy
+```{dropdown} Video "Differentiability and continuity" by Khan Academy
 <iframe width="887" height="499" src="https://www.youtube.com/embed/xuAiQOzIkWY"
 title="Differentiability and continuity | Derivatives introduction | AP Calculus AB |
 Khan Academy" frameborder="0" allow="accelerometer; autoplay; clipboard-write;

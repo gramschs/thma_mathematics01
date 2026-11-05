@@ -54,7 +54,7 @@ We compute this average rate for decreasing values of $h$:
 
 | $h~[\text{s}]$ | $r(h)~[\text{V/s}]$ |
 | -------------- | -------------------- |
-| 1.000 | 0.2326 |
+| 1.000 | 0.2325 |
 | 0.500 | 0.2895 |
 | 0.100 | 0.3501 |
 | 0.010 | 0.3660 |
@@ -89,8 +89,8 @@ it systematically is the central task of chapter 5, where it will become the
 definition of the derivative.
 
 Limits can also be taken as $x \to \infty$. We already know that
-$\lim_{t \to \infty} e^{-t} = 0$: the discharging capacitor eventually
-reaches zero. Similarly, $\lim_{x \to \infty} \ln(x) = \infty$ and
+$\lim_{t \to \infty} e^{-t} = 0$: the voltage of the discharging capacitor
+gets arbitrarily close to zero. Similarly, $\lim_{x \to \infty} \ln(x) = \infty$ and
 $\lim_{x \to 0^+} \ln(x) = -\infty$. The notation $0^+$ indicates that $x$
 approaches zero from the right, which leads us to the next concept.
 
@@ -177,7 +177,7 @@ radians) reveals a clear pattern:
 | 1.000 | 0.8415 | 0.8415 |
 | 0.500 | 0.4794 | 0.9589 |
 | 0.100 | 0.0998 | 0.9983 |
-| 0.010 | 0.0100 | 0.9999 |
+| 0.010 | 0.0100 | 0.99998 |
 
 The ratio converges to $1$. This result,
 
@@ -258,8 +258,7 @@ simply defining $f(0) = 1$.
 A **jump discontinuity** occurs when both one-sided limits exist but are not
 equal. The function $f(x) = |x|/x$ has a jump discontinuity at $x = 0$,
 as we saw above. In engineering, the closing of an electrical switch produces
-a jump in the current, and the piecewise stress-strain curve of a material
-at the yield point is another example.
+a jump in the current.
 
 An **infinite discontinuity** occurs when the function values grow without
 bound near $x = a$. The function $f(x) = 1/x$ has an infinite discontinuity

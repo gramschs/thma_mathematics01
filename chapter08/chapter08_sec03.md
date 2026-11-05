@@ -5,13 +5,13 @@ authors:
 
 # 8.3 Optimization Problems
 
-Curve sketching organises everything we know about a function that is already
+Curve sketching organizes everything we know about a function that is already
 given to us. In engineering the more common situation is different: we have
 a design goal and a set of constraints, and we must find the parameter values
-that achieve the best outcome. The function to be optimised is not handed to
+that achieve the best outcome. The function to be optimized is not handed to
 us but must be constructed from the problem statement. Setting up that
 construction, reducing it to a single-variable problem, and then applying the
-tools of section 8.1 is the full workflow of engineering optimisation.
+tools of section 8.1 is the full workflow of engineering optimization.
 
 ```{admonition} Learning goals
 :class: attention
@@ -24,7 +24,7 @@ tools of section 8.1 is the full workflow of engineering optimisation.
 ## What is the design problem?
 
 A water utility requires a closed cylindrical storage tank that holds exactly
-$V_0 = 16\pi~\text{m}^3$ of water, approximately 50 cubic metres, a typical
+$V_0 = 16\pi~\text{m}^3$ of water, approximately 50 cubic meters, a typical
 capacity for a small supply facility. The tank has a circular top and bottom,
 each of radius $r$, and a cylindrical lateral wall of height $h$. The total
 surface area is
@@ -35,7 +35,7 @@ A = 2\pi r^2 + 2\pi r h,
 
 where $2\pi r^2$ is the combined area of the two circular caps and $2\pi r h$
 is the lateral area. The cost of construction is proportional to the total
-surface area, so the utility wants to minimise $A$ subject to the volume
+surface area, so the utility wants to minimize $A$ subject to the volume
 constraint $\pi r^2 h = V_0$.
 
 *Why should a minimum exist at all?* If $r$ is very small the tank must be
@@ -60,7 +60,7 @@ A(r) = 2\pi r^2 + 2\pi r \cdot \frac{16}{r^2}
 = 2\pi r^2 + \frac{32\pi}{r}, \quad r > 0.
 \end{equation*}
 
-The problem is now one-dimensional: find the value of $r > 0$ that minimises
+The problem is now one-dimensional: find the value of $r > 0$ that minimizes
 $A(r)$.
 
 ## What are the optimal dimensions?
@@ -106,31 +106,32 @@ the diameter. This is a universal result: for any fixed volume, the closed
 cylinder with minimum surface area satisfies $h = 2r$, regardless of the
 value of $V_0$.
 
-We can confirm that the endpoint behaviour supports this conclusion.
+We can confirm that the endpoint behavior supports this conclusion.
 The surface area at two alternative radii is:
 
 | Radius $r$ [m] | Height $h$ [m] | $A(r)$ [m²] |
 | --- | --- | --- |
-| $1$ | $16$ | $\approx 107.5$ |
+| $1$ | $16$ | $34\pi \approx 106.8$ |
 | $2$ | $4$ | $24\pi \approx 75.4$ (optimal) |
-| $4$ | $1$ | $\approx 108.9$ |
+| $4$ | $1$ | $40\pi \approx 125.7$ |
 
 A tank that is too narrow or too flat both require substantially more material
-than the optimal proportion. The minimum is broad rather than sharp: halving
-or doubling the optimal radius increases the area by roughly 40 percent, which
-means the design is relatively tolerant of small deviations from the optimum.
+than the optimal proportion. Halving the optimal radius increases the area by
+about 40 percent, doubling it by about 67 percent. Near the optimum, however,
+the curve is flat, which means the design is relatively tolerant of small
+deviations from the optimum.
 
 <!--
-  SVELTE APP: "Cylindrical tank optimiser"
+  SVELTE APP: "Cylindrical tank optimizer"
 
   LEFT PANEL: a 3D schematic of the cylinder, updating live as r changes.
-  The cylinder is drawn with radius r and height h = 16/r², labelled with
+  The cylinder is drawn with radius r and height h = 16/r², labeled with
   both dimensions. When r = 2 the cylinder has a clearly proportional look
   (h = 2r); for other values the shape is visibly distorted.
 
   RIGHT PANEL: the graph of A(r) = 2πr² + 32π/r on [0.5, 6].
     A movable point at (r, A(r)) with a slider for r, default r = 2.
-    A dashed vertical line and horizontal annotation at r = 2 labelled
+    A dashed vertical line and horizontal annotation at r = 2 labeled
     "optimal: r = 2 m, A = 24π".
     The three rows of the comparison table above shown as dots on the curve.
 
@@ -140,28 +141,28 @@ means the design is relatively tolerant of small deviations from the optimum.
 
   Purpose: students see the cylinder change shape as they drag r, and watch
   the total area cost update. The minimum is clearly visible on the curve,
-  and the shape of the optimal cylinder (h = 2r) is immediately recognisable.
+  and the shape of the optimal cylinder (h = 2r) is immediately recognizable.
 -->
 
 ## Where do optimization problems appear in engineering?
 
-The cylindrical tank illustrates the structure of every optimisation problem:
+The cylindrical tank illustrates the structure of every optimization problem:
 an objective, at least one constraint, a reduction to a single variable, and a
 derivative calculation to locate the optimum. The same workflow applies across
 engineering disciplines.
 
 In hydraulic engineering, the cross-section of an open irrigation channel is
-designed to maximise the flow rate for a given amount of lining material. A
+designed to maximize the flow rate for a given amount of lining material. A
 rectangular channel of fixed perimeter has an optimal width-to-depth ratio,
 found by the same method as the cylinder, and the result (width equals twice
 the depth) is a practical guideline used throughout the design of drainage
 networks.
 
 In manufacturing, the optimal production batch size balances the fixed cost of
-setting up a machine run (which favours large batches) against the cost of
-holding inventory (which favours small batches). The total cost function, a
+setting up a machine run (which favors large batches) against the cost of
+holding inventory (which favors small batches). The total cost function, a
 sum of a term proportional to batch size and a term inversely proportional to
-it, has exactly the algebraic structure of $A(r)$, and the critical point is
+it, has a similar algebraic structure to $A(r)$, and the critical point is
 the familiar economic order quantity formula.
 
 In structural engineering, the cross-section of a beam is sized to carry a
@@ -173,7 +174,7 @@ a derivative set to zero.
 
 ## Summary and outlook
 
-We have solved a concrete engineering optimisation problem: identifying the
+We have solved a concrete engineering optimization problem: identifying the
 objective and constraint, reducing to a single-variable function $A(r)$,
 locating the critical point at $r = 2~\text{m}$, classifying it as a global
 minimum, and verifying the solution. The optimal cylindrical tank has

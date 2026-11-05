@@ -29,7 +29,7 @@ final addition to our toolkit of elementary functions.
 
 ## Definitions
 
-In the previous section we saw that every point on the unit circle can be
+In section 4.4 we saw that every point on the unit circle can be
 written as $(\cos(\alpha), \sin(\alpha))$. A similar parametric description
 exists for the unit hyperbola $x^2 - y^2 = 1$: every point on its right branch
 can be written as $(\cosh(t), \sinh(t))$. This geometric analogy is the origin
@@ -94,7 +94,8 @@ definitions and from the properties of $e^x$ that we established in section 1.
 **Hyperbolic sine $\sinh(x)$.** Since $e^x - e^{-x} = 0$ only at $x = 0$, the
 only zero is at the origin. For large positive $x$, the term $e^x$ dominates
 and $\sinh(x) \to +\infty$; for large negative $x$, the term $-e^{-x}$
-dominates and $\sinh(x) \to -\infty$. The function is therefore strictly
+dominates and $\sinh(x) \to -\infty$. Since $e^x$ and $-e^{-x}$ are both
+strictly monotonically increasing, so is their sum: $\sinh$ is strictly
 monotonically increasing with domain $\mathbb{R}$ and range $\mathbb{R}$.
 Checking symmetry: $\sinh(-x) = (e^{-x} - e^x)/2 = -\sinh(x)$, so $\sinh$ is
 an odd function, symmetric about the origin.
@@ -128,7 +129,7 @@ values under control as they pass through layer after layer of a network.
 
 ## The hyperbolic Pythagorean identity
 
-In the previous section, the Pythagorean identity $\sin^2(\alpha) + \cos^2(\alpha) = 1$
+In section 4.5, the Pythagorean identity $\sin^2(\alpha) + \cos^2(\alpha) = 1$
 followed from the geometry of the unit circle. The hyperbolic counterpart
 follows directly from the definitions by straightforward algebra:
 

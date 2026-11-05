@@ -33,7 +33,7 @@ crest the track is horizontal, so the car's vertical velocity is momentarily
 zero. Gravity then pulls it downward along the descending slope, and the
 motion gathers speed rapidly.
 
-We model the height of the car, in metres, as a function of time $t$ in
+We model the height of the car, in meters, as a function of time $t$ in
 seconds measured from the moment the car passes the summit:
 
 \begin{equation*}
@@ -50,15 +50,15 @@ free fall along the actual track.
 
 Height of the roller coaster car during the first descent, modeled by $s(t) = 40 -
 t^3$ for $t \in [0, 3]$. The car starts at the summit $(0, 40)$ and reaches a
-height of $13~\text{m}$ after three seconds. (Source: own figure; licence [CC
+height of $13~\text{m}$ after three seconds. (Source: own figure; license [CC
 BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
 At $t = 0$ the car is at the summit: $s(0) = 40~\text{m}$. At $t = 3~\text{s}$
-it has descended to $s(3) = 40 - 27 = 13~\text{m}$, dropping 27 metres in
-three seconds. The height zero corresponds to ground level, and the base of
-this descent sits a few metres above the valley floor where the track curves
-back up into the next element of the ride.
+it has descended to $s(3) = 40 - 27 = 13~\text{m}$, dropping 27 meters in
+three seconds. The height zero corresponds to ground level, so the end of
+this part of the descent still lies $13~\text{m}$ above the ground, before the
+track curves back up into the next element of the ride.
 
 *How fast is the car descending?* The instantaneous velocity is the first
 derivative of the height with respect to time:
@@ -73,7 +73,7 @@ v(t) = s'(t) = -3t^2 ~\frac{\text{m}}{\text{s}}.
 Vertical velocity of the roller coaster car during the first descent, modeled by
 $v(t) = s'(t) = -3t^2$ for $t \in [0, 3]$. The car starts from rest at the
 summit, then its downward speed increases from $3~\text{m/s}$ after one second
-to $27~\text{m/s}$ after three seconds. (Source: own figure; licence [CC BY-SA
+to $27~\text{m/s}$ after three seconds. (Source: own figure; license [CC BY-SA
 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
@@ -97,7 +97,7 @@ a(t) = s''(t) = -6t ~\frac{\text{m}}{\text{s}^2}.
 Vertical acceleration of the roller coaster car during the first descent,
 modeled by $a(t) = s''(t) = -6t$ for $t \in [0, 3]$. The downward acceleration
 grows linearly from $0~\text{m/s}^2$ at the summit to $18~\text{m/s}^2$ after
-three seconds, corresponding to about $1.8\,g$. (Source: own figure; licence [CC
+three seconds, corresponding to about $1.8\,g$. (Source: own figure; license [CC
 BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
@@ -105,9 +105,10 @@ At the summit, $a(0) = 0$: in this simple model the acceleration is zero at
 the moment the track is horizontal. As the car moves down the slope, the
 magnitude of the downward acceleration increases steadily. At $t = 1~\text{s}$
 the downward acceleration is $6~\text{m/s}^2$, roughly $0.6\,g$. At
-$t = 3~\text{s}$ it reaches $18~\text{m/s}^2$, approximately $1.8\,g$:
-passengers feel pressed into their seats with a force nearly twice their own
-weight.
+$t = 3~\text{s}$ it reaches $18~\text{m/s}^2$, approximately $1.8\,g$. Since
+this downward acceleration exceeds $g$, gravity alone could not produce it:
+passengers would be lifted out of their seats and held in place only by the
+restraints.
 
 We can verify this against the velocity data. Between $t = 1~\text{s}$ and
 $t = 2~\text{s}$ the velocity changes from $-3~\text{m/s}$ to $-12~\text{m/s}$,
@@ -131,7 +132,7 @@ j(t) = s'''(t) = -6 ~\frac{\text{m}}{\text{s}^3}.
 Jerk of the roller coaster car during the first descent, modeled by $j(t) =
 s'''(t) = -6$ for $t \in [0, 3]$. The jerk is constant and negative, meaning
 that the downward acceleration increases at a uniform rate throughout the
-motion. (Source: own figure; licence [CC BY-SA
+motion. (Source: own figure; license [CC BY-SA
 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 

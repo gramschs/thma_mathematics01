@@ -48,7 +48,7 @@ convex (concave up), where the slope $h'(x)$ increases and the graph bends
 upward. The upper half $[30, 60]$ (yellow shading) is concave (concave down),
 where the slope decreases and the graph bends downward. The tangents at $x = 15$
 and $x = 45$ have the same slope but lie below the curve in the convex region
-and above the curve in the concave region. (Source: own figure; licence [CC
+and above the curve in the concave region. (Source: own figure; license [CC
 BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
@@ -120,7 +120,7 @@ $f(x) \approx f(x_0) + f'(x_0)(x - x_0)$ developed in section 5.5. On a
 convex interval the formula underestimates the true value, and on a concave
 interval it overestimates it.
 
-For the roller coaster lift hill we summarise: $h$ is convex on $[0, 30]$ and
+For the roller coaster lift hill we summarize: $h$ is convex on $[0, 30]$ and
 concave on $[30, 60]$. The transition occurs at $x = 30~\text{m}$, the point
 of steepest ascent.
 
@@ -136,13 +136,15 @@ $I$ is the second moment of area, and $M(x)$ is the bending moment at
 cross-section $x$. The sign of $y''$ at each section identifies whether the
 beam is sagging (bending downwards in the middle, convex upward, $y'' > 0$)
 or hogging (bending upwards in the middle, concave, $y'' < 0$). These two
-regimes produce tension in opposite fibres of the cross-section, and the
+regimes produce tension in opposite fibers of the cross-section, and the
 reinforcement layout in a concrete beam is designed with this distinction in
 mind.
 
-In road and railway design, the vertical alignment alternates between convex
-sections at summits and concave sections in valleys. The curvature at each
-point, directly proportional to $|h''|$, determines the minimum sight distance
+In road and railway design, the vertical alignment alternates between concave
+sections at summits (crest curves) and convex sections in valleys (sag
+curves). Note that road engineers often call crest curves "convex", which is
+the opposite of our mathematical convention. The curvature at each point,
+approximately equal to $|h''|$ for the small gradients of roads, determines the minimum sight distance
 on a crest curve and the dynamic wheel load on a vehicle passing through a sag
 curve at speed. Both quantities are checked against design standards before a
 vertical profile is approved.

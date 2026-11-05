@@ -45,7 +45,7 @@ load resistors. At $R = 0$ (short circuit) all power is dissipated inside
 the battery and none reaches the load: $P(0) = 0$. As $R$ increases, the
 power rises. But the current simultaneously decreases, and eventually the
 power must begin to fall. *There must be an optimal load resistance that
-maximises the power delivered.*
+maximizes the power delivered.*
 
 We locate this optimum by differentiating, using the quotient rule from
 chapter 6:
@@ -157,7 +157,7 @@ $x = 15~\text{cm}$, the vertex of the parabola.
 
 ## What is the global extremum on a closed interval?
 
-A local extremum is the best value in a neighbourhood of $x_0$. The engineer
+A local extremum is the best value in a neighborhood of $x_0$. The engineer
 usually needs the best value on the entire domain of interest: the **global
 maximum** or **global minimum**. On a closed interval $[a, b]$ the global
 extremum is found by comparing three types of candidate: the critical points
@@ -197,14 +197,14 @@ and $f(x_0)$ for every critical point $x_0 \in (a, b)$.
   The tangent line to P at R0, shown as a dashed green line.
   A filled dot at (R0, P(R0)) in orange.
 
-  Marker at R = 3: a vertical dashed line labelled "R = r = 3 Ω"
+  Marker at R = 3: a vertical dashed line labeled "R = r = 3 Ω"
   with the annotation "Maximum power transfer".
 
   Three info tiles below the graph:
     - "P(R₀)" showing the power in watts to 2 decimal places.
-    - "P'(R₀)" showing the derivative value, coloured blue when positive,
+    - "P'(R₀)" showing the derivative value, colored blue when positive,
       red when negative, and green when near zero.
-    - "P''(R₀)" showing the second derivative, labelled "local max" when
+    - "P''(R₀)" showing the second derivative, labeled "local max" when
       negative (near the peak).
 
   A second mini-panel shows the three candidate values in a small table:
@@ -242,7 +242,7 @@ point at $R = 3~\Omega$ is a local and global maximum with $P(3) = 12~\text{W}$.
 The marble track contributes the contrasting case: a local minimum at the
 vertex, confirmed by a positive second derivative.
 
-With extrema fully characterised, we now have all the ingredients for a
+With extrema fully characterized, we now have all the ingredients for a
 complete portrait of any differentiable function. The next section assembles
 them into a systematic procedure, called curve sketching, that produces a
 qualitatively accurate graph from the derivatives alone.

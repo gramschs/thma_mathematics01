@@ -62,7 +62,7 @@ the position as a function of time is
 x(t) = A\,e^{-\delta t}\cos(\omega_d\, t),
 \end{equation*}
 
-where $A$ is the initial displacement in metres, $\delta > 0$ is the
+where $A$ is the initial displacement in meters, $\delta > 0$ is the
 **damping exponent** in $\text{s}^{-1}$, and $\omega_d$ is the **damped
 natural frequency** in $\text{rad/s}$. At $t = 0$ we have $x(0) = A$,
 confirming that the mass starts at the prescribed displacement. As $t$
@@ -98,7 +98,7 @@ name: chap06_damped_oscillation
 ---
 Graph of the damped oscillation $x(t) = 0.10\,e^{-0.5\,t}\cos(3t)$ in blue with the
 exponential envelope $\pm 0.10\,e^{-0.5\,t}$ shown as dashed curves in red.
-(Source: own figure; licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+(Source: own figure; license [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
 *How fast is the mass moving, and in which direction?* The velocity $v(t) = x'(t)$
@@ -111,7 +111,7 @@ functions. Neither the marble track nor any polynomial from sections 6.1 and
 We apply the limit definition directly to the product $f(x)\cdot g(x)$. The
 standard approach is to add and subtract a bridge term $f(x)\,g(x+h)$ in the
 numerator, which allows the difference quotient to be split into two
-recognisable pieces:
+recognizable pieces:
 
 \begin{align*}
 \bigl(f \cdot g\bigr)'(x)
@@ -148,10 +148,8 @@ second, plus the first times the derivative of the second. The two terms
 capture the independent contribution of each factor to the overall rate of
 change.
 
-Notice that the rule is not symmetric: $(f \cdot g)' \neq f' \cdot g'$.
-The product of the derivatives is not the derivative of the product, just as
-the composition of two functions is not the composition of their derivatives,
-as we discussed in section 3.6.
+Note that the derivative of a product is not the product of the derivatives:
+$(f \cdot g)' \neq f' \cdot g'$.
 
 ## What is the velocity of the damped oscillator?
 
@@ -196,7 +194,7 @@ Left: displacement $x(t) = 0.10\,e^{-0.5\,t}\cos(3t)$. Right: velocity
 $v(t) = -0.10\,e^{-0.5\,t}(0.5\cos(3t)+3\sin(3t))$, obtained by the product
 rule. Both start from their verified values at $t = 0$ and decay to zero as the
 damper dissipates energy.
-(Source: own figure; licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+(Source: own figure; license [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
 We verify the result at $t = 0$ with the concrete values
@@ -208,11 +206,14 @@ v(0) = -0.10\,e^{0}\bigl(0.5 \cdot \cos(0) + 3 \cdot \sin(0)\bigr)
      = -0.05~\frac{\text{m}}{\text{s}}.
 \end{equation*}
 
-At the moment of release the mass is moving at $0.05~\text{m/s}$ back toward
-equilibrium. The negative sign confirms the direction: the mass starts at
-positive displacement $x(0) = 0.10~\text{m}$ and the restoring force is
-already pulling it inward, so the initial velocity is indeed directed toward
-the origin.
+At $t = 0$ the mass is already moving at $0.05~\text{m/s}$ toward
+equilibrium. The negative sign confirms the direction: the mass starts at the
+positive displacement $x(0) = 0.10~\text{m}$ and moves inward, toward the
+origin. Our model therefore describes a mass that receives a small initial
+push toward equilibrium. A mass released from rest has $v(0) = 0$; its motion
+is described by $x(t) = A\,e^{-\delta t}\bigl(\cos(\omega_d\,t) +
+\tfrac{\delta}{\omega_d}\sin(\omega_d\,t)\bigr)$, which differs from our model
+only by a small additional sine term.
 
 ## What is the quotient rule?
 
@@ -243,8 +244,8 @@ For two differentiable functions $f$ and $g$ with $g(x) \neq 0$:
 ```
 
 The order of terms in the numerator matters: it is always $f'g$ minus $f g'$,
-never the other way around. A sign error here produces a result that is wrong
-by a sign and a factor of two, so it is worth double-checking by substituting
+never the other way around. Swapping the two terms produces a result with the
+wrong sign, so it is worth double-checking by substituting
 a simple example.
 
 ## Can we verify the derivative of the tangent?
@@ -278,7 +279,7 @@ name: quotient_rule_tan
 Left: $\tan x = \sin x / \cos x$. Right: its derivative $(\tan x)' = 1/\cos^2 x$,
 which is always greater than or equal to $1$ and diverges at the same asymptotes
 as $\tan x$.
-(Source: own figure; licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+(Source: own figure; license [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
 ```{dropdown} Video "Derivatives of tan(x) and cot(x)" by Khan Academy

@@ -25,7 +25,7 @@ needed to work with quadratic functions confidently.
 * [ ] You can determine whether a parabola opens upwards or downwards from
   the sign of the leading coefficient $a$.
 * [ ] You can compute the zeros of a quadratic function using the
-  **pq-formula** or the **abc-formula**.
+  **pq-formula** or the **quadratic formula**.
 * [ ] You know the **discriminant** and can use it to determine the number of
   real zeros.
 * [ ] You can sketch a parabola from its key features.
@@ -43,7 +43,7 @@ before, the height function of such a rail might look like this:
 h(x) = 0.01x^2 - 0.5x + 6.
 \end{equation*}
 
-Here $h$ is measured in centimetres and $x$ runs from $0$ to $50~\text{cm}$.
+Here $h$ is measured in centimeters and $x$ runs from $0$ to $50~\text{cm}$.
 At $x = 0$ we have $h(0) = 6~\text{cm}$, the starting height. The rail dips
 down, reaches its lowest point, and then climbs back up. The graph of this
 function is a **parabola** opening upward, since the coefficient of $x^2$ is
@@ -56,7 +56,7 @@ name: fig03_marble_track_parabola
 ---
 A marble track with a parabolic rail profile. The lowest point of the rail is
 the vertex of the parabola.
-(Source: own figure; licence [CC BY-SA
+(Source: own figure; license [CC BY-SA
 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
@@ -203,7 +203,7 @@ x_{1,2} = \frac{0.5 \pm \sqrt{0.01}}{2 \cdot 0.01} = \frac{0.5 \pm 0.1}{0.02},
 
 which gives $x_1 = 30~\text{cm}$ and $x_2 = 20~\text{cm}$. The rail crosses
 the table surface at two positions, consistent with the vertex being just below
-the surface at $y_S = -0.25~\text{cm}$.
+the surface at $y_V = -0.25~\text{cm}$.
 
 ## Sketching a parabola
 
@@ -230,7 +230,7 @@ width: 75%
 name: fig03_parabola_sketch
 ---
 Key features of a parabola: opening direction, vertex, zeros, and $y$-intercept.
-(Source: own figure; licence [CC BY-SA
+(Source: own figure; license [CC BY-SA
 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 

@@ -5,7 +5,7 @@ authors:
 
 # 3.1 What is a Function?
 
-The height of a ball rolling along a marble track -- how can we describe this
+The height of a ball rolling along a marble track: how can we describe this
 mathematically? This seemingly simple question leads us directly to one of the
 most important concepts in mathematics: the concept of a function. In this
 section we develop the necessary mathematical tools using a marble track as our
@@ -17,7 +17,7 @@ guiding example.
 :class: attention
 * [ ] You know how a **function** is defined in mathematics.
 * [ ] You can determine the **domain** and the **codomain** of a function.
-* [ ] You can determine the **image** of a function.
+* [ ] You can determine the **range** of a function.
 * [ ] You are familiar with the three representations of a function:
   **table of values**, **function formula**, and **function graph**.
 ```
@@ -35,7 +35,7 @@ width: 75%
 name: marble_track_straight
 ---
 A straight inclined marble track.
-(Source: own figure; licence [CC BY-SA
+(Source: own figure; license [CC BY-SA
 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
@@ -43,7 +43,7 @@ To describe the height mathematically, we need a coordinate system. We choose
 the straight line through the starting block and the finishing block as the
 first axis. This line lies on the table surface. As the second axis we choose
 the height above the table surface, pointing vertically upward. We are free to
-place the origin wherever we like -- we choose the position of the starting
+place the origin wherever we like, and we choose the position of the starting
 block on the table surface as the origin $O$.
 
 With this coordinate system we can describe the position of the ball precisely.
@@ -106,7 +106,7 @@ mathematically in a compact and exact form:
 h(x) = -\frac{1}{4} x + 6.
 \end{equation*}
 
-Here $h(x)$ gives the height at position $x$, measured in centimetres. We now
+Here $h(x)$ gives the height at position $x$, measured in centimeters. We now
 have an exact formula that allows us to calculate the height at any position.
 This representation is called the **function formula**. It is precise, compact,
 and ideal for further calculations.
@@ -122,13 +122,13 @@ width: 75%
 name: function_marble_track
 ---
 Graph of the height function of the ball on the marble track.
-(Source: own figure; licence [CC BY-SA
+(Source: own figure; license [CC BY-SA
 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
-The graph makes the behaviour of the function immediately visible and is
+The graph makes the behavior of the function immediately visible and is
 particularly useful for building intuition. All three representations describe
-the same function — just in different ways.
+the same function, just in different ways.
 
 ```{dropdown} Video "What is a function?" by MatheMagician
 <iframe width="1020" height="574" src="https://www.youtube.com/embed/FM4jsBGZKi4?list=PLJMXXdEk8kMD27qyxFL_d7Slkk0NpBAlh" title="What is a function?" frameborder="0" 
@@ -167,42 +167,42 @@ block ($x < 0~\text{cm}$) and to the right of the finishing block
 ($x > 24~\text{cm}$) are not relevant. We therefore consider only the interval:
 
 \begin{equation*}
-X = [0, 24] \quad \text{measured in cm.}
+D = [0, 24] \quad \text{measured in cm.}
 \end{equation*}
 
 The set of all valid input values is called the **domain** of the function.
 
 For the height values we use real numbers. So the possible output of the
-function is the so-called **codomain** $Y = \mathbb{R}$. But we notice that the
+function is the so-called **codomain** $W = \mathbb{R}$. But we notice that the
 ball starts at $6~\text{cm}$ and ends at $0~\text{cm}$. So the height function
 takes values in the interval
 
 \begin{equation*}
-f(X) = [0, 6] \quad \text{measured in cm},
+h(D) = [0, 6] \quad \text{measured in cm},
 \end{equation*}
 
-which is called the **range** of the function $f$.
+which is called the **range** of the function $h$.
 
 ```{admonition} What is ... the domain, codomain, and range?
 :class: note
-**Domain $X$:** The set of all valid input values ($x$-values) for which the
+**Domain $D$:** The set of all valid input values ($x$-values) for which the
 function is defined.
 
-**Codomain $Y$:** The set into which the function maps. It contains all
-possible output values, but not every value in $Y$ must actually be reached.
+**Codomain $W$:** The set into which the function maps. It contains all
+possible output values, but not every value in $W$ must actually be reached.
 
-**Range $f(X)$:** The set of all output values that the function
-actually takes. For our marble track, we have $f(X) = [0, 6]$.
+**Range $f(D)$:** The set of all output values that the function
+actually takes. For our marble track, we have $h(D) = [0, 6]$.
 ```
 
 The domain defines the **validity range** of the function. Outside the domain
 our formula $h(x) = -\frac{1}{4}x + 6$ produces a number, but it has no
-physical meaning — at $x = -10~\text{cm}$ the formula would give a height of
+physical meaning: at $x = -10~\text{cm}$ the formula would give a height of
 $8.5~\text{cm}$, but there is no rail there. Extrapolation, that is, applying
 a formula outside its domain, is a common source of errors in engineering: a
 formula is only valid within its domain.
 
-The image tells us which heights the ball can actually reach on our track. This
+The range tells us which heights the ball can actually reach on our track. This
 matters in practice: where does the catch container need to be placed? Could we
 extend the range of heights by redesigning the track?
 
@@ -222,7 +222,7 @@ title="Domain, Codomain, and Range (Correction)" frameborder="0" allow="accelero
 Using a simple marble track we have developed the foundations of functions: a
 function is a unique assignment between an input value and an output value,
 which we can represent as a table of values, a function formula, or a function
-graph. The domain and image define the validity range and the set of reachable
+graph. The domain and range define the validity range and the set of reachable
 values of our mathematical description. Our straight inclined rail is only the
 beginning. In the next section we extend the marble track system to discover
 important properties that functions can have.

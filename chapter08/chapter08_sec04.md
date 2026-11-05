@@ -176,7 +176,7 @@ T_n(x) = x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} + \cdots +
 \end{equation*}
 
 Unlike the exponential and trigonometric polynomials, this series converges
-only for $|x| \leq 1$, and the approximation is accurate only near $x = 0$.
+only for $-1 < x \leq 1$, and the approximation is accurate only near $x = 0$.
 
 <!--
   SVELTE APP: "Taylor polynomial explorer"
@@ -238,13 +238,14 @@ limit of this sequence, if it converges, is the **Taylor series**:
 For the exponential function $e^x$, the sine, and the cosine, this series
 converges to the function itself for every real $x$. These functions are
 called **entire**, meaning they are perfectly captured by their Taylor series
-at any centre $x_0$ and on the whole real line.
+at any center $x_0$ and on the whole real line.
 
 For $\ln(1+x)$ the situation is different: the series converges only for
-$|x| \leq 1$ (with the boundary case $x = 1$ also converging). At $x = 2$,
-for instance, the partial sums do not approach $\ln 3$. The interval on
-which the series converges is called the **radius of convergence**, and
-different functions have different radii.
+$-1 < x \leq 1$. At the boundary point $x = 1$ it still converges, while at
+$x = -1$ it diverges. At $x = 2$, for instance, the partial sums do not
+approach $\ln 3$. The interval on which the series converges is called the
+**interval of convergence**, and half its width is the **radius of
+convergence**, here equal to $1$. Different functions have different radii.
 
 Not every function equals its Taylor series even within the radius of
 convergence. A famous counterexample is $f(x) = e^{-1/x^2}$ (extended
@@ -260,12 +261,12 @@ Taylor polynomials appear wherever a nonlinear function must be handled by
 linear or polynomial methods.
 
 In dynamics and control engineering, the nonlinear equation of motion of a
-system is **linearised** about a steady operating point $x_0$ by replacing
+system is **linearized** about a steady operating point $x_0$ by replacing
 $f(x)$ with $T_1(x) = f(x_0) + f'(x_0)(x - x_0)$. The resulting linear
-system can be analysed with the full toolkit of linear control theory. We
+system can be analyzed with the full toolkit of linear control theory. We
 used exactly this idea in section 5.5 when we discussed the tangent line as
 a linear approximation, but now we can quantify the error and decide how
-close to $x_0$ the linearisation remains valid.
+close to $x_0$ the linearization remains valid.
 
 In numerical analysis, the Taylor expansion of a function at the grid points
 of a computational mesh is the foundation of finite-difference methods for
@@ -297,16 +298,16 @@ higher-order derivatives of chapter 7. The Taylor series extends the
 polynomial to an infinite sum and, for entire functions such as $e^x$,
 $\sin(x)$, and $\cos(x)$, converges to the function everywhere.
 
-This chapter has developed the full apparatus of differential calculus in one
-variable. Starting from the derivative as the instantaneous rate of change,
+Chapters 5 through 8 have developed the full apparatus of differential
+calculus in one variable. Starting from the derivative as the instantaneous rate of change,
 we moved through differentiation rules, higher-order derivatives, and the
 geometric interpretation of the second derivative, reaching in this final
 section an approximation theory that unifies all of those ideas. The local
 extrema of section 8.1, the curve sketching of section 8.2, the constrained
-optimisation of section 8.3, and the Taylor polynomial of this section are
+optimization of section 8.3, and the Taylor polynomial of this section are
 four facets of the same underlying insight: a differentiable function is
-completely characterised, near any given point, by the sequence of values
-$f(x_0),\, f'(x_0),\, f''(x_0), \ldots$ The next chapter opens the second
+completely characterized, near any given point, by the sequence of values
+$f(x_0),\, f'(x_0),\, f''(x_0), \ldots$. The next chapter opens the second
 major branch of the calculus, integration, which asks not how a function
 changes but how its values accumulate, and which will turn out to be
 connected to differentiation in the deepest possible way.

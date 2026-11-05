@@ -86,7 +86,7 @@ convex (concave up), the upper half $[30, 60]$ (yellow shading) is concave
 (concave down). At $x = 30~\text{m}$ the second derivative $h''(x)$ changes
 sign, the graph passes through an inflection point $(30, 20)$, and the tangent
 $y = x - 10$ crosses from lying below the curve to lying above it. (Source: own
-figure; licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+figure; license [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
 ## Is $h''(x_0) = 0$ enough on its own?
@@ -122,7 +122,7 @@ convex everywhere and $x = 0$ is a minimum, not an inflection point. Right:
 $f(x) = x^3$ with $f''(0) = 0$ and $f''(x) < 0$ for $x < 0$, $f''(x) > 0$ for $x>
 0$, so the graph changes from concave to convex and $x = 0$ is a true
 inflection point where the tangent crosses the curve. (Source: own figure;
-licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+license [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
 ## What does the inflection point look like on the graph?
@@ -194,6 +194,6 @@ For the roller coaster height profile $h(x)$, the unique inflection at
 $x = 30~\text{m}$ marks the transition from the bowl-shaped lower half of the
 lift hill (convex) to the dome-shaped upper half (concave), at mid-height and
 at the point of maximum gradient. In the next chapter we will use the same
-idea—linking the sign of $f''$ to the local shape of the graph—to classify
+idea, linking the sign of $f''$ to the local shape of the graph, to classify
 stationary points $f'(x_0) = 0$ as local minima, local maxima, or neither via
 the **second derivative test**.

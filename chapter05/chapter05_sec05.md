@@ -12,7 +12,7 @@ that this tangent exists precisely at the points where $f$ is differentiable.
 We now put these two facts together and write down the equation of the tangent
 line explicitly. The resulting formula is more than a geometric description of
 a straight line: it is the simplest possible approximation of a curved function
-in the neighbourhood of a point, and it underpins a wide range of engineering
+in the neighborhood of a point, and it underpins a wide range of engineering
 calculations.
 
 ```{admonition} Learning goals
@@ -23,7 +23,7 @@ calculations.
   t(x) = f(x_0) + f'(x_0)\,(x - x_0).
   \end{equation*}
 * [ ] You understand the tangent line as a **linear approximation** of the
-  function in a neighbourhood of $x_0$.
+  function in a neighborhood of $x_0$.
 * [ ] You can compute the tangent line for a given function and a given point,
   and interpret its slope and intercept in the context of the application.
 ```
@@ -60,7 +60,7 @@ confirming the slope.
 Note the connection to the straight rail of section 3.1. The height function
 of that rail was $f(x) = -\tfrac{1}{4}\,x + 6$, a linear function with slope
 $-\tfrac{1}{4}$ everywhere. The tangent line to a straight rail at any point
-is the rail itself — a linear function is its own tangent, and its derivative
+is the rail itself: a linear function is its own tangent, and its derivative
 is the constant slope.
 
 ## How do we find the tangent line at a given point on the track?
@@ -136,7 +136,7 @@ linear at every scale small enough. The approximation
 f(x_0 + \Delta x) \approx f(x_0) + f'(x_0)\,\Delta x
 \end{equation*}
 
-is called the **linear approximation** or **linearisation** of $f$ at $x_0$.
+is called the **linear approximation** or **linearization** of $f$ at $x_0$.
 
 <!--
   SVELTE APP: "Tangent line and linear approximation"
@@ -148,12 +148,12 @@ is called the **linear approximation** or **linearisation** of $f$ at $x_0$.
     - A slider for x0 across [0, 30], default 5.
     - A second slider for a query point x1, shown as a second dot
       (red) at (x1, f(x1)), with a dashed vertical line connecting
-      (x1, f(x1)) to (x1, t(x1)) and labelled "error".
+      (x1, f(x1)) to (x1, t(x1)) and labeled "error".
 
   ZOOM INSET (bottom-right corner of the main view):
     - A magnified view of the region [x0 - w, x0 + w] in both x and f,
       where w = 2 by default.
-    - A slider labelled "zoom" reduces w from 2 down to 0.05.
+    - A slider labeled "zoom" reduces w from 2 down to 0.05.
     - As w decreases, the parabola segment inside the window straightens
       and becomes visually indistinguishable from the tangent line,
       illustrating the "locally linear" character of differentiable functions.
@@ -192,10 +192,10 @@ on the final dimension.
 
 In control engineering, the dynamics of a system are often described by
 nonlinear differential equations. Near a steady operating point $x_0$, the
-nonlinear term $f(x)$ is replaced by its linearisation $f(x_0) + f'(x_0)(x - x_0)$.
-This produces a linear system that can be analysed with the full toolkit of
+nonlinear term $f(x)$ is replaced by its linearization $f(x_0) + f'(x_0)(x - x_0)$.
+This produces a linear system that can be analyzed with the full toolkit of
 linear control theory. The quality of the control design depends on how well
-the linearisation captures the true nonlinear behaviour, which in turn depends
+the linearization captures the true nonlinear behavior, which in turn depends
 on how far the system strays from $x_0$ during operation.
 
 Both applications rest on the same mathematical fact: for small deviations
@@ -203,7 +203,7 @@ from a reference point, the error of the linear approximation is quadratic in
 the deviation, and can therefore be made arbitrarily small by staying close to
 the reference point. In a later chapter we will develop more accurate
 polynomial approximations that reduce the error further by adding quadratic
-and higher-order terms. These are the Taylor polynomials, and they generalise
+and higher-order terms. These are the Taylor polynomials, and they generalize
 the tangent line formula in a natural direction.
 
 ## Additional Material
@@ -234,7 +234,7 @@ function, a new function that encodes the slope of the original curve
 everywhere. The concept of differentiability identified the points where this
 construction succeeds: exactly those where the curve has a unique, finite
 tangent direction and no jump, corner, cusp, or vertical tangent is present.
-The tangent line, the centrepiece of this final section, gives the limiting
+The tangent line, the centerpiece of this final section, gives the limiting
 secant a concrete equation and simultaneously the best linear approximation of
 the function near the chosen point.
 

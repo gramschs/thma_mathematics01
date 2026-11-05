@@ -34,8 +34,8 @@ B = \{\text{Monday}, \text{Wednesday}, \text{Friday}, \text{Sunday}\}.
 If they both want to train together, they can meet on the days
 
 \begin{equation*}
-A \cap B = \{\text{Monday}, \text{Sunday}\}
-\end{equation*}.
+A \cap B = \{\text{Monday}, \text{Sunday}\}.
+\end{equation*}
 
 We call this set the **intersection**. The intersection is created by going
 through the days in Anna's set and checking whether that day is also in Bob's
@@ -67,14 +67,14 @@ empty, i.e., $A\cap B = \emptyset$ or $A\cap B=\{\}$.
 
 ## Union
 
-A third friend joins them, Charlie also likes to work out at the gym. She
+A third friend joins them: Charlie also likes to work out at the gym. She
 doesn't want to work out alone, but it doesn't matter to her whether she works
 out with Anna or Bob. The set of possible days on which she wouldn't have to go
 to the gym alone is therefore
 
 \begin{equation*}
 A\cup B=\{\text{Monday}, \text{Wednesday}, \text{Thursday}, \text{Friday},
-\text{Saturday}, \text{Sunday}.\}
+\text{Saturday}, \text{Sunday}\}.
 \end{equation*}
 
 ```{figure} pics/fig01_union_EN.svg
@@ -124,8 +124,8 @@ A\setminus B=\{\text{Thursday}, \text{Saturday}\}.
 In general, the difference set is defined as
 
 \begin{equation*}
-A\setminus B = \{x \,|\, x\in A \land x\notin B \}
-\end{equation*}.
+A\setminus B = \{x \,|\, x\in A \land x\notin B \}.
+\end{equation*}
 
 In words, the difference set of $A$ and $B$ is the set of all $x$ such that $x$
 is in the set $A$ *and* at the same time $x$ is not in the set $B$.

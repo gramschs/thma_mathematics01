@@ -139,7 +139,7 @@ $x > 0$.
 ## Calculation rules for logarithms
 
 The calculation rules for logarithms correspond directly to the calculation
-rules for exponentials from the previous section. Each logarithm rule can be
+rules for exponentials from section 4.1. Each logarithm rule can be
 derived from the corresponding exponential rule by applying $\ln$ to both sides
 and using the identity $\ln(e^x) = x$.
 

@@ -15,7 +15,7 @@ week of the course.
 :class: attention
 * [ ] You know the **substitution rule** for indefinite integrals as the
   integration counterpart of the chain rule from Section 6.4.
-* [ ] You can identify a suitable substitution $u = g(x)$ by recognising a
+* [ ] You can identify a suitable substitution $u = g(x)$ by recognizing a
   composite structure in the integrand.
 * [ ] You can carry out a substitution completely: rewriting the integrand,
   transforming the differential $dx$, evaluating the resulting integral in

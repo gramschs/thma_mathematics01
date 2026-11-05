@@ -26,14 +26,14 @@ calculated as $\sqrt{297^2 + 210^2}$ mm and is therefore a real number.
   * **rational numbers** $\mathbb{Q}$,
   * **real numbers** $\mathbb{R}$.
 * [ ] You know the embedding of numbers
-  $\mathbb{N}\subset\mathbb{Z}\subset\mathbb{Q}\subset\mathbb{R}$.
+  $\mathbb{N}\subsetneq\mathbb{Z}\subsetneq\mathbb{Q}\subsetneq\mathbb{R}$.
 ```
 
 ## Natural numbers
 
 The **natural numbers** are the numbers we learn to count with as children. We
 have a brother, we are two years old, and with our parents, the family consists
-of three people. The numbers have their own symbols and are written as
+of four people. The numbers have their own symbols and are written as
 
 \begin{equation*}
 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, \dots
@@ -100,7 +100,7 @@ rational numbers with the symbol $\mathbb{Q}$.
 There are two ways of writing rational numbers:
 
 1. as a fraction (examples $\frac{3}{8}$ or $\frac{2}{3}$) or
-2. as a floating point number (examples $0.375$ or $0.\bar{6}$).
+2. as a decimal number (examples $0.375$ or $0.\bar{6}$).
 
 ```{figure} pics/fig01_line_number_Q.svg
 ---
@@ -117,7 +117,7 @@ examples in blue (source: own representation; license [CC BY-NC-SA
 
 Which equation cannot be solved using rational numbers? We cannot find a
 rational number as the solution for the equation $x^2 = 2$. The number $1.41421$
-comes quite close to the result, since $1.41421^2 = 1.99998992$, but it is not
+comes quite close to the result, since $1.41421^2 = 1.9999899241$, but it is not
 an exact solution, only an approximation of the exact solution. We could add
 more and more decimal places
 
@@ -167,7 +167,7 @@ width: 100%
 name: fig01_number_embedding_EN
 ---
 Embedding the numbers
-$\mathbb{N}\subset\mathbb{Z}\subset\mathbb{Q}\subset\mathbb{R}$ (Source: own
+$\mathbb{N}\subsetneq\mathbb{Z}\subsetneq\mathbb{Q}\subsetneq\mathbb{R}$ (Source: own
 representation; license [CC BY-NC-SA
 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/))
 ```

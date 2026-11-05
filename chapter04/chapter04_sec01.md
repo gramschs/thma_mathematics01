@@ -88,9 +88,8 @@ RC circuit. Both are exponential functions of time.
 ```
 
 These curves appear throughout engineering: the temperature of a cooling
-component, the amplitude of a damped oscillation, the concentration of a
-substance undergoing radioactive decay, and the speed of a vehicle braking
-against air resistance all follow the same exponential pattern. Understanding
+component, the amplitude of a damped oscillation, and the concentration of a
+substance undergoing radioactive decay all follow the same exponential pattern. Understanding
 the exponential function is therefore not optional for an engineer.
 
 ```{dropdown} Video "Introduction to Exponential Functions" by Nerdstudy
@@ -134,9 +133,10 @@ function passes through the point $(0, 1)$.
 **Monotonicity.** If $a > 1$, the function is strictly monotonically
 increasing: larger exponents give larger values. If $0 < a < 1$, the function
 is strictly monotonically decreasing: larger exponents give smaller values. The
-charging curve uses $a = e > 1$ (increasing), while the discharging curve uses
-the same base but with a negative exponent, which is equivalent to using a base
-less than 1 (decreasing).
+natural exponential function $e^x$ has the base $a = e > 1$ (increasing). The
+expression $e^{-t/\tau}$ in the charging and discharging curves can be written
+as $\left(e^{-1/\tau}\right)^t$, that is, as an exponential function with a
+base less than 1 (decreasing).
 
 **Boundedness.** For $a > 1$ the function is bounded below by 0 but unbounded
 above: as $x \to +\infty$ the function grows without bound. For $0 < a < 1$

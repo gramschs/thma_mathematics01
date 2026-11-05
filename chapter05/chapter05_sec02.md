@@ -30,11 +30,11 @@ to zero and examine what the difference quotient approaches in that process.
 ## What happens as the step size approaches zero?
 
 At the end of section 5.1 we observed that the secant line through
-$P_1 = (5,\, f(5))$ and $P_2 = (5 + \Delta x,\, f(5 + \Delta x))$ rotates as
-$\Delta x$ decreases. The table below continues that observation with even
+$P_1 = (5,\, f(5))$ and $P_2 = (5 + h,\, f(5 + h))$ rotates as
+$h$ decreases. The table below continues that observation with even
 smaller step sizes.
 
-| Step size $\Delta x$ [cm] | Difference quotient |
+| Step size $h$ [cm] | Difference quotient |
 | ------------------------- | ------------------- |
 | 2.0 | $-0.36$ |
 | 1.0 | $-0.38$ |
@@ -44,12 +44,12 @@ smaller step sizes.
 | 0.001 | $-0.39998$ |
 
 The values are clearly settling toward $-0.4$. They never reach it for any
-finite $\Delta x$, but they get arbitrarily close. In mathematics we express
+finite $h$, but they get arbitrarily close. In mathematics we express
 this by saying that the difference quotient has a **limit** of $-0.4$ as
-$\Delta x$ approaches zero, and we write
+$h$ approaches zero, and we write
 
 \begin{equation*}
-\lim_{\Delta x \to 0} \frac{f(5 + \Delta x) - f(5)}{\Delta x} = -0.4.
+\lim_{h \to 0} \frac{f(5 + h) - f(5)}{h} = -0.4.
 \end{equation*}
 
 This limiting value is the instantaneous steepness of the rail at
@@ -86,44 +86,43 @@ interchangeably.
 
 ## How do we compute the differential quotient for the marble track?
 
-We now verify the limiting value $-0.4$ algebraically, using the same
-technique that the German algebraist Carl Friedrich Gauss might have called
-"expanding and cancelling." This method works for any polynomial and
+We now verify the limiting value $-0.4$ algebraically, using a technique we
+might call "expanding and canceling." This method works for any polynomial and
 produces the exact limit without any guesswork.
 
 Our height function is $f(x) = 0.02\,x^2 - 0.6\,x + 6$. We want to compute
 $f'(5)$. We start from the difference quotient and expand the numerator by
-substituting $x_0 + \Delta x = 5 + \Delta x$ into the function:
+substituting $x_0 + h = 5 + h$ into the function:
 
 \begin{align*}
-f(5 + \Delta x)
-&= 0.02\,(5 + \Delta x)^2 - 0.6\,(5 + \Delta x) + 6 \\
-&= 0.02\,(25 + 10\,\Delta x + (\Delta x)^2) - 3 - 0.6\,\Delta x + 6 \\
-&= 0.5 + 0.2\,\Delta x + 0.02\,(\Delta x)^2 - 3 - 0.6\,\Delta x + 6 \\
-&= 3.5 - 0.4\,\Delta x + 0.02\,(\Delta x)^2.
+f(5 + h)
+&= 0.02\,(5 + h)^2 - 0.6\,(5 + h) + 6 \\
+&= 0.02\,(25 + 10\,h + h^2) - 3 - 0.6\,h + 6 \\
+&= 0.5 + 0.2\,h + 0.02\,h^2 - 3 - 0.6\,h + 6 \\
+&= 3.5 - 0.4\,h + 0.02\,h^2.
 \end{align*}
 
-Subtracting $f(5) = 3.5$ and dividing by $\Delta x$:
+Subtracting $f(5) = 3.5$ and dividing by $h$:
 
 \begin{align*}
-\frac{f(5 + \Delta x) - f(5)}{\Delta x}
-&= \frac{3.5 - 0.4\,\Delta x + 0.02\,(\Delta x)^2 - 3.5}{\Delta x} \\
-&= \frac{-0.4\,\Delta x + 0.02\,(\Delta x)^2}{\Delta x} \\
-&= \frac{\Delta x\,(-0.4 + 0.02\,\Delta x)}{\Delta x} \\
-&= -0.4 + 0.02\,\Delta x.
+\frac{f(5 + h) - f(5)}{h}
+&= \frac{3.5 - 0.4\,h + 0.02\,h^2 - 3.5}{h} \\
+&= \frac{-0.4\,h + 0.02\,h^2}{h} \\
+&= \frac{h\,(-0.4 + 0.02\,h)}{h} \\
+&= -0.4 + 0.02\,h.
 \end{align*}
 
-We factored $\Delta x$ out of the numerator and cancelled it with the
-$\Delta x$ in the denominator. The result is a simple linear expression with
-no division by zero. Letting $\Delta x \to 0$ gives
+We factored $h$ out of the numerator and canceled it with the
+$h$ in the denominator. The result is a simple linear expression with
+no division by zero. Letting $h \to 0$ gives
 
 \begin{equation*}
-f'(5) = \lim_{\Delta x \to 0} (-0.4 + 0.02\,\Delta x) = -0.4.
+f'(5) = \lim_{h \to 0} (-0.4 + 0.02\,h) = -0.4.
 \end{equation*}
 
 This confirms the numerical observation from the table. At $x_0 = 5~\text{cm}$
 the rail is descending at an instantaneous rate of $0.4~\text{cm}$ of height
-per centimetre of horizontal travel, and the negative sign tells us it is
+per centimeter of horizontal travel, and the negative sign tells us it is
 indeed descending rather than rising.
 
 As a consistency check we can anticipate what the same calculation would give
@@ -135,7 +134,7 @@ this expectation.
 
 ## What does the differential quotient look like on the graph?
 
-In section 5.1 we saw the secant line rotating as $\Delta x$ decreased.
+In section 5.1 we saw the secant line rotating as $h$ decreased.
 The differential quotient is the slope that the secant approaches in the
 limit. The line with exactly that slope, passing through the point
 $P_1 = (5,\, f(5)) = (5,\, 3.5)$, is called the **tangent line** to the
@@ -165,7 +164,7 @@ know that the differential quotient $f'(x_0)$ is its slope.
     Columns: Δx | f(x0 + Δx) | Δf | difference quotient Δf/Δx
     All values computed from f(x) = 0.02x² - 0.6x + 6.
     A slider lets the student choose x0 in [0, 28], default 5.
-    The bottom row of the table is highlighted and labelled
+    The bottom row of the table is highlighted and labeled
     "approaches f'(x0) = ..." with the analytical value 0.04·x0 - 0.6.
 
   RIGHT PANEL: graph
@@ -209,7 +208,7 @@ We have defined the differential quotient as the limit of the difference
 quotient as the step size approaches zero. For the parabolic marble track at
 $x_0 = 5~\text{cm}$, this limit is $-0.4$, a result we confirmed both
 numerically from a convergence table and algebraically by expanding and
-cancelling. Geometrically, the differential quotient is the slope of the
+canceling. Geometrically, the differential quotient is the slope of the
 tangent line to the curve at the chosen point. In the computation above we
 fixed $x_0 = 5$ and obtained a single number. But the same algebraic steps
 work for any $x_0$, and the result would be a formula in $x_0$ rather than

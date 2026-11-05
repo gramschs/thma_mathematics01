@@ -81,11 +81,11 @@ intersects the graph of the function at most once. This is called the
 
 ```{admonition} What is ... an invertible function?
 :class: note
-A function $f: X \to Y$ is called **invertible** over its domain $X$ if for
-every value $y$ in the image $f(X)$ there exists exactly one $x \in X$ with
+A function $f: D \to W$ is called **invertible** over its domain $D$ if for
+every value $y$ in the range $f(D)$ there exists exactly one $x \in D$ with
 $f(x) = y$.
 
-The **inverse function** $f^{-1}: f(X) \to X$ is then defined by
+The **inverse function** $f^{-1}: f(D) \to D$ is then defined by
 
 \begin{equation*}
 f^{-1}(y) = x \quad \text{if and only if} \quad f(x) = y.
@@ -154,7 +154,7 @@ monotonically increasing and therefore invertible:
 This example illustrates an important point: when a function is not invertible
 over its full domain, we can often make it invertible by restricting the domain
 to an interval on which it is strictly monotonic. We will use exactly this idea
-when we define the inverse functions of sine and cosine in section 4.
+in section 6.5 when we define the inverse functions of sine and cosine.
 
 ```{dropdown} Video "How To Find The Inverse of a Function" by The Organic Chemistry tutor
 <iframe width="1020" height="574" src="https://www.youtube.com/embed/2zeYEx4eTdc"
@@ -182,7 +182,7 @@ mirror images of each other about the line $y = x$ (dashed).
 ```
 
 This reflection also explains what happens to the domain and range. If
-$f: X \to Y$ has image $f(X)$, then $f^{-1}$ maps $f(X)$ back to $X$. The
+$f: D \to W$ has range $f(D)$, then $f^{-1}$ maps $f(D)$ back to $D$. The
 domain and range are swapped. For our linear example, $f(x) = 3x - 5$ maps
 $\mathbb{R}$ to $\mathbb{R}$, and so does $f^{-1}$. For the restricted squaring
 function, $f: [0, \infty) \to [0, \infty)$ and $f^{-1} = \sqrt{x}$ also maps

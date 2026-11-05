@@ -8,7 +8,7 @@ authors:
 In the previous section we described the height of a ball on a straight
 inclined rail as a function. Now we extend the marble track system by building
 different track configurations. Each new track will reveal a property that
-helps us understand and classify the behaviour of mathematical functions.
+helps us understand and classify the behavior of mathematical functions.
 
 ## Learning goals
 
@@ -24,7 +24,7 @@ helps us understand and classify the behaviour of mathematical functions.
   function.
 ```
 
-## Zeros — where does the ball reach the ground?
+## Zeros: where does the ball reach the ground?
 
 Our straight inclined rail starts at a height of $6~\text{cm}$ and descends
 steadily. At some point the ball reaches the table surface, that is, the height
@@ -52,14 +52,14 @@ touches the horizontal axis.
 
 A function can have no zeros, exactly one zero, or several zeros, depending on
 its shape. Whether zeros exist, and how many, is one of the first questions we
-ask when analysing a function in an engineering context, for example, when
+ask when analyzing a function in an engineering context, for example, when
 asking where a signal crosses a threshold or where a force becomes zero.
 
-## Monotonicity — does the track rise or fall?
+## Monotonicity: does the track rise or fall?
 
 Let us look more carefully at our straight inclined rail. The ball rolls from
 left to right and its height decreases continuously. The further the ball
-travels from the start, the lower it sits. This behaviour is called
+travels from the start, the lower it sits. This behavior is called
 **monotonicity**.
 
 More precisely: for any two positions $x_1 < x_2$ on our track, we always find
@@ -68,7 +68,7 @@ We call this **strictly monotonically decreasing**.
 
 Imagine now that we add a horizontal plateau to the track: the ball descends,
 rolls along a flat section, and then descends again. On the flat section the
-height stays constant — for any two positions $x_1 < x_2$ within the plateau
+height stays constant: for any two positions $x_1 < x_2$ within the plateau
 we have $h(x_1) = h(x_2)$. This means the function is no longer *strictly*
 decreasing on the whole track, but it is still *monotonically decreasing* in a
 broader sense, because the height never increases. We will look at this kind of
@@ -77,7 +77,7 @@ the next section.
 
 We can also imagine the reverse situation: a conveyor belt that carries the ball
 uphill back to the starting block. Its height function would be monotonically
-increasing — the height grows as the position $x$ increases.
+increasing: the height grows as the position $x$ increases.
 
 ```{admonition} What is ... monotonicity?
 :class: note
@@ -104,7 +104,7 @@ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; pic
 web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 ```
 
-## Boundedness — how high and how low can it go?
+## Boundedness: how high and how low can it go?
 
 Every real marble track has physical limits. The table surface prevents the ball
 from going below $0~\text{cm}$, and the starting block fixes the maximum height
@@ -119,7 +119,7 @@ Since the function is bounded both above and below, it is simply called
 **bounded**.
 
 Not all functions behave this way. If we extended the rail infinitely far to
-the right, the height would eventually become arbitrarily negative — the
+the right, the height would eventually become arbitrarily negative, and the
 function would be unbounded below. In contrast, the height could never exceed
 the starting height of $6~\text{cm}$, so the function would remain bounded
 above.
@@ -135,7 +135,7 @@ A function $f: D \to \mathbb{R}$ is called
 - **bounded** if it is both bounded above and bounded below.
 ```
 
-## Symmetry — mirror tracks
+## Symmetry: mirror tracks
 
 Symmetry is everywhere in engineering. Machine parts are often designed to be
 mirror-symmetric; other structures are rotationally symmetric. In mathematics
@@ -159,16 +159,19 @@ width: 75%
 name: function_marble_track_symmetric
 ---
 Graph of the height function of a y-axis symmetric marble track.
-(Source: own figure; licence [CC BY-SA
+(Source: own figure; license [CC BY-SA
 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
 A marble track bounded by the table surface can never dip below zero, so we
 cannot construct a point-symmetric marble track in the same way. Instead,
-imagine a roller coaster built into hilly terrain: the track rises over a hill
-on the right and descends into a valley of exactly the same depth on the left.
+imagine a roller coaster built into hilly terrain: on the left the track runs
+through a cutting below ground level, climbs steadily, passes ground level at
+the center and continues upward on an embankment on the right. At every
+distance from the center, the track on the right lies exactly as high above the
+ground as the track on the left lies below it.
 We can describe such a track by the function $h(x) = 0.1\, x^3$, where the
-coordinate system is placed at the centre. Let us check the symmetry at
+coordinate system is placed at the center. Let us check the symmetry at
 $x = 2$:
 
 \begin{equation*}
@@ -176,9 +179,9 @@ h(2) = 0.1 \cdot 2^3 = 0.8~\text{cm}, \quad
 h(-2) = 0.1 \cdot (-2)^3 = -0.8~\text{cm.}
 \end{equation*}
 
-In general: $h(-x) = 0.1 \cdot (-x)^3 = -0.1\, x^3 = -h(x)$. The hill on the
-right corresponds to a valley of equal depth on the left — action and reaction
-are equal in magnitude but opposite in direction.
+In general: $h(-x) = 0.1 \cdot (-x)^3 = -0.1\, x^3 = -h(x)$. The height above
+ground on the right corresponds to a depth of equal magnitude below ground on
+the left.
 
 ```{figure} pics/function_marble_track_odd.svg
 ---
@@ -186,7 +189,7 @@ width: 75%
 name: function_marble_track_odd
 ---
 Graph of a roller coaster track that is point-symmetric about the origin.
-(Source: own figure; licence [CC BY-SA
+(Source: own figure; license [CC BY-SA
 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
@@ -209,7 +212,7 @@ f(-x) = -f(x) \quad \text{for all } x \in D.
 Its graph is point-symmetric about the origin.
 ```
 
-Note that not every function is either even or odd — most functions have no
+Note that not every function is either even or odd. Most functions have no
 symmetry at all. Checking for symmetry is nevertheless always worthwhile, since
 it can simplify calculations considerably.
 
@@ -225,7 +228,7 @@ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media
 </iframe>
 ```
 
-## Periodicity — repeating patterns
+## Periodicity: repeating patterns
 
 Imagine a marble track built over a series of identical hills. After each hill
 the track looks exactly the same as before. If we shift the entire track
@@ -238,7 +241,7 @@ width: 75%
 name: function_marble_track_periodic
 ---
 Graph of a periodic marble track with period $T$.
-(Source: own figure; licence [CC BY-SA
+(Source: own figure; license [CC BY-SA
 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
@@ -276,4 +279,4 @@ the function is rising or falling; boundedness tells us whether the function
 values are confined within fixed limits; symmetry captures mirror or point
 symmetry of the graph; and periodicity describes repeating patterns. In the
 next section we look at a special class of functions where different equations
-apply on different parts of the domain — the piecewise defined functions.
+apply on different parts of the domain: the piecewise defined functions.

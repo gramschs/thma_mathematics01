@@ -402,7 +402,7 @@ the form:
 
 ```{figure}
 Graph of [what the figure shows].
-(Source: own figure; licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+(Source: own figure; license [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
 Keep the descriptive part to one sentence. Do not repeat information that

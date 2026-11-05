@@ -42,12 +42,12 @@ difference quotient:
 f(x) = 0.02\,x^2 - 0.6\,x + 6, \quad x \in [0, 30],
 \end{equation*}
 
-where $x$ is the position along the track in centimetres and $f(x)$ is the
-height above the table surface in centimetres.
+where $x$ is the position along the track in centimeters and $f(x)$ is the
+height above the table surface in centimeters.
 
 ```{figure} pics/fig05_marble_track_parabola.svg
 Graph of the height function $f(x) = 0.02x^2 - 0.6x + 6$ of the parabolic marble track on the domain $[0, 30]$.
-(Source: own figure; licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+(Source: own figure; license [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
 The rail starts at $f(0) = 6~\text{cm}$, descends to its lowest point at $x =
@@ -64,7 +64,7 @@ $x_0 = 5~\text{cm}$ and position $x_1 = 20~\text{cm}$.
 
 ```{figure} pics/fig05_marble_track_difference_quotient.svg
 Graph of the height function with the secant line through $P_1 = (5, 3.5)$ and $P_2 = (20, 2)$, showing the rise $\Delta f$ and the run $\Delta x$.
-(Source: own figure; licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+(Source: own figure; license [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
 The heights are
@@ -85,7 +85,7 @@ $15~\text{cm}$ horizontally. The average rate of change is
 \end{equation*}
 
 The negative sign reflects the downward trend. The magnitude $0.1$ tells us
-that the track drops, on average, $0.1~\text{cm}$ for every centimetre of
+that the track drops, on average, $0.1~\text{cm}$ for every centimeter of
 horizontal travel over this interval.
 
 ## What is the difference quotient?
@@ -165,7 +165,7 @@ In case of display problems please use the link
 
 There is a clean geometric picture that makes the difference quotient
 immediately visible. Consider the graph of the height function, the parabola
-we drew in section 3.5. The two points $P_1 = (x_0,\, f(x_0))$ and
+shown at the beginning of this section. The two points $P_1 = (x_0,\, f(x_0))$ and
 $P_2 = (x_0 + h,\, f(x_0 + h))$ both lie on this curve. Draw the straight
 line that passes through both of them. This line is called the **secant line**
 through $P_1$ and $P_2$.
@@ -213,8 +213,8 @@ wherever we measure how fast something changes between two observable moments.
 In structural engineering, the deflection of a beam under load varies along its
 length. If we measure the deflection at two points separated by a distance $h$,
 the difference quotient gives the average slope of the deflected beam over that
-span. This slope determines the bending stress, which is the quantity the
-engineer checks against the material's yield strength.
+span. This slope matters, for example, at the bearings of a shaft, where an
+excessive tilt causes misalignment and wear.
 
 In thermal engineering, the temperature inside a wall varies with depth.
 Measuring the temperature at two positions gives the average temperature

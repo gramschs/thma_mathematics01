@@ -106,10 +106,10 @@ name: inverse_rule_ln
 Left: $\ln x$, defined for $x > 0$, with $\ln 1 = 0$ and $\ln e = 1$ marked.
 Right: its derivative $(\ln x)' = 1/x$, which is always positive and decays
 toward zero as $x \to \infty$.
-(Source: own figure; licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+(Source: own figure; license [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
-Returning to the damped oscillator: in section 6.3 we asked at what time the
+Returning to the damped oscillator from section 6.3, we ask at what time the
 amplitude envelope $A\,e^{-\delta t}$ drops to a prescribed fraction $\alpha$
 of the initial displacement $A$. Solving $e^{-\delta t} = \alpha$ gives
 $t = -\ln(\alpha)/\delta$. If we now ask how sensitive this time is to a
@@ -136,14 +136,13 @@ target fraction $\alpha$, with $\delta = 0.5~\text{s}^{-1}$. Right: the
 sensitivity $dt/d\alpha = -1/(\delta\,\alpha)$; at $\alpha = 0.5$ its value
 is $-4~\text{s}$, meaning each percentage-point increase in target fraction
 shortens the settling time by approximately $0.04~\text{s}$.
-(Source: own figure; licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+(Source: own figure; license [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
 ## What are the inverse trigonometric functions?
 
-In section 4.4 we noted that the sine and cosine functions are not invertible
-over their full domains because they are periodic and therefore fail the
-horizontal line test. The standard remedy, introduced in section 4.2, is to
+The sine and cosine functions are not invertible over their full domains:
+they are periodic and therefore fail the horizontal line test. The standard remedy, introduced in section 4.2, is to
 restrict the domain to an interval on which the function is strictly monotonic.
 
 The **arcsine** $\arcsin(x)$ is the inverse of $\sin$ restricted to
@@ -159,7 +158,7 @@ $\sin x$ restricted to $[-\pi/2,\,\pi/2]$ (red) and its inverse $\arcsin x$
 (blue), mirror images of each other across the diagonal $y = x$. The grid
 lines at $y = \pm 1$ confirm that $\sin(\pm\pi/2) = \pm 1$ and
 $\arcsin(\pm 1) = \pm\pi/2$.
-(Source: own figure; licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+(Source: own figure; license [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
 The **arccosine** $\arccos(x)$ is the inverse of $\cos$ restricted to
@@ -174,7 +173,7 @@ $\cos x$ restricted to $[0,\,\pi]$ (red) and its inverse $\arccos x$ (blue),
 mirror images of each other across the diagonal $y = x$. The grid lines at
 $y = \pm 1$ confirm that $\cos(0) = 1$, $\cos(\pi) = -1$, $\arccos(1) = 0$,
 and $\arccos(-1) = \pi$.
-(Source: own figure; licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+(Source: own figure; license [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
 The **arctangent** $\arctan(x)$ is the inverse of $\tan$ restricted to
@@ -191,7 +190,7 @@ $\tan x$ restricted to $(-\pi/2,\,\pi/2)$ (red) and its inverse $\arctan x$
 vertical lines mark the asymptotes of $\tan x$; dotted horizontal lines mark
 the asymptotes of $\arctan x$. Open circles indicate that both the domain of
 $\tan$ and the range of $\arctan$ are open intervals.
-(Source: own figure; licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+(Source: own figure; license [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
 ```{admonition} What are ... the inverse trigonometric functions?
@@ -238,7 +237,7 @@ Left: $\arcsin x$ on its closed domain $[-1,\,1]$. Right: its derivative
 $(\arcsin x)' = 1/\sqrt{1-x^2}$, which is always greater than or equal to
 $1$ and diverges as $x \to \pm 1$, reflecting the vertical tangents of
 $\arcsin$ at its endpoints.
-(Source: own figure; licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+(Source: own figure; license [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
 **Derivative of $\arccos(x)$.** Here $f(y) = \cos(y)$ on $[0, \pi]$, so
@@ -271,7 +270,7 @@ $(\arccos x)' = -1/\sqrt{1-x^2}$, which is always less than or equal to
 $-1$ and diverges to $-\infty$ as $x \to \pm 1$. The right panel is the
 exact negative of the derivative of $\arcsin x$, consistent with
 $(\arcsin x)' + (\arccos x)' = 0$.
-(Source: own figure; licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+(Source: own figure; license [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
 **Derivative of $\arctan(x)$.** Here $f(y) = \tan(y)$ on $(-\pi/2, \pi/2)$,
@@ -303,7 +302,7 @@ Left: $\arctan x$ on $\mathbb{R}$, with dotted horizontal asymptotes at
 $\pm\pi/2$. Right: its derivative $(\arctan x)' = 1/(1+x^2)$, which attains
 its maximum value of $1$ at $x = 0$ and decays smoothly to zero as
 $|x| \to \infty$.
-(Source: own figure; licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+(Source: own figure; license [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
 ## Summary and outlook

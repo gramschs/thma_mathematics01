@@ -6,7 +6,7 @@ authors:
 # 6.1 Derivatives of Elementary Functions
 
 In chapter 5 we computed derivatives from the limit definition, expanding and
-cancelling step by step. For the parabolic marble track that calculation took
+canceling step by step. For the parabolic marble track that calculation took
 the better part of a page of algebra. That approach is rigorous and
 illuminating, but repeating it from scratch every time we encounter a new
 function would make practical work impossibly slow. The solution is to carry
@@ -80,12 +80,20 @@ Returning to our marble track: applying the power rule to each term of
 $f(x) = 0.02\,x^2 - 0.6\,x + 6$ recovers $f'(x) = 0.04\,x - 0.6$
 immediately. The same result that required a full page in section 5.3 now
 follows in a single line. The rules for combining terms systematically are
-formalised in section 6.2.
+formalized in section 6.2.
 
 ```{dropdown} Video "Power Rule" by The Organic Chemistry Tutor
 <iframe width="1020" height="574" src="https://www.youtube.com/embed/9Yz-RCdS2Tg"
 title="The Power Rule For Derivatives" frameborder="0" allow="accelerometer; autoplay;
 clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
+
+```{dropdown} Video "Calculus Power Rule Explained in 2 Minutes" by CodeLucky
+<iframe width="1020" height="574" src="https://www.youtube.com/embed/j7RPQ5kWEdM"
+title="Calculus Power Rule Explained in 2 Minutes | Derivatives for Beginners"
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+allowfullscreen></iframe>
 ```
 
 ## What are the derivatives of the exponential function and the natural logarithm?
@@ -109,7 +117,7 @@ width: 100%
 name: chap06_exp_derivative
 ---
 The exponential function with some slopes on the left and its derivative at the right
-(Source: own figure; licence [CC BY-SA
+(Source: own figure; license [CC BY-SA
 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
@@ -125,7 +133,7 @@ width: 100%
 name: chap06_log_derivative
 ---
 The logarithm with some slopes on the left and its derivative at the right
-(Source: own figure; licence [CC BY-SA
+(Source: own figure; license [CC BY-SA
 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
@@ -184,7 +192,7 @@ picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
 allowfullscreen></iframe>
 ```
 
-```{dropdown} Video "Derivatives of sin(x) and cos(x)" by Khan Acdemy
+```{dropdown} Video "Derivatives of sin(x) and cos(x)" by Khan Academy
 <iframe width="1020" height="574" src="https://www.youtube.com/embed/UwFlrPNf5ZE"
 title="Derivatives of sin(x) and cos(x) | Derivative rules | AP Calculus AB |
 Khan Academy" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
@@ -207,7 +215,7 @@ width: 100%
 name: chap06_tan_derivative
 ---
 The tangent with some slopes on the left and its derivative at the right
-(Source: own figure; licence [CC BY-SA
+(Source: own figure; license [CC BY-SA
 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 

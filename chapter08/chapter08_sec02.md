@@ -44,10 +44,10 @@ examine what the three graphs $f$, $f'$, and $f''$ reveal about each other.
 
 ## How do we sketch the speed profile of a test sled?
 
-A motorised sled on a straight test track performs a controlled braking
+A motorized sled on a straight test track performs a controlled braking
 sequence. Starting from rest, the sled accelerates to a test speed, then
 brakes back to a complete stop before re-accelerating. The speed of the sled,
-in m/s, as a function of time $t$ in seconds is modelled by
+in m/s, as a function of time $t$ in seconds is modeled by
 
 \begin{equation*}
 v(t) = t(t - 3)^2, \quad t \in [0, 4].
@@ -117,7 +117,7 @@ is negative, so the curve is concave (bends downward). For $t \in [2, 4]$
 the second derivative is positive, so the curve is convex (bends upward).
 
 The curve starts at the origin, rises with downward curvature to the local
-maximum at $(1,\, 4)$, continues descending through the inflection at
+maximum at $(1,\, 4)$, then descends through the inflection at
 $(2,\, 2)$ where the curvature reverses, then arcs upward to the double zero
 at $(3,\, 0)$ where it just touches the axis before rising again to the
 endpoint at $(4,\, 4)$.
@@ -142,12 +142,12 @@ to a stop and then re-accelerating without reversing direction.
     The first-derivative curve in red.
     Filled dots where v'(t) = 0 at t = 1 and t = 3.
     A dashed horizontal line at y = 0.
-    The sign of v' labelled "+" and "−" in each subinterval.
+    The sign of v' labeled "+" and "−" in each subinterval.
 
   BOTTOM PANEL: v''(t) = 6t − 12
     A straight line in orange.
     A filled dot at the zero t = 2.
-    The zero crossing labelled "inflection point of v".
+    The zero crossing labeled "inflection point of v".
 
   A movable cursor linked across all three panels. Dragging it shows the
   student how the value of v' in the middle panel equals the slope of v
@@ -186,7 +186,7 @@ three different vantage points.
 
 ## Where does curve sketching appear in engineering?
 
-The ability to read qualitative behaviour directly from derivatives is
+The ability to read qualitative behavior directly from derivatives is
 valuable whenever a function is known in formula form and the engineer needs
 to understand its structure quickly, without numerical simulation.
 
@@ -195,7 +195,7 @@ whose zeros (crossing times), local extrema (overshoot values), and
 inflection points (moment of maximum rate of rise) each have direct
 engineering significance. An engineer sketches the response curve from the
 transfer function in order to check whether the system will produce
-acceptable behaviour before committing to a detailed simulation. In
+acceptable behavior before committing to a detailed simulation. In
 thermodynamics, the efficiency of a cycle as a function of one operating
 parameter can be sketched to identify the optimal operating region and the
 sensitivity of the efficiency to changes away from the optimum.

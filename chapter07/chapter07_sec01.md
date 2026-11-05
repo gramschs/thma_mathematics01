@@ -46,7 +46,7 @@ differentiation process twice.
 :name: chap07_marble_track
 Graph of the marble track height profile together with its first and second
 derivatives, showing the curve, the tangent slope, and the constant slope change
-at a common position $x = 10$. (Source: own figure; licence [CC BY-SA
+at a common position $x = 10$. (Source: own figure; license [CC BY-SA
 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
@@ -112,7 +112,7 @@ h(x) = \frac{1}{30}\,x^2 - \frac{1}{2700}\,x^3, \quad x \in [0, 60].
 :name: chap07_roller_coaster
 Graph of the roller coaster lift hill height profile $h(x) = \dfrac{1}{30}x^2 -
 \dfrac{1}{2700}x^3$ on the interval $[0, 60]$, showing the base at $(0, 0)$ and
-the summit at $(60, 40)$. (Source: own figure; licence [CC BY-SA
+the summit at $(60, 40)$. (Source: own figure; license [CC BY-SA
 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
@@ -127,7 +127,7 @@ h(60) = \frac{3600}{30} - \frac{216000}{2700} = 120 - 80 = 40~\text{m}.
 The lift hill raises passengers $40~\text{m}$ over a horizontal span of
 $60~\text{m}$, from the base at $x = 0$ to the summit at $x = 60$.
 
-We now apply the power rule and constant multiple rule from chapter 6 to
+We now apply the power rule and factor rule from chapter 6 to
 compute the successive derivatives. The first derivative gives the gradient,
 that is, the slope of the track at each horizontal position:
 
@@ -139,7 +139,7 @@ h'(x) = \frac{x}{15} - \frac{x^2}{900} = \frac{x(60 - x)}{900}.
 :name: chap07_roller_coaster_1stderivative
 Graph of the slope function $h'(x) = \dfrac{x}{15} - \dfrac{x^2}{900}$ on the
 interval $[0, 60]$, showing the horizontal start and end of the lift hill and
-the maximum slope at $x = 30~\text{m}$. (Source: own figure; licence [CC BY-SA
+the maximum slope at $x = 30~\text{m}$. (Source: own figure; license [CC BY-SA
 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
@@ -165,7 +165,7 @@ h''(x) = \frac{1}{15} - \frac{x}{450} = \frac{30 - x}{450}.
 Graph of the second derivative $h''(x) = \frac{1}{15} - \frac{x}{450}$ on the
 interval $[0, 60]$, showing the positive values on the lower half of the lift
 hill, the zero at $x = 30~\text{m}$, and the negative values on the upper half.
-(Source: own figure; licence [CC BY-SA
+(Source: own figure; license [CC BY-SA
 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
@@ -186,7 +186,7 @@ h'''(x) = -\frac{1}{450}.
 :name: chap07_roller_coaster_3rdderivative
 Graph of the third derivative $h'''(x) = -\frac{1}{450}$ as a constant negative
 value on the interval $[0, 60]$, representing the uniform rate at which the
-slope change of the lift hill decreases. (Source: own figure; licence [CC BY-SA
+slope change of the lift hill decreases. (Source: own figure; license [CC BY-SA
 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 

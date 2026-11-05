@@ -52,7 +52,7 @@ This combined mapping is the **composition** of $f$ and $g$.
 :class: note
 Let $g: X_g \to Y_g$ and $f: X_f \to Y_f$ be two functions such that the
 range of $g$ is contained in the domain of $f$, that is,
-$g(X_g) \subseteq Y_f$. The **composition** of $f$ and $g$ is the function
+$g(X_g) \subseteq X_f$. The **composition** of $f$ and $g$ is the function
 
 \begin{equation*}
 (f \circ g): X_g \to Y_f, \quad x \mapsto f(g(x)).
@@ -90,7 +90,7 @@ is satisfied for all real $x$. So the domain of $f \circ g$ is $\mathbb{R}$.
 Notice that a composition of two simple functions can produce a more complex
 expression. In the first example, $f$ and $g$ were both straightforward, but
 their composition $\sqrt{x^2 + 1}$ is a function we would not have written down
-directly. Recognising it as a composition will be essential when we differentiate
+directly. Recognizing it as a composition will be essential when we differentiate
 it later.
 
 A note on domains: the output values of the inner function $g$ must lie within
@@ -132,7 +132,7 @@ domains. Composition is **not commutative**: in general, $f \circ g \neq g \circ
 When we encounter a composite expression written as a single formula, we need
 to be able to identify the inner and outer functions. This skill becomes
 essential for the chain rule: before we can differentiate a composite function,
-we must recognise it as one.
+we must recognize it as one.
 
 The key question is: *what is the last operation performed?* That last operation
 is the outer function $f$, and everything inside it is the inner function $g$.
@@ -141,7 +141,7 @@ Consider $h(x) = (3x^2 - 5)^4$. The last operation is raising something to the
 power 4, so the outer function is $f(u) = u^4$. Everything inside the brackets
 is the inner function: $g(x) = 3x^2 - 5$. We can verify: $f(g(x)) = (3x^2 - 5)^4 = h(x)$.
 
-A few more examples to practise:
+A few more examples to practice:
 
 | Expression $h(x)$ | Inner function $g(x)$ | Outer function $f(u)$ |
 | ---- | ---- | ---- |
@@ -164,7 +164,7 @@ referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 The composition of functions chains two functions in sequence: the output of
 the inner function becomes the input of the outer function. Composition is not
 commutative, and the order of $f$ and $g$ must always be checked carefully.
-Recognising a composite expression and naming its inner and outer functions is
+Recognizing a composite expression and naming its inner and outer functions is
 a skill that will be needed immediately when we reach differential calculus:
 the chain rule states precisely how to differentiate a composition, and it
 requires exactly this decomposition. With this section we complete the

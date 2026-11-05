@@ -18,13 +18,13 @@ them, polynomials.
 :class: attention
 * [ ] You know what a **power function** $f(x) = a \cdot x^n$ is and understand
   how the coefficient $a$ and the exponent $n$ affect its shape.
-* [ ] You know the behaviour of power functions for positive integer exponents,
+* [ ] You know the behavior of power functions for positive integer exponents,
   negative integer exponents, and rational exponents (root functions).
 * [ ] You know what a **polynomial** is and are familiar with the terms
   **degree**, **coefficients**, and **leading coefficient**.
 * [ ] You know the linear function $f(x) = mx + b$ as the polynomial of degree 1
   and can identify the **slope** $m$ and the **intercept** $b$.
-* [ ] You can determine the long-term behaviour of a polynomial for
+* [ ] You can determine the long-term behavior of a polynomial for
   $x \to \pm\infty$ from its degree and leading coefficient.
 ```
 
@@ -73,7 +73,7 @@ name: fig03_power_functions_positive
 Graphs of power functions with positive integer exponents. Functions with odd
 exponents (left) are odd functions; functions with even exponents (right) are
 even functions.
-(Source: own figure; licence [CC BY-SA
+(Source: own figure; license [CC BY-SA
 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
@@ -82,7 +82,7 @@ even functions.
 For negative exponents we can rewrite the power function as a fraction:
 
 \begin{equation*}
-f(x) = a \cdot x^{-n} = \frac{a}{x^n}.
+f(x) = a \cdot x^{n} = \frac{a}{x^{|n|}}.
 \end{equation*}
 
 These functions are not defined at $x = 0$, because division by zero is not
@@ -98,7 +98,7 @@ name: fig03_power_functions_negative
 ---
 Graphs of power functions with negative integer exponents. Again, odd exponents
 (left) give odd functions and even exponents (right) give even functions.
-(Source: own figure; licence [CC BY-SA
+(Source: own figure; license [CC BY-SA
 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
@@ -122,7 +122,7 @@ width: 75%
 name: fig03_power_functions_rational
 ---
 Graphs of power functions with rational exponents (root functions).
-(Source: own figure; licence [CC BY-SA
+(Source: own figure; license [CC BY-SA
 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
@@ -164,7 +164,7 @@ Both $m$ and $b$ are real numbers.
 
 The slope $m$ tells us how steeply the graph rises or falls. For our marble
 track the slope was $m = -\frac{1}{4}$, meaning the rail fell. The sign and
-magnitude of $m$ determine the qualitative behaviour:
+magnitude of $m$ determine the qualitative behavior:
 
 - If $m > 0$, the function is strictly monotonically increasing (rising line).
 - If $m < 0$, the function is strictly monotonically decreasing (falling line).
@@ -215,8 +215,8 @@ called the **leading coefficient**.
 
 A polynomial is therefore a sum of power functions with non-negative integer
 exponents, plus a constant term $a_0$. The functions we have already met are
-all special cases: a power function $a \cdot x^n$ is a polynomial with a single
-term, and a linear function $mx + b$ is a polynomial of degree 1.
+all special cases: a power function $a \cdot x^n$ with a non-negative integer
+exponent $n$ is a polynomial with a single term, and a linear function $mx + b$ is a polynomial of degree 1.
 
 A few examples illustrate the variety:
 
@@ -236,13 +236,14 @@ width: 75%
 name: fig03_polynomial_graphs
 ---
 Graphs of polynomials of degrees 1 through 4.
-(Source: own figure; licence [CC BY-SA
+(Source: own figure; license [CC BY-SA
 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
-**Long-term behaviour**
+**Long-term behavior**
+
 One of the most useful things we can read off immediately from a polynomial is
-its behaviour for very large positive or very large negative values of $x$, that
+its behavior for very large positive or very large negative values of $x$, that
 is, for $x \to \pm\infty$. This is determined entirely by the degree $n$ and
 the sign of the leading coefficient $a_n$:
 
@@ -259,7 +260,7 @@ conclude that for large positive $x$ the function goes to $-\infty$, which
 makes physical sense: a descending rail eventually reaches the ground and
 cannot be extended indefinitely.
 
-```{dropdown} Video "How To Graph Polynomial Functions"by The Organic Chemistry Tutor
+```{dropdown} Video "How To Graph Polynomial Functions" by The Organic Chemistry Tutor
 <iframe width="1020" height="574" src="https://www.youtube.com/embed/a5x4lwnvHM0?list=PL0o_zxa4K1BU5sTWZ2YxFhpXwsnMfMke7" title="How To Graph Polynomial Functions Using
 End Behavior, Multiplicity &amp; Zeros" frameborder="0" allow="accelerometer; autoplay;
 clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -269,7 +270,7 @@ clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" refe
 
 We have seen that power functions form the building blocks of polynomials, and
 that polynomials can describe arbitrarily complex curved track profiles by
-combining terms of different degrees. The long-term behaviour of a polynomial
+combining terms of different degrees. The long-term behavior of a polynomial
 is controlled entirely by its degree and leading coefficient. Among all
 polynomials, the quadratic function of degree 2 deserves special attention: its
 graph is a parabola with a lowest or highest point that will later play a

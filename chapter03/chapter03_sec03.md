@@ -36,7 +36,7 @@ name: fig03_marble_track_plateau
 ---
 A marble track with three segments: a descending rail, a horizontal plateau,
 and a second descending rail.
-(Source: own figure; licence [CC BY-SA
+(Source: own figure; license [CC BY-SA
 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
@@ -111,7 +111,7 @@ name: fig03_function_graph_marble_track_plateau
 ---
 Graph of the piecewise defined height function of the marble track with a
 plateau.
-(Source: own figure; licence [CC BY-SA
+(Source: own figure; license [CC BY-SA
 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
@@ -137,8 +137,8 @@ operating regimes. A few typical examples:
   plastically beyond it. The stress-strain relationship is described by two
   different equations, one for each regime.
 - A **control system with a threshold** responds linearly up to a saturation
-  limit and then holds a constant output value. This is precisely the structure
-  of our plateau track.
+  limit and then holds a constant output value. This corresponds to the first
+  two segments of our plateau track.
 - An **electrical switch** is either open (current zero) or closed (current
   determined by Ohm's law), with the switching point as the boundary between two
   sub-intervals.

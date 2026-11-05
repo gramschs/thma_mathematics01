@@ -99,7 +99,7 @@ $\delta = 0.5~\text{s}^{-1}$:
 = -0.10 \cdot 0.5 \cdot e^{0} = -0.05~\frac{\text{m}}{\text{s}}.
 \end{equation*}
 
-At the moment of release the envelope is shrinking at $0.05~\text{m/s}$,
+At $t = 0$ the envelope is shrinking at $0.05~\text{m/s}$,
 which matches the initial velocity we computed in section 6.3.
 
 ## How do we differentiate the oscillator's cosine factor?
@@ -152,7 +152,7 @@ name: chain_rule_sin_x2
 ---
 Left: $h(x) = \sin(x^2)$. Right: its derivative $h'(x) = \cos(x^2)\cdot 2x$,
 obtained by the chain rule with outer function $\sin(u)$ and inner function $u = x^2$.
-(Source: own figure; licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+(Source: own figure; license [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
 Consider $h(x) = e^{\sin x}$. The outer function is $e^u$ and the inner
@@ -169,10 +169,10 @@ name: chain_rule_exp_sinx
 ---
 Left: $h(x) = e^{\sin x}$. Right: its derivative $h'(x) = e^{\sin x}\cdot\cos x$,
 obtained by the chain rule with outer function $e^u$ and inner function $u = \sin x$.
-(Source: own figure; licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+(Source: own figure; license [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
-Consider $h(x) = \sqrt{1 - x^2}$, which we recognised as a composition in
+Consider $h(x) = \sqrt{1 - x^2}$, which we recognized as a composition in
 section 3.6. Writing it as $(1 - x^2)^{1/2}$, the outer function is $u^{1/2}$
 and the inner function is $u = 1 - x^2$. The chain rule and the power rule give:
 
@@ -188,10 +188,10 @@ name: chain_rule_sqrt
 ---
 Left: $h(x) = \sqrt{1-x^2}$, the upper unit semicircle, defined on $[-1,\,1]$.
 Right: its derivative $h'(x) = -x/\sqrt{1-x^2}$, which diverges as $x \to \pm 1$.
-(Source: own figure; licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+(Source: own figure; license [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
-This last example also completes the loose end from section 6.1, where we noted
+The chain rule also completes the loose end from section 6.1, where we noted
 that the power rule extends to real exponents but deferred the argument. For any
 $f(x) = x^r$ with real $r$ and $x > 0$, writing $x^r = e^{r\ln x}$ and applying
 the chain rule gives $(x^r)' = e^{r\ln x} \cdot r/x = r\,x^{r-1}$, confirming

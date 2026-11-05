@@ -31,10 +31,10 @@ larger than a full turn, is covered.
 
 ## Trigonometric functions in the right-angled triangle
 
-Imagine a connecting rod in an engine. One end is fixed at the crankshaft
-center and the other traces a circular path. To find the horizontal and
-vertical components of the rod's position at a given angle, we decompose its
-length into two perpendicular directions. This decomposition is exactly what
+Imagine the crank of an engine's crankshaft. One end is fixed at the crankshaft
+center and the other end, the crank pin, traces a circular path. To find the
+horizontal and vertical components of the crank pin's position at a given
+angle, we decompose the crank length into two perpendicular directions. This decomposition is exactly what
 sine and cosine do.
 
 Consider a right-angled triangle with an acute angle $\alpha$ at one corner.
@@ -63,8 +63,8 @@ We define the three basic trigonometric functions by the ratios of these sides:
 \tan(\alpha) = \frac{\text{opposite}}{\text{adjacent}}.
 \end{equation*}
 
-For the connecting rod of length $r$ at angle $\alpha$, the horizontal
-component of its tip is $r \cos(\alpha)$ and the vertical component is
+For a crank of length $r$ at angle $\alpha$, the horizontal
+component of the crank pin is $r \cos(\alpha)$ and the vertical component is
 $r \sin(\alpha)$. Sine and cosine decompose a length into its components along
 two perpendicular directions.
 
@@ -246,7 +246,7 @@ voltage in Europe, $A \approx 325~\text{V}$.
 
 **Angular frequency $\omega$:** controls how fast the oscillation repeats.
 The period is $T = 2\pi/\omega$. The ordinary frequency in Hz is
-$f = 1/T = \omega/(2\pi)$. For European mains voltage, $f = 50~\text{Hz}$,
+$\nu = 1/T = \omega/(2\pi)$. For European mains voltage, $\nu = 50~\text{Hz}$,
 so $\omega = 100\pi~\text{rad/s}$.
 
 **Phase shift $\varphi$:** shifts the entire curve horizontally. A positive
@@ -270,7 +270,7 @@ four parameters labeled.
 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
-```{dropdown} Video ""Graphing Trigonometric Functions" by The Organic Chemistry Tutor
+```{dropdown} Video "Graphing Trigonometric Functions" by The Organic Chemistry Tutor
 <iframe width="1020" height="574" src="https://www.youtube.com/embed/fo_q9mEAFp4"
 title="Graphing Trigonometric Functions, Phase Shift, Period, Transformations, Tangent,
 Cosecant, Cosine" frameborder="0" allow="accelerometer; autoplay; clipboard-write;

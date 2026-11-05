@@ -18,7 +18,7 @@ is important that the objects are distinguishable and that we can decide for
 each individual object whether it belongs to the set or not (see also [Wikipedia
 → Set](https://en.wikipedia.org/wiki/Set_(mathematics))).
 
-Let's take the number of working days as an example. In Germany, working days
+Let's take the set of working days as an example. In Germany, working days
 usually consist of
 
 * Monday,
@@ -29,8 +29,8 @@ usually consist of
 
 The days are distinguishable from one another; it definitely makes a difference
 whether it is Monday or Friday. Furthermore, we can decide whether a day belongs
-to the set of weekdays or not. Wednesday belongs to the set of weekdays, Sunday
-does not belong to the set of weekdays. The objects that belong to the set are
+to the set of working days or not. Wednesday belongs to the set of working days,
+Sunday does not belong to the set of working days. The objects that belong to the set are
 called **elements of the set**.
 
 ```{note} What is ... a set?
@@ -47,7 +47,7 @@ In mathematics, there are three ways of representing sets:
 2. Description (set-builder notation), and
 3. graphical representation as a Venn diagram.
 
-For the **enumeration**, sometimes called **Roster methode** we use the
+For the **enumeration**, sometimes called **roster method** we use the
 so-called curly brackets `{` and `}` and write down the elements:
 
 \begin{equation*}
@@ -90,15 +90,15 @@ Let's look at a second example, namely the days of the month of April:
 A = \{1, 2, 3, 4, 5, \dots, 30\}.
 \end{equation*}
 
-Once the pattern is clear, bullet points `...` can also be set. The first half
+Once the pattern is clear, an ellipsis `...` can also be used. The first half
 of April, which we abbreviate as $A_1$, is then
 
 \begin{equation*}
 A_{1} = \{1, 2, 3, 4, \dots, 15\}.
 \end{equation*}
 
-The second way to enumerate a set is by means of a **description** or the
-so-called **set-builder methode**. The first half of April consists of all days
+The second way to represent a set is by means of a **description** or the
+so-called **set-builder method**. The first half of April consists of all days
 in April that are before or equal to the 15th day. Mathematically, this is
 written as follows:
 
@@ -108,7 +108,7 @@ A_{1} = \{d\in A \;|\; d \leq 15\}.
 
 So we say that the set $A_1$ consists of all days in April ($d\in A$) and then
 use the symbol $|$ to require that these days in April must satisfy an
-additional condition, namely $t\leq 15$. The symbol $|$ is read as "for which
+additional condition, namely $d\leq 15$. The symbol $|$ is read as "for which
 the following applies". This allows us to describe the days $\{1, 2, 3, \ldots,
 15\}$ instead of listing them.
 
@@ -133,7 +133,7 @@ to the set are written outside the ellipse. (Source: own representation; license
 Graphical representations of sets are very common, especially when it comes to
 calculating with sets, which we will learn about in the next chapter. We also
 refer to the graphical representation as a **Venn diagram** (see [Wikipedia →
-Venn diagram (https://en.wikipedia.org/wiki/Venn_diagram)). In a set diagram,
+Venn diagram](https://en.wikipedia.org/wiki/Venn_diagram)). In a set diagram,
 objects are placed inside geometric shapes such as circles or ellipses to
 indicate that they are elements of the set. Objects that do not belong to the
 set are placed outside.
@@ -192,10 +192,10 @@ S_1 = S_2, \quad \text{if} \quad S_1 \subseteq S_2 \; \text{\textbf{ and }} \;
 S_2 \subseteq S_1.
 \end{equation*}
 
-For example, we can list the number of working days according to their occurrence
+For example, we can list the set of working days according to their occurrence
 
 \begin{equation*}
-W_1 = \{\text{Monday}, \text{Tuesday}, \text{Wednesday}, \text{Thursday}, \text{Friday} \}.
+W_1 = \{\text{Monday}, \text{Tuesday}, \text{Wednesday}, \text{Thursday}, \text{Friday} \}
 \end{equation*}
 
 or alphabetically
